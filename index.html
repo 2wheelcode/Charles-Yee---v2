@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="./dist/style.css" rel="stylesheet">
+    <script src="/js/script.js" defer></script>
+    <title>V-2 Charles Yee</title>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <!-- @todo Insert Logo -->
+    <!-- @todo Make Read More/Read Less Button Transition smoothly -->
+    <section id="hero" class="h-fit w-screen bg-fixed z-0">
+        <div class="h-fit bg-black bg-opacity-60"> <!-- Gradient Overlay -->
+        
+            <!-- Navigation -->
+            <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+            <nav class="mx-auto px-6 py-2 screen-full">
+                <!-- Menu/Logo Container -->
+                <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
+                    <!-- Logo -->
+                    <!-- Place these inside a div to stack -->
+                    <!-- <img src="" alt="" class="w-36"> -->
+                    <h2 class="font-alata text-2xl text-center items-self-center font-bold text-white border-2 w-16 h-16 rounded-full md:text-4xl">LOGO</h2>
+
+                    <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+                    <div class="hidden h-10 font-alata md:flex md:space-x-6">
+                        <!-- Menu Item 1 -->
+                        <div class="group">
+                            <a href="#">About</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                        </div>
+                        <!-- Menu Item 2 -->
+                        <div class="group">
+                            <a href="#">Projects</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Menu Item 3 -->
+                        <div class="group">
+                            <a href="#">Services</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Menu Item 4 -->
+                        <div class="group">
+                            <a id="contact-btn" href="">Contact</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Menu Item 5 -->
+                        <div class="group">
+                            <a target="_blank" href="#">Resume</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                    </div>
+                    <!-- Hamburger Button -->
+                    <div class="md:hidden">
+                        <button
+                        id="menu-btn"
+                        type="button"
+                        class="z-40 block hamburger lg:hidden focus:ouline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </nav>
+                
+                <!-- Mobile Menu -->
+                <div
+                    id="menu"
+                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
+                    <a href="#" class="hover:text-blue-600">About</a>
+                    <a href="#" class="hover:text-blue-600">Projects</a>
+                    <a target="_blank" href="#" class="hover:text-blue-600">Services</a>
+                    <a id="contact-btn" href="" class="hover:text-blue-600">Contact</a>
+                    <a target="_blank" href="#" class="hover:text-blue-600">Resume</a>
+                    <a href="" class="hover:text-blue-600">You're at Home</a>
+                    <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
+                </div>
+
+                <!-- Hero Statement -->
+                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-sans text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
+                    In any project- there is Time, Quality, and Cost- You can have two, but not all three…
+                </div>
+
+                <!-- Subscription Sign Up Currently Not In Use -->
+                <!-- <div id="sub-form" class="flex flex-col mt-5 md:justify-end">
+                    <form name="submit-to-google-sheet" action="" method="post" class="flex flex-col mt-5 space-y-4 md:justify-end md:flex-row md:space-y-0">
+                    <input type="email" name="Email" placeholder="Subscribe to Charles' Blog" class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none hover:cursor-pointer">
+                    <button class="px-5 py-3 text-xs text-white bg-black border border-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Subscribe</button>
+                </form>
+                    <div id="sub-msg" class="text-white text-sm font-alata text-right"></div>
+                </div> --> <!-- End sub-form -->
+            </nav>
+
+            <!-- Contact Form Insert, Hidden until clicked -->
+            <span id="contact-dots"></span>
+            <!-- Contact From -->
+            <span class="hidden" id="contact-form">
+
+            <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
+                <form class="px-10 py-6 space-y-4" action="action-page.php" method="post">
+
+                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"  type="text" placeholder="Name" required>
+                    <br>
+                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email" type="email" placeholder="Email" required>
+                    <br>
+                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject" id="subject" type="text" placeholder="Subject" required>
+                    <br>
+                    <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3" placeholder="Your message" name="Message" id="message" cols="40" rows="8" required></textarea>
+                    <button onclick="" id="submitBtn" class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
+                </form>
+            </div> <!-- End of Contact Form -->
+            </span>
+
+            <!-- Hero and Title section -->
+            <div class="mx-auto">
+                <div class="flex flex-col lg:flex-row lg:px-6">
+                    <!-- Image Container -->
+                    <div class="mx-auto my-auto md:shrink-0">
+                        <img class="w-72 rounded-full object-cover lg:w-96" src="images/charles-hero-square.jpg" alt="Photo of Charles Yee">
+                    </div>
+                    <div id="title" class="mx-auto px-10 py-8 md:max-w-3xl md:py-0">
+                        <p class="font-alata font-extrabold text-3xl mt-4 text-slate-100">Charles Yee</p>
+                        <p class="mt-2 text-xl text-slate-100">
+                            NLP, Machine Learning
+                            <br>
+                            Backend Consulting
+                            <br>
+                            Leader in Machine Learning/Deep Neural Networks for Natural Language Processing. Specialized in Healthcare Industry
+                            <br>
+                            <br>
+                            <!-- Principal Scientist at AstraZeneca<br>
+                            University of Stuttgart <br>
+                            Boston, Massachusetts, United States. -->
+                        </p>
+                        <div class="text-lg mt-2 text-slate-100">
+                            Is your software team struggling to deliver projects on time? Too many bugs?
+
+                            Do you have problematic stakeholders on your team, anti-patterns in your backend, or poorly documented code that you would like to scale up, but could not?
+                            <br>
+                            <br>
+                            Would you like to pivot your business by using insights from big data?
+                            <br>
+                            Do you want to apply machine learning to automate manual components in your workflow, but don’t know how?
+                        <span id="header-dots"></span>
+                        <!-- Learn How Read More/Read Less -->
+                        <span class="hidden" id="header-more">
+                            <br>
+                            <br>
+                            Entrepreneurs, startups, and Fortune 500 corporations come to me to help transform their data science and backend infrastructure from a frustrating mess, or low-tech prototype, into a state-of-the-art, well-oiled machine that delivers value to customers. I have a track record of solving challenging technology and product problems for my clients, increasing their revenue, mitigating risks, and significantly reducing costs. 
+
+                            <br>
+                            <br>
+                            Well acclimated to large corporate culture. Nevertheless, full track record of entrepreneurship initiatives.
+                        </span>
+                        <br>
+                        <br>
+                        </p>
+                        <button onclick="headerFunction()" id="headerBtn" class="px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Read More...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section> <!-- End of Header Section -->
+
+
+    <!-- Principle Why's -->
+    <!-- @todo Added content, ask Charles to review -->
+    <section id="why-work-with-charles" class="font-alata grid grid-cols-1 divide-x divide-y lg:grid-cols-2  bg-gray-300">
+        <div id="leader" class="px-12 py-8 lg:p-32">
+            <!-- Widget -->
+            <div class="flex border border-1 bg-white border-black h-12 w-12 mb-4">
+                <div class="border border-1 border-black bg-blue-900 h-6 w-6 mx-auto my-auto"></div>
+            </div>
+            <!-- Leader -->
+            <h2 class="text-3xl uppercase font-bold">Leader In Healthcare & Tech</h2>
+            <br>
+            <p class="text-xl">
+                Charles is your Tech Mercenary Specializing in NLP & ML in Healthcare
+                <br>
+                <br>
+                <ul class="list-disc">
+                    <li>Due Diligence in the Healthcare Industry</li>
+                    <li>Due Diligence in the Technology Industry</li>
+                    <li>Strong Why Point 3</li>
+                    <li>Strong Why Point 4</li>
+                    <a href="#" class="text-blue-500 underline">The Why is obvious with these 4 major points</a>
+                </ul>
+                 *I think this is better that just a textbox "Why Work With Charles?"
+                <br>
+                *We may not want a "Read More" link in this section, use very compelling points instead
+             </p>
+        </div>
+        <div id="services" class="px-12 py-8 lg:p-32">
+            <!-- Widget -->
+            <div class="flex border border-1 bg-white border-black h-12 w-12 mb-4 place-content-end items-end">
+                <div class="border border-1 border-black bg-blue-900 h-6 w-6"></div>
+            </div>
+            <!-- Services -->
+            <h2 class="text-3xl uppercase font-bold">Services</h2>
+            <br>
+            <p class="text-xl">
+                Charles' expertise is machine learning and backend development, with a strong emphasis on the healthcare industry. Throughout his career, he has proven to excel in the following responsibilities:
+            <br>
+            <br>
+                <ul class="list-disc">
+                    <li>Hands-on, backend software development/troubleshooting </li>
+                    <li>Technical audit, particularly for startup acquisition, pharmacovigilance, and regulatory</li>
+                    <li>Machine learning, AI, data science. Building deep neural network models using structured and unstructured data</li>
+                    <a href="#" class="text-blue-500 underline">See All Services</a>
+                </ul>
+                 *link will take them to the corresponding page
+                </p>
+        </div>
+        <div id="patent-holder" class="px-12 py-8 lg:p-32">
+            <!-- Widget -->
+            <div class="flex border border-1 bg-white border-black h-12 w-12 mb-4"> <!--  -->
+                <div class="border border-1 border-black bg-blue-900 h-6 w-6"></div>
+            </div>
+            <!-- Patent -->
+            <h2 class="text-3xl uppercase font-bold">PATENT HOLDER</h2>
+            <br>
+            <p class="text-xl">Charles' focus on Healthcare & Technology has been instrumental in advancing the field he holds Intellectual Property rights.
+                <br>
+                <br>
+                <ul class="list-disc">
+                    <li>
+                        METHOD AND SYSTEM FOR CANCER STAGE ANNOTATION WITHIN A MEDICAL TEXT
+                        <br>
+                        US PCT/EP2019/072816
+                    </li>
+                    <li>
+                        METHODS AND SYSTEMS FOR HEALTHCARE CLINICAL TRIALS
+                        <br>
+                        US WO/2019/068870
+                    </li>
+                    <li>
+                        A METHOD AND SYSTEM FOR MATCHING SUBJECTS TO CLINICAL TRIALS 
+                        <br>
+                        US WO/2018/060838
+                    </li>                    
+                    <a href="#" class="text-blue-500 underline">See All Patents</a>
+                </ul>
+            *We can change the title and/or order of each of these to Charles' preference 
+            </p>
+        </div>
+        <div id="publications" class="px-12 py-8 lg:p-32">
+            <!-- Widget -->
+            <div class="flex border border-none h-12 w-12 mb-4"> <!--  -->
+                <div class="border border-1 border-black bg-white h-6 w-6 "></div>
+                <div class="border border-1 border-black bg-blue-900 h-6 w-6 mt-6"></div>
+            </div>
+            <!-- Published -->
+            <h2 class="text-3xl uppercase font-bold">PUBLISHED AUTHOR </h2>
+            <br>
+            <p class="text-xl">
+                Charles' expertise and Due Diligence have lead him to publish articles in respected journals and educational publications 
+            <br>
+            <br>
+                <ul class="list-disc">
+                    <li>A Domain Knowledge-Enhanced LSTM-CRF Model for Disease Named Entity Recognition
+                        <br>
+                        AMIA · Mar 25, 2019
+                    </li>
+                    <li>Human-Algorithm Interaction To Define Variables from Free-Text Notes in Electronic Health Records.
+                        <br>
+                        Aug 31, 2015
+                    </li>
+                    <li>Automated Scoring for High Stakes Assessments: Ready for Prime Time?
+                        <br>
+                        CCSSO 2012 · Jun 29, 2012
+                    </li>
+                    <a href="#" class="text-blue-500 underline">See All Publications</a>
+                </ul>
+                 *link will take them to the publications page
+                </p>
+        </div>
+    </section> <!-- End Principle Why Section -->
+
+    <!-- About Charles Section -->
+    <!-- @todo Add bg-slide parallax while scrolling -->
+    <!-- @todo Make Read More/Read Less Button Transition smoothly -->
+    <section id="about" class="bg-black bg-[url('/images/charles-b-w.jpg')] bg-no-repeat bg-center">
+        <div class="flex flex-col font-alata p-12 justify-center lg:h-fit lg:flex-row lg:flex-wrap space-y-8 lg:p-32 ">
+    
+            <h2 class="text-4xl text-slate-50 font-bold uppercase flex-1">About Charles</h2>
+                    
+        <div id="blurb" class="text-slate-50 lg:bg-black/20 lg:shadow-slate-500 lg:p-6 lg:rounded-xl md:max-w-lg sm:w-auto flex-1 place-items-end">
+            <p>
+            Charles is an industry leader in healthcare NLP (Natural Language Processing) with nearly two decades of experience building commercial products, both in a hands-on capacity and as a technical manager.
+            <span id="about-dots"></span>
+            <span id="about-more" class="hidden">
+                <br>
+                <br>
+                As a player coach, Charles has led multimillion-dollar projects in health-tech Fortune 500s such as United Health, Philips, and AstraZeneca. 
+                <br>
+                <br>
+                Charles was also the co-founder and early employee of multiple Series-A and Series-B startup companies.
+                <br>
+                <br>
+                Charles has a Ph.D. in computational linguistics. With over a dozen publications and patents in his field, Charles is an authority in machine learning for named entity extraction and classification.
+                <br>
+                <br>
+                Charles’ expertise ranges from semantics, ontology, machine learning, and deep learning approaches for information classification and extraction.
+                <br>
+                Providing leadership, orchestration, and implementation to materialize domain experts’ scientific rationale into commercial products.
+                <br>
+                Uniquely versed in clinical trial protocol, oncology/pathology, EMR/EHR, and NLP-Assisted ICD coding.
+                <br>
+                Headed various companies’ R & D and infrastructure teams: Code review, building deep neural networks, model diagnosis, product and project management, end-to-end UAT and OAT, DevOps, recruitment-onboarding, aspirational speeches, and business acumen.
+                <br>
+                <br>
+                Well acclimated to large corporate culture. Nevertheless, full track record of entrepreneurship initiatives.
+            </span>
+        </p>
+        <br>
+        <button onclick="aboutFunction()" id="aboutBtn" class="px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Read More...</button>
+        </div>
+    </div>
+    </section> <!-- End About Section -->
+
+    <!-- Credentials Section -->
+    <!-- @todo Add Outline to text to help readability -->
+    <!-- @todo Add bg-slide parallax while scrolling -->
+    <section id="credentials" class="font-alata text-xl p-8 lg:p-24 z-0 relative bg-fixed bg-center bg-cover bg-no-repeat" style="background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/presentation-2.jpg)">
+        <div class="bg-white/20 mb-12">
+            <h2 class="font-alata font-bold uppercase text-4xl text-black shadow-zinc-400 text-center py-12">credentials</h2>
+        </div>
+        
+        <div id="boxes" class="grid lg:grid-cols-2 md:grid-cols-1 gap-12">
+            <!-- Projects Container -->
+            <div id="projects"  class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
+                <a href="#">
+                    <span class="text-2xl uppercase font-bold">projects</span>
+                    <br>
+                    <span class="font-normal">
+                        <br>
+                        <ul class="list-disc">
+                            <li>Manufacturing Lot-Based Analysis to Detect Adverse Event Signals</li>
+                            <li>Data-Driven Nutrition and Workout Recommendation System</li>
+                            <li>LSTM-enabled Clinical Trial Matching for Precision Medicine</li>
+                            <li>Insurance Billing Code Extraction through Hybrid NLP Approaches</li>
+                            <li>A Method and Apparatus for Genome Spelling Correction and Acronym Standardization</li>
+                        </ul>
+                    </span>
+                </a>
+            </div>
+            <!-- Patents Container -->
+            <div id="education" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
+                <a href="#">
+                    <span class="text-2xl uppercase font-bold">patents</span>
+                    <br>
+                    <span class="font-normal">
+                        <br>
+                        <ul class="list-disc">
+                            <li>Method & System for Cancer Stage Annotation Within a Medical Text
+                                <br>
+                                US PCT/EP2019/072816
+                            </li>
+                            <li>METHODS AND SYSTEMS FOR HEALTHCARE CLINICAL TRIALS
+                                <br>
+                                US WO/2019/068870
+                            </li>
+                            <li>A METHOD AND SYSTEM FOR MATCHING SUBJECTS TO CLINICAL TRIALS
+                                <br>
+                                US PCT/EP2019/072816
+                            </li>
+
+                        </ul>
+                        - Method & System for Cancer Stage Annotation Within a Medical Text <br>
+                    </span>
+                </a>
+            </div>
+            <!-- Recommendations Container -->
+            <div id="patents" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
+                <a href="#">
+                    <span class="text-2xl uppercase font-bold">recommendations</span>
+                    <br>
+                    <span class="font-normal">
+                            <br>
+                            <ul class="list-disc">
+                                <li>Rohit Patwa
+                                    <br>
+                                    Software Engineer at Google
+                                </li>
+                                <li>Agniva B
+                                    <br>
+                                    Data Scientist at Hypatos
+                                </li>
+                                <li>Bowei Wei
+                                    <br>
+                                    Back End Developer at Shanghai Pudong Development Bank
+                                </li>
+                            </ul>
+                    </span>
+                </a>
+            </div>
+            <!-- Education Container -->
+            <div id="recommendations" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
+                <a href="#">
+                    <span class="text-2xl uppercase font-bold">education</span>
+                    <br>
+                    <span class="font-normal"> 
+                        <br>
+                        <ul class="list-disc">
+                            <li>Ph.D. Computational Linguistics, NLP
+                                <br>
+                                University of Stuttgart
+                            </li>
+                            <li>M.Sc. Computational Linguistics, NLP
+                                <br>
+                                Kings Collage London
+                            </li>
+                            <li>B.Sc. Computer Science
+                                <br>
+                                Ohio University
+                            </li>
+                        </ul>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section> <!-- End Credentials Section -->
+
+    <!-- Publications Section -->
+    <section id="publications" class="bg-black h-fit px-8">
+        <h2 class="font-alata uppercase text-4xl font-bold text-slate-100 text-center pt-24" >publications</h2>
+
+            <div id="default-carousel duration-5000 ease-in-out" class="relative py-16 lg:px-32" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="font-alata overflow-hidden relative h-32 rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+                        <img src="images/background-1.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto  -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">A Lexical Approach to Presupposition and Meaning<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, quibusdam. This is 25 words</span></span>
+                        
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                        <img src="images/background.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">An Object Oriented Approach to Dynamic Syntax, with C++ implementation<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam. This is 25 words</span></span>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                        <img src="images/background.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">Human-Algorithm Interaction To Define Variables from Free-Text Notes in Electronic Health Records<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam. This is 25 words</span></span>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                        <img src="images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">PUBLICATION 4 HEADLINE<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat. This is 25 words</span></span>
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="hidden lg:flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="hidden lg:flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="hidden lg:flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+    </section> <!-- End Publications section -->
+
+    <!-- Motto Section -->
+    <!-- @todo Add bg-slide parallax while scrolling -->
+    <section id="moto" class="font-alata p-12 justify-center items-center h-fit lg:p-48 bg-center bg-cover bg-no-repeat" style="background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/img-5383.jpg)"> <!-- Alternate Image url(/images/porsche-4.jpg)  -->
+        <div>       
+            <p class="font-alata text-slate-200/70 italic text-center text-5xl">
+            We are all flying around space on this massive rock for no particular reason.
+            <br>
+             Everyone on this rock is just a friend I haven’t met, yet.</p><br>
+            <p class="text-slate-100 font-semibold italic text-right">- Charles' Motto</p>
+        </div>    
+    </section>
+
+        <!-- Footer -->
+        <!-- @todo Insert Logo -->
+        <footer id="footer" class="bg-black">
+            <!-- Container -->
+            <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
+                <!-- Footer Flex Container -->
+                <div class="flex flex-col font-alata mx-auto mb-8 space-y-6 lg:flex-row lg:mx-0 lg:space-y-0 lg:justify-between lg:items-end">
+                    <!-- Logo & Title -->
+                    <div class="flex flex-col">
+                        <!-- Logo & Title Container -->
+                        <div>
+                            <a href="#hero">
+                            <!-- <img src="/images/charles-headshot.jpeg" alt="" class="block h-42 w-42 rounded-full"> -->
+                            <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2>
+                        </div>
+                        <!-- Logo Title -->
+                        <div>
+                            <h2 class="font-alata text-3xl text-center lg:justify-start text-white lg:text-6xl">Charles Yee</h2>
+                        </div>
+                    </div> <!-- End Logo & Title -->
+                        
+
+                    <!-- Menu Container -->
+                    <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-4">
+                        
+                            <!-- Contact Container -->
+                        <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
+                            <!-- Item 1 -->
+                            <div class="group h-16 text-center cursor-default">
+                                <a href=""class="cursor-default"></a>
+                                <div class="text-white">
+                                    (720)771-1828
+                                    <br>
+                                    charles.wj.yee@gmail.com
+                                </div>
+                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="group h-16 text-center cursor-default">
+                                <a href="" class="cursor-default"></a>
+                                <div class="text-white">
+                                    123 Any Street
+                                    <br>
+                                    Boston, MA 00000
+                                </div>
+                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            
+                            <!-- Item 4 -->
+                            <!-- <div class="group h-10 text-center pb-5">
+                                <a href="#">Events ???</a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                            <!-- Item 5 -->
+                            <!-- <div class="group h-10 text-center">
+                                <a href="#">Support</a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                        </div>
+                        <div class="mx-auto">
+                            <button id="contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Contact Form</button>
+                        </div>
+                        
+                    </div>
+                    <!-- Social & Copy Container -->
+                    <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
+                        <!-- icons Container -->
+                        <div class="flex items-center justify-center mx-auto space-x-4 xl:space-x-12 md:justify-end">
+                            <!-- Icon 1 -->
+                            <div class="group h-8 mb-4">
+                                <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
+                                    <img src="/images/linkedin-128.gif" alt="" class="h-12 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            <!-- Icon 2 -->
+                            <div class="group h-8 mb-4">
+                                <a target="_blank" href="">
+                                    <img src="/images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            <!-- Icon 3 -->
+                            <!-- <div class="group h-8">
+                                <a target="_blank" href="#">
+                                    <img src="/images/icon-instagram.svg" alt="" class="h-6 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                            <!-- Icon 4 -->
+                            <!-- <div class="group h-8">
+                                <a target="_blank" href="#">
+                                    <img src="/images/icon-pinterest.svg" alt="" class="h-6 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                        </div>
+        
+                        <!-- Copyright -->
+                        <div class="font-bold text-center px-3">
+                            Charles Yee &copy; 2022
+                            <br>
+                            All Rights Reserved
+                            <br>
+                            <div class="group h-16 text-center cursor-pointer">
+                                <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built & powered by
+                                    <br>
+                                    summit web creations
+                                </a>
+                                <div class="mx-8 group-hover:border-b group-hover:border-blue-50"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- End Footer -->
+
+    <!-- Javascript -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+
+</body>
+</html>
