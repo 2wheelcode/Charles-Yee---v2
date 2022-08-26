@@ -42,12 +42,12 @@
                         </div>
                         <!-- Menu Item 2 -->
                         <div class="group">
-                            <a href="#">Projects</a>
+                            <a href="#">Services</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                         <!-- Menu Item 3 -->
                         <div class="group">
-                            <a href="#">Services</a>
+                            <a href="#">Projects</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                         <!-- Menu Item 4 -->
@@ -79,8 +79,8 @@
                     id="menu"
                     class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
                     <a href="#" class="hover:text-blue-600">About</a>
-                    <a href="#" class="hover:text-blue-600">Projects</a>
                     <a target="_blank" href="#" class="hover:text-blue-600">Services</a>
+                    <a href="#" class="hover:text-blue-600">Projects</a>
                     <a id="contact-btn" href="" class="hover:text-blue-600">Contact</a>
                     <a target="_blank" href="#" class="hover:text-blue-600">Resume</a>
                     <a href="" class="hover:text-blue-600">You're at Home</a>
@@ -88,7 +88,7 @@
                 </div>
 
                 <!-- Hero Statement -->
-                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-sans text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
+                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
                     In any project- there is Time, Quality, and Cost- You can have two, but not all three…
                 </div>
 
@@ -108,7 +108,7 @@
             <span class="hidden" id="contact-form">
 
             <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
-                <form class="px-10 py-6 space-y-4" action="action-page.php" method="post">
+                <form action="/action-page.php" method="post" id="contact-form" class="px-10 py-6 space-y-4">
 
                     <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"  type="text" placeholder="Name" required>
                     <br>
@@ -178,7 +178,7 @@
     <!-- Principle Why's -->
     <!-- @todo Added content, ask Charles to review -->
     <section id="why-work-with-charles" class="font-alata grid grid-cols-1 divide-x divide-y lg:grid-cols-2  bg-gray-300">
-        <div id="leader" class="px-12 py-8 lg:p-32">
+        <div id="leader" class="px-12 py-8 lg:p-24">
             <!-- Widget -->
             <div class="flex border border-1 bg-white border-black h-12 w-12 mb-4">
                 <div class="border border-1 border-black bg-blue-900 h-6 w-6 mx-auto my-auto"></div>
@@ -202,7 +202,7 @@
                 *We may not want a "Read More" link in this section, use very compelling points instead
              </p>
         </div>
-        <div id="services" class="px-12 py-8 lg:p-32">
+        <div id="services" class="px-12 py-8 lg:p-24">
             <!-- Widget -->
             <div class="flex border border-1 bg-white border-black h-12 w-12 mb-4 place-content-end items-end">
                 <div class="border border-1 border-black bg-blue-900 h-6 w-6"></div>
@@ -223,7 +223,7 @@
                  *link will take them to the corresponding page
                 </p>
         </div>
-        <div id="patent-holder" class="px-12 py-8 lg:p-32">
+        <div id="patent-holder" class="px-12 py-8 lg:p-24">
             <!-- Widget -->
             <div class="flex border border-1 bg-white border-black h-12 w-12 mb-4"> <!--  -->
                 <div class="border border-1 border-black bg-blue-900 h-6 w-6"></div>
@@ -255,7 +255,7 @@
             *We can change the title and/or order of each of these to Charles' preference 
             </p>
         </div>
-        <div id="publications" class="px-12 py-8 lg:p-32">
+        <div id="publications" class="px-12 py-8 lg:p-24">
             <!-- Widget -->
             <div class="flex border border-none h-12 w-12 mb-4"> <!--  -->
                 <div class="border border-1 border-black bg-white h-6 w-6 "></div>
