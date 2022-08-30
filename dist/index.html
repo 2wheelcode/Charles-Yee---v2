@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="./dist/style.css" rel="stylesheet">
-    <script src="/js/script.js" defer></script>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./js/script.js" defer></script>
     <title>V-2 Charles Yee</title>
 </head>
 <body>
@@ -52,7 +52,7 @@
                         </div>
                         <!-- Menu Item 4 -->
                         <div class="group">
-                            <a id="contact-btn" href="">Contact</a>
+                            <a id="contact-btn" href="javascript:void(0)">Contact</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                         <!-- Menu Item 5 -->
@@ -81,7 +81,7 @@
                     <a href="#" class="hover:text-blue-600">About</a>
                     <a target="_blank" href="#" class="hover:text-blue-600">Services</a>
                     <a href="#" class="hover:text-blue-600">Projects</a>
-                    <a id="contact-btn" href="" class="hover:text-blue-600">Contact</a>
+                    <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600">Contact</a>
                     <a target="_blank" href="#" class="hover:text-blue-600">Resume</a>
                     <a href="" class="hover:text-blue-600">You're at Home</a>
                     <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
@@ -105,10 +105,14 @@
             <!-- Contact Form Insert, Hidden until clicked -->
             <span id="contact-dots"></span>
             <!-- Contact From -->
-            <span class="hidden" id="contact-form">
+            <div class="hidden" id="contact-form-wrapper">
 
             <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
-                <form action="/action-page.php" method="post" id="contact-form" class="px-10 py-6 space-y-4">
+                <form id="contact-form" class="px-10 py-6 space-y-4">
+                    <!-- Honeypot for spambots -->
+                    <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see" tabindex="-1" autocomplete="off">
+                    <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
+                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1" autocomplete="off"></label> <!-- End Honeypot -->
 
                     <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"  type="text" placeholder="Name" required>
                     <br>
@@ -117,17 +121,29 @@
                     <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject" id="subject" type="text" placeholder="Subject" required>
                     <br>
                     <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3" placeholder="Your message" name="Message" id="message" cols="40" rows="8" required></textarea>
-                    <button onclick="" id="submitBtn" class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
+                    <button id="submitBtn" class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
                 </form>
             </div> <!-- End of Contact Form -->
-            </span>
+                <div id="error-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
+                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                        There was an error sending your form.
+                    </p>
+                </div>
+                <div id="success-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
+                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                        Your message has been sent successfully, 
+                        <br>
+                        Charles will be in touch with you shortly.
+                    </p>
+                </div>
+            </div> <!-- End Contact Form Wrapper -->
 
             <!-- Hero and Title section -->
             <div class="mx-auto">
                 <div class="flex flex-col lg:flex-row lg:px-6">
                     <!-- Image Container -->
                     <div class="mx-auto my-auto md:shrink-0">
-                        <img class="w-72 rounded-full object-cover lg:w-96" src="images/charles-hero-square.jpg" alt="Photo of Charles Yee">
+                        <img class="w-72 rounded-full object-cover lg:w-96" src="/images/charles-hero-square.jpg" alt="Photo of Charles Yee">
                     </div>
                     <div id="title" class="mx-auto px-10 py-8 md:max-w-3xl md:py-0">
                         <p class="font-alata font-extrabold text-3xl mt-4 text-slate-100">Charles Yee</p>
@@ -434,6 +450,7 @@
     </section> <!-- End Credentials Section -->
 
     <!-- Publications Section -->
+    <!-- @todo Change this section to recommendations -->
     <section id="publications" class="bg-black h-fit px-8">
         <h2 class="font-alata uppercase text-4xl font-bold text-slate-100 text-center pt-24" >publications</h2>
 
@@ -442,23 +459,23 @@
                 <div class="font-alata overflow-hidden relative h-32 rounded-lg md:h-96">
                     <!-- Item 1 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
-                        <img src="images/background-1.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto  -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <img src="/images/background-1.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto  -translate-x-1/2 -translate-y-1/2" alt="...">
                         <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">A Lexical Approach to Presupposition and Meaning<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, quibusdam. This is 25 words</span></span>
                         
                     </div>
                     <!-- Item 2 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
-                        <img src="images/background.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <img src="/images/background.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                         <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">An Object Oriented Approach to Dynamic Syntax, with C++ implementation<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam. This is 25 words</span></span>
                     </div>
                     <!-- Item 3 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
-                        <img src="images/background.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <img src="/images/background.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                         <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">Human-Algorithm Interaction To Define Variables from Free-Text Notes in Electronic Health Records<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam. This is 25 words</span></span>
                     </div>
                     <!-- Item 4 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
-                        <img src="images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <img src="/images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                         <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">PUBLICATION 4 HEADLINE<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat. This is 25 words</span></span>
                     </div>
                 </div>
@@ -520,7 +537,7 @@
                         
 
                     <!-- Menu Container -->
-                    <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-4">
+                    <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-8">
                         
                             <!-- Contact Container -->
                         <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
@@ -535,7 +552,7 @@
                                 <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
                             </div>
                             <!-- Item 3 -->
-                            <div class="group h-16 text-center cursor-default">
+                            <!-- <div class="group h-16 text-center cursor-default">
                                 <a href="" class="cursor-default"></a>
                                 <div class="text-white">
                                     123 Any Street
@@ -543,19 +560,10 @@
                                     Boston, MA 00000
                                 </div>
                                 <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div>
+                            </div> -->
                             
-                            <!-- Item 4 -->
-                            <!-- <div class="group h-10 text-center pb-5">
-                                <a href="#">Events ???</a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div> -->
-                            <!-- Item 5 -->
-                            <!-- <div class="group h-10 text-center">
-                                <a href="#">Support</a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div> -->
                         </div>
+
                         <div class="mx-auto">
                             <button id="contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Contact Form</button>
                         </div>
@@ -573,23 +581,24 @@
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div>
                             <!-- Icon 2 -->
-                            <div class="group h-8 mb-4">
-                                <a target="_blank" href="">
-                                    <img src="/images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
+                            <div class="group h-8">
+                                <a target="_blank" href="https://www.toptal.com/">
+                                    <img src="/images/toptal.png" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div>
                             <!-- Icon 3 -->
-                            <!-- <div class="group h-8">
-                                <a target="_blank" href="#">
-                                    <img src="/images/icon-instagram.svg" alt="" class="h-6 mb-2">
+                            <!-- <div class="group h-8 mb-4">
+                                <a target="_blank" href="https://github.com/CharlesWJYee">
+                                    <img src="/images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div> -->
+                            
                             <!-- Icon 4 -->
                             <!-- <div class="group h-8">
                                 <a target="_blank" href="#">
-                                    <img src="/images/icon-pinterest.svg" alt="" class="h-6 mb-2">
+                                    <img src="" alt="" class="h-6 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div> -->

@@ -11,17 +11,79 @@ function navToggle() {
 }
 
 // Open Contact Form Button
-// @todo The form only stays open for a second or two
 const contactBtn = document.getElementById('contact-btn');
+const contactFormWrapper = document.getElementById('contact-form-wrapper');
 const contactForm = document.getElementById('contact-form');
+const formSubmitButton = document.getElementById('submitBtn');
+
+contactForm.addEventListener('submit', function(event){
+  event.preventDefault();
+})
 
 contactBtn.addEventListener('click', contactToggle);
+formSubmitButton.addEventListener('click', submitForm2);
 
 function contactToggle() {
-    //contactBtn.classList.toggle('open');
-    contactForm.classList.toggle('block');
-    contactForm.classList.toggle('hidden');
+    contactFormWrapper.classList.toggle('block');
+    contactFormWrapper.classList.toggle('hidden');
 }
+
+// function submitForm1() {
+//   contactForm.requestSubmit()
+//   contactFormWrapper.classList.toggle('block');
+//   contactFormWrapper.classList.toggle('hidden');
+//   contactForm.reset()
+// }
+
+// function handleEvent(e) {
+//   console.log( `${e.type}: ${e.loaded} bytes transferred\n`)
+// }
+
+// function addListeners(xhr) {
+//   xhr.addEventListener('loadstart', handleEvent);
+//   xhr.addEventListener('load', handleEvent);
+//   xhr.addEventListener('loadend', handleEvent);
+//   xhr.addEventListener('progress', handleEvent);
+//   xhr.addEventListener('error', handleEvent);
+//   xhr.addEventListener('abort', handleEvent);
+// }
+
+
+function submitForm2(){
+  const request = new XMLHttpRequest();
+  const successMsg = document.getElementById('success-msg');
+  // addListeners(request);
+  request.open("POST", "/action-page.php");
+  request.addEventListener('loadend', function(){
+    if(request.status === 200){
+      //hide contact form
+      contactFormWrapper.classList.toggle('block');
+      //contactFormWrapper.classList.toggle('hidden');
+      //clear out form values
+      contactForm.reset()
+      //TODO: show a 'message sent dialog' 
+      console.log('Message Successfully Sent');
+      // Timeout the Success Message   
+      setTimeout(() => {
+        contactFormWrapper.classList.toggle('block');
+      }, '1500')
+        contactFormWrapper.classList.toggle('hidden');
+        
+    }
+    if(request.status !== 200){
+      console.log('error', request.statusText, request.status)
+      setTimeout(() => {
+        contactFormWrapper.classList.toggle('block');
+      }, '1500')
+        contactFormWrapper.classList.toggle('hidden');
+    }
+    
+  });
+  request.send(new FormData(contactForm));
+
+  
+}
+
 
 // Subscribe Btn Action - Not In Use at this time
 /* const scriptURL = 'https://script.google.com/macros/s/AKfycbzbniPzDhvKO3kEIuSoImYI-vUPGLJudnuIRAdMNu1TYLQM1PDLSpJ4q5L7nKZNu5J-/exec'
@@ -85,12 +147,12 @@ function aboutFunction() {
       aboutDots.style.display = "inline";
       btnText.innerHTML = "Read More...";
       moreText.style.display = "none";
-    } else {
-        aboutDots.style.display = "none";
+    } /* else {
+        aboutDots.style.display === "none";
         btnText.innerHTML = "Read Less...";
         moreText.style.display = "inline";
-      } /* else {
+      } */ else {
       aboutBtn.style.display = "none";
       moreText.style.display = "inline";
-    } */ /* Use this else stmt to not have a Read Less Button */
+    } /* Use this else stmt to not have a Read Less Button */
   }

@@ -65,3 +65,7 @@
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
+
+.user-cannot-see {
+    display: none;
+}
