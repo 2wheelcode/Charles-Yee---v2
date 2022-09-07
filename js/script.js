@@ -77,11 +77,32 @@ function submitForm2(){
       }, '1500')
         contactFormWrapper.classList.toggle('hidden');
     }
-    
   });
   request.send(new FormData(contactForm));
+}
 
-  
+// Contact Form with Ajax & PHP
+function submitForm3() {
+  document,getElementById('contact-btn').disabled = true;
+  document,getElementById('contact-dots').innerHTML = 'please wait...';
+  let formdata = new FormData();
+  formdata.append('name', document.getElementById('name').value);
+  formdata.append('email', document.getElementById('email').value);
+  formdata.append('subject', document.getElementById('subject').value);
+  formdata.append('message', document.getElementById('message').value);
+  let ajax = new XMLHttpRequest();
+  ajax.open('POST', 'action-page.php');
+  ajax.onreadystatechange = function() {
+    if(ajax.readyState == 4 && ajax.status === 200) {
+      if(ajax.responseText === 'success') {
+        document.getElementById('contact-dots').innerHTML = '<h2>Thanks ' + document.getElementById('name').value + ', your message has been sent. <br>Charles will be in touch with you shortly</h2>';
+      } else {
+        document.getElementById('status').innerHTML = ajax.responseText;
+        document.getElementById('contact-btn').disabled = false;
+      }
+    }
+  }
+  ajax.send('formdata');
 }
 
 

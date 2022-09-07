@@ -1379,6 +1379,85 @@ video {
   }
 }
 
+#about {
+  width: 100%;
+  margin: 0px auto;
+  background-image: url('/images/charles-b-w.jpg');
+  background-position: 120% 0px 0px 0px;
+  background-repeat: no-repeat;
+  animattion: animate-background linear scroll;
+}
+@keyframes animate-background {
+  from {background-position: 120% 0px;}
+  to {background-poistion: 90% 0px;}
+}
+#credentials {
+  width: 100%;
+  margin: 0px auto;
+  background-image: url('/images/charles-b-w.jpg');
+  background-position: 90% 0px 0px 0px;
+  background-repeat: no-repeat;
+  animattion: animate-background linear scroll;
+}
+@keyframes animate-background {
+  from {background-position: 90% 0px;}
+  to {background-poistion: 120% 0px;}
+}
+
+#about-page {
+    background-image: url('../images/porsche-brick.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    background-overflow: hidden;
+}
+
+@media(max-width: 768px) {
+    #about-page {
+    background-image: url('../images/charles-portrait-1.jpg');
+    background-position: center;
+    background-gradient: rgba(-180deg 0,0,0,0.8);
+    }
+}
+
+#services-page {
+    background-image: url('../images/presentation-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    background-overflow: hidden;
+}
+
+@media(max-width: 768px) {
+    #services-page {
+    background-image: url('../images/presentation-portrait.jpg');
+    background-position: center;
+    background-gradient: rgba(-180deg 0,0,0,0.8);
+    }
+}
+
+#projects-page {
+    background-image: url('../images/water.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    background-overflow: hidden;
+}
+
+/* @media(max-width: 768px) {
+    #projects-page {
+    background-image: url('../images/presentation-portrait.jpg');
+    background-position: center;
+    background-gradient: rgba(-180deg 0,0,0,0.8);
+    }
+} */
+
 /* Hamburger Menu */
 
 .hamburger {

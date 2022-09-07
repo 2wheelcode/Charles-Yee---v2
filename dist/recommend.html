@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="/js/script.js" defer></script>
+    <title>Charles Yee | Recommendations</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <!-- @todo Insert Logo -->
+    <!-- @todo Make Read More/Read Less Button Transition smoothly -->
+    <section id="hero" class="h-fit w-screen bg-fixed z-0">
+        <div class="h-fit bg-black bg-opacity-60"> <!-- Gradient Overlay -->
+        
+            <!-- Navigation -->
+            <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+            <nav class="mx-auto px-6 py-2 screen-full">
+                <!-- Menu/Logo Container -->
+                <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
+                    <!-- Logo -->
+                    <!-- Place these inside a div to stack -->
+                    <!-- <img src="" alt="" class="w-36"> -->
+                    <h2 class="font-alata text-2xl text-center items-self-center font-bold text-white border-2 w-16 h-16 rounded-full md:text-4xl">LOGO</h2>
+
+                    <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+                    <div class="hidden h-10 font-alata md:flex md:space-x-6">
+                        <!-- Menu Item 1 -->
+                        <div class="group">
+                            <a href="index.html">Home</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                        </div>
+                        <!-- Menu Item 3 -->
+                        <div class="group">
+                            <a href="about.html">About</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Menu Item 2 -->
+                        <div class="group">
+                            <a href="projects.html">Projects</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        
+                        <!-- Menu Item 4 -->
+                        <div class="group">
+                            <a id="contact-btn" href="javascript:void(0)">Contact</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Menu Item 5 -->
+                        <div class="group">
+                            <a target="_blank" href="/images/example-resume.pdf">Resume</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                    </div>
+                    <!-- Hamburger Button -->
+                    <div class="md:hidden">
+                        <button
+                        id="menu-btn"
+                        type="button"
+                        class="z-40 block hamburger lg:hidden focus:ouline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </nav>
+                
+                <!-- Mobile Menu -->
+                <div
+                    id="menu"
+                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
+                    <a href="index.html" class="hover:text-blue-600">Home</a>
+                    <a href="about.html" class="hover:text-blue-600">About</a>
+                    <a href="services.html" class="hover:text-blue-600">Services</a>
+                    <a href="projects.html" class="hover:text-blue-600">Projects</a>
+                    <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600">Contact</a>
+                    <a target="_blank" href="/images/example-resume.pdf" class="hover:text-blue-600">Resume</a>
+                    <a href="" class="hover:text-blue-600">You're the Services Page</a>
+                    <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
+                </div>
+
+                <!-- Hero Statement -->
+                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
+                    services page
+                </div>
+
+                <!-- Subscription Sign Up Currently Not In Use -->
+                <!-- <div id="sub-form" class="flex flex-col mt-5 md:justify-end">
+                    <form name="submit-to-google-sheet" action="" method="post" class="flex flex-col mt-5 space-y-4 md:justify-end md:flex-row md:space-y-0">
+                    <input type="email" name="Email" placeholder="Subscribe to Charles' Blog" class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none hover:cursor-pointer">
+                    <button class="px-5 py-3 text-xs text-white bg-black border border-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Subscribe</button>
+                </form>
+                    <div id="sub-msg" class="text-white text-sm font-alata text-right"></div>
+                </div> --> <!-- End sub-form -->
+            </nav>
+
+            <!-- Contact Form Insert, Hidden until clicked -->
+            <span id="contact-dots"></span>
+            <!-- Contact From -->
+            <div class="hidden" id="contact-form-wrapper">
+
+            <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
+                <form id="contact-form" class="px-10 py-6 space-y-4">
+                    <!-- Honeypot for spambots -->
+                    <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see" tabindex="-1" autocomplete="off">
+                    <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
+                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1" autocomplete="off"></label> <!-- End Honeypot -->
+
+                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"  type="text" placeholder="Name" required>
+                    <br>
+                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email" type="email" placeholder="Email" required>
+                    <br>
+                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject" id="subject" type="text" placeholder="Subject" required>
+                    <br>
+                    <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3" placeholder="Your message" name="Message" id="message" cols="40" rows="8" required></textarea>
+                    <button id="submitBtn" class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
+                </form>
+            </div> <!-- End of Contact Form -->
+                <div id="error-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
+                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                        There was an error sending your form.
+                    </p>
+                </div>
+                <div id="success-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
+                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                        Your message has been sent successfully, 
+                        <br>
+                        Charles will be in touch with you shortly.
+                    </p>
+                </div>
+            </div> <!-- End Contact Form Wrapper -->
+
+            <!-- Hero and Title section -->
+          
+        </div>
+    </section> <!-- End of Header Section -->
+
+
+    <!-- Fill -->
+
+        <!-- Footer -->
+        <!-- @todo Insert Logo -->
+        <footer id="footer" class="bg-black">
+            <!-- Container -->
+            <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
+                <!-- Footer Flex Container -->
+                <div class="flex flex-col font-alata mx-auto mb-8 space-y-6 lg:flex-row lg:mx-0 lg:space-y-0 lg:justify-between lg:items-end">
+                    <!-- Logo & Title -->
+                    <div class="flex flex-col">
+                        <!-- Logo & Title Container -->
+                        <div>
+                            <a href="#hero">
+                            <!-- <img src="/images/charles-headshot.jpeg" alt="" class="block h-42 w-42 rounded-full"> -->
+                            <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2>
+                        </div>
+                        <!-- Logo Title -->
+                        <div>
+                            <h2 class="font-alata text-3xl text-center lg:justify-start text-white lg:text-6xl">Charles Yee</h2>
+                        </div>
+                    </div> <!-- End Logo & Title -->
+                        
+
+                    <!-- Menu Container -->
+                    <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-8">
+                        
+                            <!-- Contact Container -->
+                        <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
+                            <!-- Item 1 -->
+                            <div class="group h-16 text-center cursor-default">
+                                <a href=""class="cursor-default"></a>
+                                <div class="text-white">
+                                    (720)771-1828
+                                    <br>
+                                    charles.wj.yee@gmail.com
+                                </div>
+                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            <!-- Item 3 -->
+                            <!-- <div class="group h-16 text-center cursor-default">
+                                <a href="" class="cursor-default"></a>
+                                <div class="text-white">
+                                    123 Any Street
+                                    <br>
+                                    Boston, MA 00000
+                                </div>
+                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                            
+                        </div>
+
+                        <div class="mx-auto">
+                            <button id="contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Contact Form</button>
+                        </div>
+                        
+                    </div>
+                    <!-- Social & Copy Container -->
+                    <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
+                        <!-- icons Container -->
+                        <div class="flex items-center justify-center mx-auto space-x-4 xl:space-x-12 md:justify-end">
+                            <!-- Icon 1 -->
+                            <div class="group h-8 mb-4">
+                                <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
+                                    <img src="/images/linkedin-128.gif" alt="" class="h-12 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            <!-- Icon 2 -->
+                            <div class="group h-8">
+                                <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
+                                    <img src="/images/toptal.png" alt="" class="h-12 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            <!-- Icon 3 -->
+                            <!-- <div class="group h-8 mb-4">
+                                <a target="_blank" href="https://github.com/CharlesWJYee">
+                                    <img src="/images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                            
+                            <!-- Icon 4 -->
+                            <!-- <div class="group h-8">
+                                <a target="_blank" href="#">
+                                    <img src="" alt="" class="h-6 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                        </div>
+        
+                        <!-- Copyright -->
+                        <div class="font-bold text-center px-3">
+                            Charles Yee &copy; 2022
+                            <br>
+                            All Rights Reserved
+                            <br>
+                            <div class="group h-16 text-center cursor-pointer">
+                                <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built & powered by
+                                    <br>
+                                    summit web creations
+                                </a>
+                                <div class="mx-8 group-hover:border-b group-hover:border-blue-50"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- End Footer -->
+
+    <!-- Javascript -->
+
+</body>
+</html>

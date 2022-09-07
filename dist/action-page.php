@@ -9,7 +9,7 @@
     } else {
     # process as normal
 
-    if(isset($_POST['email']) && $_POST['email'] != '') {
+    if(isset($_POST['email']) && $_POST['email'] != '' && ($_POST['name']) && ($_POST['subject']) && ($_POST['message'])) {
         //if $_POST['email'] has an email, && it is not an empty string - first check
         if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             //validate the email is formatted correctly contains '@' and '.'
@@ -43,5 +43,10 @@
 
 ?>
 
+<!-- if(mail($mailTo, "Message from Charles' Website", $messageSubject, $body)) {
+                echo 'success';
+            } else {
+                echo 'The server failed to send the message. Please try again later.';
+            } -->
 
                     

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="/js/script.js" defer></script>
+    <title>Charles Yee | Projects</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <!-- @todo Insert Logo -->
+    <!-- @todo Make Read More/Read Less Button Transition smoothly -->
+    <section id="projects-page" class="w-screen bg-fixed z-0">
+        <div class="bg-black bg-opacity-60"> <!-- Gradient Overlay -->
+        
+            <!-- Navigation -->
+            <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+            <nav class="mx-auto px-6 py-2 screen-full">
+                <!-- Menu/Logo Container -->
+                <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
+                    <!-- Logo -->
+                    <!-- Place these inside a div to stack -->
+                    <!-- <img src="" alt="" class="w-36"> -->
+                    <h2 class="font-alata text-2xl text-center items-self-center font-bold text-white border-2 w-16 h-16 rounded-full md:text-4xl">LOGO</h2>
+
+                    <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+                    <div class="hidden h-10 font-alata md:flex md:space-x-6">
+                        <!-- Menu Item 1 -->
+                        <div class="group">
+                            <a href="index.html">Home</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                        </div>
+                        <!-- Menu Item 3 -->
+                        <div class="group">
+                            <a href="about.html">About</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Menu Item 2 -->
+                        <div class="group">
+                            <a href="services.html">Services</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        
+                        <!-- Menu Item 4 -->
+                        <div class="group">
+                            <a id="contact-btn" href="javascript:void(0)">Contact</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Menu Item 5 -->
+                        <div class="group">
+                            <a target="_blank" href="/images/example-resume.pdf">Resume</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                    </div>
+                    <!-- Hamburger Button -->
+                    <div class="md:hidden">
+                        <button
+                        id="menu-btn"
+                        type="button"
+                        class="z-40 block hamburger lg:hidden focus:ouline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </nav>
+                
+                <!-- Mobile Menu -->
+                <div
+                    id="menu"
+                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
+                    <a href="index.html" class="hover:text-blue-600">Home</a>
+                    <a href="about.html" class="hover:text-blue-600">About</a>
+                    <a href="services.html" class="hover:text-blue-600">Services</a>
+                    <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600">Contact</a>
+                    <a target="_blank" href="/images/example-resume.pdf" class="hover:text-blue-600">Resume</a>
+                    <a href="" class="hover:text-blue-600">You're the Projects Page</a>
+                    <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
+                </div>
+
+                <!-- Hero Statement -->
+                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:text-3xl">
+                    projects
+                </div>
+
+                <!-- Subscription Sign Up Currently Not In Use -->
+                <!-- <div id="sub-form" class="flex flex-col mt-5 md:justify-end">
+                    <form name="submit-to-google-sheet" action="" method="post" class="flex flex-col mt-5 space-y-4 md:justify-end md:flex-row md:space-y-0">
+                    <input type="email" name="Email" placeholder="Subscribe to Charles' Blog" class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none hover:cursor-pointer">
+                    <button class="px-5 py-3 text-xs text-white bg-black border border-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Subscribe</button>
+                </form>
+                    <div id="sub-msg" class="text-white text-sm font-alata text-right"></div>
+                </div> --> <!-- End sub-form -->
+            </nav>
+
+            <!-- Contact Form Insert, Hidden until clicked -->
+            <span id="contact-dots"></span>
+            <!-- Contact From -->
+            <div class="hidden" id="contact-form-wrapper">
+
+            <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
+                <form id="contact-form" class="px-10 py-6 space-y-4">
+                    <!-- Honeypot for spambots -->
+                    <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see" tabindex="-1" autocomplete="off">
+                    <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
+                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1" autocomplete="off"></label> <!-- End Honeypot -->
+
+                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"  type="text" placeholder="Name" required>
+                    <br>
+                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email" type="email" placeholder="Email" required>
+                    <br>
+                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject" id="subject" type="text" placeholder="Subject" required>
+                    <br>
+                    <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3" placeholder="Your message" name="Message" id="message" cols="40" rows="8" required></textarea>
+                    <button id="submitBtn" class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
+                </form>
+            </div> <!-- End of Contact Form -->
+                <div id="error-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
+                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                        There was an error sending your form.
+                    </p>
+                </div>
+                <div id="success-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
+                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                        Your message has been sent successfully, 
+                        <br>
+                        Charles will be in touch with you shortly.
+                    </p>
+                </div>
+            </div> <!-- End Contact Form Wrapper -->
+
+            <!-- Projects Description Section -->
+            <div class="font-alata text-white p-8 lg:p-32">
+                <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+                    
+                    <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                        <span class="text-2xl capitalize font-bold">
+                            Manufacturing Lot-Based Analysis to Detect Adverse Event Signals
+                        </span>
+                        <br>
+                        <br>
+                        <span class="font-normal">
+                            Every drug and vaccine approved by the FDA are required to keep track and report all Adverse Events (AE) occurred as a result of its consumption. Drugs and vaccines are manufactured in factory “lots”. Each lot is ID’ed with a unique alphanumeric sequence that allows pharmaceutical companies to trace a dose back to its origin. Since most drugs/vaccines are made from biological substances, the risk of contamination or other transportation issues directly influence the type and prominence of side effects of those products made by the lot in question. The accuracy of lot number reporting is crucial on the tracing and amelioration of AE’s. 
+                            <br>
+                            <br>
+                            Unfortunately, a substantial percentage (>50%) of the lot IDs as manually curated by providers, or reported by patients, are incorrect. The problem lies in that lot numbers are often written confusingly/erroneously during vaccination, the patient has a difficult time deciphering the writings, communication on the phone can sometimes be distorted, and doctors/PA’s on site are often busy or distracted, while their handwriting could be misunderstood on the regulatory end.
+                            <br>
+                            <br>
+                            During my contract with AstraZeneca, I devised a method to approximate a misspelled raw lot to what a human would deem the closest correct lot in existence. The approach uses NLP spelling correction for a customized vocabulary in a specialized domain. Once all raw lot numbers have been corrected, I apply an Observed-to-Expected analysis model and Gamma-Poisson to detect any abnormal signals in AE for each and every lot. If there is a significant signal from a specific manufacturing lot for a single, or a set of AE’s, the lot is flagged and reported to the Patient Safety team and subsequently regulatory agency for closer examination.  
+                        </span>
+                    </div>
+                    <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                        <span class="text-2xl capitalize font-bold">
+                            Data-Driven Nutrition and Workout Recommendation System
+                        </span>
+                        <br>
+                        <br>
+                        <span class="font-normal">
+                            Insidetracker (Segterra) provides personalized nutrition solutions, supplement and exercise recommendations by measuring users’ DNA, and monitoring users’ diet and activity metrics. The company collected Fitbit data from tens of thousands of customers over the course of a decade. The data include metrics such as REM/Deep sleep duration, exercise and METs calories, exercise type and time, and resting heart rate.
+                            <br>
+                            <br>
+                            While diet/exercise recommendations are given to customers through their app, these recommendations are currently prescriptive- They are based on rules authored by nutritionists and sport scientists. The millions of data points collected are not utilized in their recommendations, nor in the user interface that their customers interact with on a day-to-day basis.
+                            <br>
+                            <br>
+                            I was approached by Insidetracker’s CTO to change this. We would like to use data-driven insights to provide the basis behind every analysis presented to the user, and give evidence-based recommendations that we can show to our customers in real-time. To achieve this, I preprocessed Insidetracker’s Fitbit dataset, grouping users and dates, along with their workout activity type. I then created correlation models, as well as implemented an anomaly detection module to flag abnormal resting heart rates and sleep patterns. The correlations will show the user what type of changes in their habits (diet, exercise) can have the most impact to improve their health, while the anomaly detection will alert users of certain live events happening that are affecting their well-being.
+                            <br>
+                            <br>
+                            In addition, various regression model proof-of-concepts were trained to demonstrate that Insidetracker can go even further to improve users’ blood biomarkers by making recommendations to their nutritional intake, workout routine, and sleep habit. These are important insights to pivot their business from a rule-based, expert system relying on humans, to a more data-driven, purely empirical, automated, and real-time recommender system.
+                        </span>
+                    </div>
+                    <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                        <span class="text-2xl capitalize font-bold">
+                            LSTM-enabled Clinical Trial Matching for Precision Medicine
+                            <br>
+                            <br>
+                            
+                                <a class="text-base font-normal text-blue-500" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6568095/" target="_blank" rel="noopener noreferrer"><li class="list-disc">Project Link</li></a>
+                            <br>
+                        </span>
+                        <span class="font-normal">
+                            I led a team of eight cross-functional specialists to develop and deploy Philips' Intellispace Genomics product at the nation's tier-one cancer centers. This includes a $6 million USD project that I was responsible for, a clinical trial matching tool for cancer patients
+                            <br>
+                            <br>
+                            The problem of clinical trial matching is to extract the relevant eligibility criteria from more than 40,000 clinical trial protocols and then match them to the given cancer patient's profile. The relevant matching criteria include cancer type, staging, genetic mutations, the patient's demographics, and comorbidities. This is an extremely complex NLP problem applied across big data.
+                            <br>
+                            <br>
+                            With my team, I evolved a naive, Elasticsearch approach to a pipeline using a hybrid of Named Entity Recognition (NER) and logical satisfiability theory. We successfully trained a Long Short-Term Memory neural network (LSTM) with a Conditional Random Field (CRF) output layer using clinical domain informed corpora as word embedding. As a result of our work, my team successfully achieved more than 95% accuracy in automated clinical trial matching—as validated by pathologists and oncologists.
+                            <br>
+                            <br>
+                            The project yielded impressive results that saved tremendous time for clinicians. It is now a commercial success, replacing IBM Watson and deployed as part of the Philips Intellispace Genomics solution at the nation's top cancer institutions such as Dana-Farber, MD Anderson, Westchester Medical Center, and Boston Children's hospital.
+                        </span>
+                    </div>
+                    <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                        <span class="text-2xl capitalize font-bold">
+                            Insurance Billing Code Extraction through Hybrid NLP Approaches
+                        </span>
+                        <br>
+                        <br>
+                        <span class="font-normal">
+                            ICD10 code extraction is an essential component of insurance risk-adjustment in the United States private insurance industry. We built a system that processes >10 k Electronic Health Records (EHR), daily, while classifying over 70k different ICD's.
+                            <br>
+                            <br>
+                            I led a team of seven to build a three-layered hybrid NLP ICD10 extraction microservice infrastructure. First, all pdf scans of EHR are OCR'ed into text using Tesseract. The content of EHRs is stored in JSON format in MongoDB. These texts then go through a rule-based, hashmap-like system where every clinical term, acronyms, synonyms are converted to their subsequent ICD10 code. However, this approach alone has a high false-positive rate, albeit an extremely high recall (>98%). A layer of Transformer network using ClincalBERT and BioBERT is then applied on top of the rule-based output to perform binary classification, eliminating false positives to provide highly accurate ICD10 that is context-sensitive and clinically relevant.
+                            <br>
+                            <br>
+                            This project along with the startup company has since been successfully acquired.
+                        </span>
+                    </div>
+                    <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 drop-shadow-2xl lg:p-12">
+                        <span class="text-2xl capitalize font-bold">
+                            A Method and Apparatus for Genome Spelling Correction and Acronym Standardization
+                        </span>
+                        <br>
+                        <br>
+                        <span class="font-normal">
+                            At Philips, I developed a genomic biomarker spelling correction module. It is used to preprocess clinical trial protocol texts as a prerequisite before name entity detection could be performed. The module is an integral part of the workflow within the IntelliSpace Precision Medicine (ISPM) platform, commercially available at various cancer hospitals around the USA.
+                            <br>
+                            <br>
+                            The method includes the following steps, by performing preprocessing on a sentence:
+                            <br>
+                            <ol>
+                                <li>
+                                    1. Storing a first adjacent word to an unknown word and a second adjacent word to the unknown word
+                                </li>
+                                <li>
+                                    2. Generating a plurality of candidate words for the unknown word
+                                </li>
+                                <li>
+                                    3. Forming a plurality of trigrams with the first adjacent word to the unknown word and the second adjacent word to the unknown word to each of the plurality of candidate words
+                                </li>
+                                <li>
+                                    4. Construct a trigram table out of the entirety of the clinical trial database, each trigram comes with its frequency count as they occur in the database
+                                </li>
+                                <li>
+                                    5. Searching in the trigram table for each of the plurality of trigrams constructed in step 3
+                                </li>
+                                <li>
+                                    6. Outputting the candidate word from the trigram with the highest trigram count in the trigram table
+                                </li>
+                            </ol>
+                            <br>
+                            <br>
+                            The correction module will detect in-context, for example, seeing a “EGGR gene”, resolve it to “EGFR gene” in a text pertaining to non-small cell lung cancer. 
+
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        <!-- Footer -->
+        <!-- @todo Insert Logo -->
+        <footer id="footer" class="bg-black">
+            <!-- Container -->
+            <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
+                <!-- Footer Flex Container -->
+                <div class="flex flex-col font-alata mx-auto mb-8 space-y-6 lg:flex-row lg:mx-0 lg:space-y-0 lg:justify-between lg:items-end">
+                    <!-- Logo & Title -->
+                    <div class="flex flex-col">
+                        <!-- Logo & Title Container -->
+                        <div>
+                            <a href="#hero">
+                            <!-- <img src="/images/charles-headshot.jpeg" alt="" class="block h-42 w-42 rounded-full"> -->
+                            <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2>
+                        </div>
+                        <!-- Logo Title -->
+                        <div>
+                            <h2 class="font-alata text-3xl text-center lg:justify-start text-white lg:text-6xl">Charles Yee</h2>
+                        </div>
+                    </div> <!-- End Logo & Title -->
+                        
+
+                    <!-- Menu Container -->
+                    <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-8">
+                        
+                            <!-- Contact Container -->
+                        <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
+                            <!-- Item 1 -->
+                            <div class="group h-16 text-center cursor-default">
+                                <a href=""class="cursor-default"></a>
+                                <div class="text-white">
+                                    (720)771-1828
+                                    <br>
+                                    charles.wj.yee@gmail.com
+                                </div>
+                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            <!-- Item 3 -->
+                            <!-- <div class="group h-16 text-center cursor-default">
+                                <a href="" class="cursor-default"></a>
+                                <div class="text-white">
+                                    123 Any Street
+                                    <br>
+                                    Boston, MA 00000
+                                </div>
+                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                            
+                        </div>
+
+                        <div class="mx-auto">
+                            <button id="contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Contact Form</button>
+                        </div>
+                        
+                    </div>
+                    <!-- Social & Copy Container -->
+                    <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
+                        <!-- icons Container -->
+                        <div class="flex items-center justify-center mx-auto space-x-4 xl:space-x-12 md:justify-end">
+                            <!-- Icon 1 -->
+                            <div class="group h-8 mb-4">
+                                <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
+                                    <img src="/images/linkedin-128.gif" alt="" class="h-12 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            <!-- Icon 2 -->
+                            <div class="group h-8">
+                                <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
+                                    <img src="/images/toptal.png" alt="" class="h-12 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+                            <!-- Icon 3 -->
+                            <!-- <div class="group h-8 mb-4">
+                                <a target="_blank" href="https://github.com/CharlesWJYee">
+                                    <img src="/images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                            
+                            <!-- Icon 4 -->
+                            <!-- <div class="group h-8">
+                                <a target="_blank" href="#">
+                                    <img src="" alt="" class="h-6 mb-2">
+                                </a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div> -->
+                        </div>
+        
+                        <!-- Copyright -->
+                        <div class="font-bold text-center px-3">
+                            Charles Yee &copy; 2022
+                            <br>
+                            All Rights Reserved
+                            <br>
+                            <div class="group h-16 text-center cursor-pointer">
+                                <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built & powered by
+                                    <br>
+                                    summit web creations
+                                </a>
+                                <div class="mx-8 group-hover:border-b group-hover:border-blue-50"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- End Footer -->
+    </div>
+</section> <!-- End of Header Section -->
+ 
+    <!-- Javascript -->
+
+</body>
+</html>

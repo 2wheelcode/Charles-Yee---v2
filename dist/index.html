@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
-    <script src="./js/script.js" defer></script>
-    <title>V-2 Charles Yee</title>
+    <script src="/js/script.js" defer></script>
+    <title>Charles Yee</title>
 </head>
 <body>
     
@@ -37,17 +37,17 @@
                     <div class="hidden h-10 font-alata md:flex md:space-x-6">
                         <!-- Menu Item 1 -->
                         <div class="group">
-                            <a href="#">About</a>
+                            <a href="about.html">About</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
                         </div>
                         <!-- Menu Item 2 -->
                         <div class="group">
-                            <a href="#">Services</a>
+                            <a href="services.html">Services</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                         <!-- Menu Item 3 -->
                         <div class="group">
-                            <a href="#">Projects</a>
+                            <a href="projects.html">Projects</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                         <!-- Menu Item 4 -->
@@ -57,7 +57,7 @@
                         </div>
                         <!-- Menu Item 5 -->
                         <div class="group">
-                            <a target="_blank" href="#">Resume</a>
+                            <a target="_blank" href="/images/example-resume.pdf">Resume</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                     </div>
@@ -78,11 +78,11 @@
                 <div
                     id="menu"
                     class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
-                    <a href="#" class="hover:text-blue-600">About</a>
-                    <a target="_blank" href="#" class="hover:text-blue-600">Services</a>
-                    <a href="#" class="hover:text-blue-600">Projects</a>
+                    <a href="about.html" class="hover:text-blue-600">About</a>
+                    <a href="services.html" class="hover:text-blue-600">Services</a>
+                    <a href="projects.html" class="hover:text-blue-600">Projects</a>
                     <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600">Contact</a>
-                    <a target="_blank" href="#" class="hover:text-blue-600">Resume</a>
+                    <a target="_blank" href="/images/example-resume.pdf" class="hover:text-blue-600">Resume</a>
                     <a href="" class="hover:text-blue-600">You're at Home</a>
                     <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
                 </div>
@@ -200,22 +200,21 @@
                 <div class="border border-1 border-black bg-blue-900 h-6 w-6 mx-auto my-auto"></div>
             </div>
             <!-- Leader -->
-            <h2 class="text-3xl uppercase font-bold">Leader In Healthcare & Tech</h2>
+            <h2 class="text-3xl uppercase font-bold">Leader In Healthcare Tech</h2>
             <br>
             <p class="text-xl">
-                Charles is your Tech Mercenary Specializing in NLP & ML in Healthcare
+                Deep Neural Network, Backend engineering in NLP applications:
                 <br>
                 <br>
                 <ul class="list-disc">
-                    <li>Due Diligence in the Healthcare Industry</li>
-                    <li>Due Diligence in the Technology Industry</li>
-                    <li>Strong Why Point 3</li>
-                    <li>Strong Why Point 4</li>
-                    <a href="#" class="text-blue-500 underline">The Why is obvious with these 4 major points</a>
+                    <li>Domain expertise in healthcare, insurance, provider, oncology, personalized nutrition</li>
+                    <li>Hands-on work with Python and Tensorflow</li>
+                    <li>Technical leadership, team management, mentorship</li>
+                    <!-- <a href="#" class="text-blue-500 underline">The Why is obvious with these 4 major points</a> -->
                 </ul>
-                 *I think this is better that just a textbox "Why Work With Charles?"
+                 
                 <br>
-                *We may not want a "Read More" link in this section, use very compelling points instead
+                
              </p>
         </div>
         <div id="services" class="px-12 py-8 lg:p-24">
@@ -234,9 +233,8 @@
                     <li>Hands-on, backend software development/troubleshooting </li>
                     <li>Technical audit, particularly for startup acquisition, pharmacovigilance, and regulatory</li>
                     <li>Machine learning, AI, data science. Building deep neural network models using structured and unstructured data</li>
-                    <a href="#" class="text-blue-500 underline">See All Services</a>
+                    <a href="services.html" class="text-blue-500 underline">See All Services</a>
                 </ul>
-                 *link will take them to the corresponding page
                 </p>
         </div>
         <div id="patent-holder" class="px-12 py-8 lg:p-24">
@@ -307,8 +305,8 @@
     <!-- About Charles Section -->
     <!-- @todo Add bg-slide parallax while scrolling -->
     <!-- @todo Make Read More/Read Less Button Transition smoothly -->
-    <section id="about" class="bg-black bg-[url('/images/charles-b-w.jpg')] bg-no-repeat bg-center">
-        <div class="flex flex-col font-alata p-12 justify-center lg:h-fit lg:flex-row lg:flex-wrap space-y-8 lg:p-32 ">
+    <section id="about" class="h-full bg-black">
+        <div class="flex flex-col font-alata p-12 justify-center lg:h-screen lg:flex-row lg:flex-wrap space-y-8 lg:p-32 ">
     
             <h2 class="text-4xl text-slate-50 font-bold uppercase flex-1">About Charles</h2>
                     
@@ -357,7 +355,7 @@
         <div id="boxes" class="grid lg:grid-cols-2 md:grid-cols-1 gap-12">
             <!-- Projects Container -->
             <div id="projects"  class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
-                <a href="#">
+                <a href="projects.html">
                     <span class="text-2xl uppercase font-bold">projects</span>
                     <br>
                     <span class="font-normal">
@@ -400,7 +398,7 @@
             </div>
             <!-- Recommendations Container -->
             <div id="patents" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
-                <a href="#">
+                <a href="recommend.html">
                     <span class="text-2xl uppercase font-bold">recommendations</span>
                     <br>
                     <span class="font-normal">
@@ -449,10 +447,10 @@
         </div>
     </section> <!-- End Credentials Section -->
 
-    <!-- Publications Section -->
-    <!-- @todo Change this section to recommendations -->
-    <section id="publications" class="bg-black h-fit px-8">
-        <h2 class="font-alata uppercase text-4xl font-bold text-slate-100 text-center pt-24" >publications</h2>
+    <!-- Recommendations Section Changed from Publications -->
+    <!-- @todo Link to Recommendations Page -->
+    <section id="recommendations" class="bg-black h-fit px-8">
+        <h2 class="font-alata uppercase text-4xl font-bold text-slate-100 text-center pt-24" >recommendations</h2>
 
             <div id="default-carousel duration-5000 ease-in-out" class="relative py-16 lg:px-32" data-carousel="slide">
                 <!-- Carousel wrapper -->
@@ -460,23 +458,71 @@
                     <!-- Item 1 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
                         <img src="/images/background-1.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto  -translate-x-1/2 -translate-y-1/2" alt="...">
-                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">A Lexical Approach to Presupposition and Meaning<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, quibusdam. This is 25 words</span></span>
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
+                            Ze Jiang 
+                            <br>
+                            CEO at iQuartic
+                            <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>Charles is dedicated and highly competent in his field; he is beloved by his team; he excelled at product ownership through his interactions with our customers.</span></span>
                         
                     </div>
                     <!-- Item 2 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <img src="/images/background.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
-                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">An Object Oriented Approach to Dynamic Syntax, with C++ implementation<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam. This is 25 words</span></span>
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
+                            Gil Blander
+                            <br>
+                            CSO at Insidetracker
+                            <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>Charles comes with lots of domain expertise in personalized nutrition, as well as the ability to demonstrate points through hands-on coding and statistical modeling.</span></span>
                     </div>
                     <!-- Item 3 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <img src="/images/background.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
-                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">Human-Algorithm Interaction To Define Variables from Free-Text Notes in Electronic Health Records<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam. This is 25 words</span></span>
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
+                            Rohit PatwaRohit Patwa
+                            <br>
+                            Software Engineer at Google
+                            <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>He has an exceptional ability to communicate technical claims to non-technical audiences and served as a critical bridge between the research and operations teams.</span></span>
                     </div>
                     <!-- Item 4 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <img src="/images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
-                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">PUBLICATION 4 HEADLINE<span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>10~30 Word Highlight of Publication description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat. This is 25 words</span></span>
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
+                            Agniva Banerjee
+                            <br>
+                            Data Scientist at Hypatos
+                            <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>It is under his tutelage I had the freedom and flexibility to look for creative solutions, which is how I learned to repurpose and implement various state-of-the-art machine learning and deep-learning algorithms directly into our product.</span></span>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                        <img src="/images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
+                            Bowei WeiBowei Wei
+                            <br>
+                            Back End Developer at Shanghai Pudong Development Bank
+                            <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>Really smart guy with a clear mind in his head. Always give me the best advice at work!
+                            </span></span>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                        <img src="/images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
+                            Julien SalomonJulien Salomon
+                            <br>
+                            Data Engineer at Picnic Technologies
+                            <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>Efficiency seems to be Charles’s biggest drive and thus his strength: his dedication to ‘not waste anyone’s time’ as he puts it...
+                            <br>
+                            As a manager, Charles expected me to meet his standards. As a mentor, he taught me how to meet them.
+                            </span></span>
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                        <img src="/images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
+                            Joseph QinJoseph Qin
+                            <br>
+                            Software Development Engineer-Augmented Reality at Vuforia
+                            <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>He knows how to bring the best out of the members of his team, by inspiring and mentoring them.
+                            </span></span>
                     </div>
                 </div>
                 <!-- Slider indicators -->
@@ -485,6 +531,9 @@
                     <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
                     <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
                     <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="3"></button>
                 </div>
                 <!-- Slider controls -->
                 <button type="button" class="hidden lg:flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
@@ -500,11 +549,11 @@
                     </span>
                 </button>
             </div>
-    </section> <!-- End Publications section -->
+    </section> <!-- End Recommendations section -->
 
     <!-- Motto Section -->
     <!-- @todo Add bg-slide parallax while scrolling -->
-    <section id="moto" class="font-alata p-12 justify-center items-center h-fit lg:p-48 bg-center bg-cover bg-no-repeat" style="background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/img-5383.jpg)"> <!-- Alternate Image url(/images/porsche-4.jpg)  -->
+    <section id="moto" class="font-alata p-12 justify-center items-center h-fit lg:p-48 bg-center bg-cover bg-no-repeat" style="background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/porsche-5.jpg)"> <!-- Alternate Image url(/images/porsche-4.jpg)  -->
         <div>       
             <p class="font-alata text-slate-200/70 italic text-center text-5xl">
             We are all flying around space on this massive rock for no particular reason.
@@ -512,7 +561,7 @@
              Everyone on this rock is just a friend I haven’t met, yet.</p><br>
             <p class="text-slate-100 font-semibold italic text-right">- Charles' Motto</p>
         </div>    
-    </section>
+    </section> <!-- End Motto Section -->
 
         <!-- Footer -->
         <!-- @todo Insert Logo -->
@@ -572,7 +621,7 @@
                     <!-- Social & Copy Container -->
                     <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
                         <!-- icons Container -->
-                        <div class="flex items-center justify-center mx-auto space-x-4 xl:space-x-12 md:justify-end">
+                        <div class="flex items-center justify-center mx-auto space-x-8 xl:space-x-12 md:justify-end">
                             <!-- Icon 1 -->
                             <div class="group h-8 mb-4">
                                 <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
@@ -582,7 +631,7 @@
                             </div>
                             <!-- Icon 2 -->
                             <div class="group h-8">
-                                <a target="_blank" href="https://www.toptal.com/">
+                                <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
                                     <img src="/images/toptal.png" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>

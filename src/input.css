@@ -69,3 +69,21 @@
 .user-cannot-see {
     display: none;
 }
+
+#about-page {
+    background-image: url('../images/porsche-brick.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    background-overflow: hidden;
+}
+
+@media(max-width: 768px) {
+    #about-page {
+    background-image: url('../images/charles-portrait.jpg');
+    background-position: center;
+    background-gradient: rgba(-180deg 0,0,0,0.8);
+    }
+}
