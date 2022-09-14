@@ -49,7 +49,7 @@ function contactToggle() {
 // }
 
 
-function submitForm2(){
+function submitForm3(){
   const request = new XMLHttpRequest();
   const successMsg = document.getElementById('success-msg');
   // addListeners(request);
@@ -82,9 +82,9 @@ function submitForm2(){
 }
 
 // Contact Form with Ajax & PHP
-function submitForm3() {
-  document,getElementById('contact-btn').disabled = true;
-  document,getElementById('contact-dots').innerHTML = 'please wait...';
+function submitForm2() {
+  document.getElementById('contact-btn').disabled = true;
+  document.getElementById('contact-dots').innerHTML = 'please wait...';
   let formdata = new FormData();
   formdata.append('name', document.getElementById('name').value);
   formdata.append('email', document.getElementById('email').value);
@@ -102,7 +102,7 @@ function submitForm3() {
       }
     }
   }
-  ajax.send('formdata');
+  ajax.send(formdata);
 }
 
 
