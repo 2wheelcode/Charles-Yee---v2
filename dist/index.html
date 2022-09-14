@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/FavIcon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/FavIcon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/FavIcon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
@@ -57,7 +57,12 @@
                         </div>
                         <!-- Menu Item 5 -->
                         <div class="group">
-                            <a target="_blank" href="/images/example-resume.pdf">Resume</a>
+                            <a target="_blank" id="appointment-btn" href="https://calendly.com/charles-wj-yee">Appointment</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Menu Item 6 -->
+                        <div class="group">
+                            <a target="_blank" href="/images/Charles Yee CV 2022.pdf">Resume</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                     </div>
@@ -82,7 +87,8 @@
                     <a href="services.html" class="hover:text-blue-600">Services</a>
                     <a href="projects.html" class="hover:text-blue-600">Projects</a>
                     <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600">Contact</a>
-                    <a target="_blank" href="/images/example-resume.pdf" class="hover:text-blue-600">Resume</a>
+                    <a target="_blank" id="appointments-btn" href="https://calendly.com/charles-wj-yee" class="hover:text-blue-600">Appointment</a>
+                    <a target="_blank" href="/images/Charles Yee CV 2022.pdf" class="hover:text-blue-600">Resume</a>
                     <a href="" class="hover:text-blue-600">You're at Home</a>
                     <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
                 </div>
@@ -192,12 +198,15 @@
 
 
     <!-- Principle Why's -->
-    <!-- @todo Added content, ask Charles to review -->
+    <!-- Why won't the logo appear Leader div -->
     <section id="why-work-with-charles" class="font-alata grid grid-cols-1 divide-x divide-y lg:grid-cols-2  bg-gray-300">
         <div id="leader" class="px-12 py-8 lg:p-24">
             <!-- Widget -->
             <div class="flex border border-1 bg-white border-black h-12 w-12 mb-4">
                 <div class="border border-1 border-black bg-blue-900 h-6 w-6 mx-auto my-auto"></div>
+            </div>
+            <div class="flex border border-1 border-black h-12 w-12 mb-4" style="background-image: url(/images/logo.png);">
+                
             </div>
             <!-- Leader -->
             <h2 class="text-3xl uppercase font-bold">Leader In Healthcare Tech</h2>
@@ -264,9 +273,8 @@
                         <br>
                         US WO/2018/060838
                     </li>                    
-                    <a href="#" class="text-blue-500 underline">See All Patents</a>
+                    <a href="patents.html" class="text-blue-500 underline">Patents Page</a>
                 </ul>
-            *We can change the title and/or order of each of these to Charles' preference 
             </p>
         </div>
         <div id="publications" class="px-12 py-8 lg:p-24">
@@ -295,52 +303,12 @@
                         <br>
                         CCSSO 2012 · Jun 29, 2012
                     </li>
-                    <a href="#" class="text-blue-500 underline">See All Publications</a>
+                    <a href="publications.html" class="text-blue-500 underline">Publications Page</a>
                 </ul>
-                 *link will take them to the publications page
+                 
                 </p>
         </div>
     </section> <!-- End Principle Why Section -->
-
-    <!-- About Charles Section -->
-    <!-- @todo Add bg-slide parallax while scrolling -->
-    <!-- @todo Make Read More/Read Less Button Transition smoothly -->
-    <section id="about" class="h-full bg-black">
-        <div class="flex flex-col font-alata p-12 justify-center lg:h-screen lg:flex-row lg:flex-wrap space-y-8 lg:p-32 ">
-    
-            <h2 class="text-4xl text-slate-50 font-bold uppercase flex-1">About Charles</h2>
-                    
-        <div id="blurb" class="text-slate-50 lg:bg-black/20 lg:shadow-slate-500 lg:p-6 lg:rounded-xl md:max-w-lg sm:w-auto flex-1 place-items-end">
-            <p>
-            Charles is an industry leader in healthcare NLP (Natural Language Processing) with nearly two decades of experience building commercial products, both in a hands-on capacity and as a technical manager.
-            <br>
-            <br>
-            As a player coach, Charles has led multimillion-dollar projects in health-tech Fortune 500s such as United Health, Philips, and AstraZeneca. 
-            <br>
-            <br>
-            Charles was also the co-founder and early employee of multiple Series-A and Series-B startup companies.
-            <br>
-            <br>
-            Charles has a Ph.D. in computational linguistics. With over a dozen publications and patents in his field, Charles is an authority in machine learning for named entity extraction and classification.
-            <br>
-            <br>
-            Charles’ expertise ranges from semantics, ontology, machine learning, and deep learning approaches for information classification and extraction.
-            <br>
-            Providing leadership, orchestration, and implementation to materialize domain experts’ scientific rationale into commercial products.
-            <br>
-            Uniquely versed in clinical trial protocol, oncology/pathology, EMR/EHR, and NLP-Assisted ICD coding.
-            <br>
-            Headed various companies’ R & D and infrastructure teams: Code review, building deep neural networks, model diagnosis, product and project management, end-to-end UAT and OAT, DevOps, recruitment-onboarding, aspirational speeches, and business acumen.
-            <br>
-            <br>
-            Well acclimated to large corporate culture. Nevertheless, full track record of entrepreneurship initiatives.
-        </p>
-        <br>
-        <!-- @todo Read More Button - do i want this to got to the about page? -->
-        <!-- <button onclick="aboutFunction()" id="aboutBtn" class="px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Read More...</button> -->
-        </div>
-    </div>
-    </section> <!-- End About Section -->
 
     <!-- Credentials Section -->
     <!-- @todo Add Outline to text to help readability -->
@@ -456,7 +424,7 @@
                     <!-- Item 1 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
                         <a href="recommendations.html">
-                            <img src="/images/background-1.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto  -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="/images/iquaratic.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto  -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Ze Jiang 
                                 <br>
@@ -467,7 +435,7 @@
                     <!-- Item 2 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">    
-                            <img src="/images/background.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="/images/inside.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Gil Blander
                                 <br>
@@ -478,9 +446,9 @@
                     <!-- Item 3 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/background.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="/images/google.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
-                                Rohit PatwaRohit Patwa
+                                Rohit Patwa
                                 <br>
                                 Software Engineer at Google
                                 <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>He has an exceptional ability to communicate technical claims to non-technical audiences and served as a critical bridge between the research and operations teams.</span></span>
@@ -489,7 +457,7 @@
                     <!-- Item 4 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="/images/hypatos.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Agniva Banerjee
                                 <br>
@@ -500,9 +468,9 @@
                     <!-- Item 5 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="/images/spdb.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
-                                Bowei WeiBowei Wei
+                                Bowei Wei
                                 <br>
                                 Back End Developer at Shanghai Pudong Development Bank
                                 <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>Really smart guy with a clear mind in his head. Always give me the best advice at work!
@@ -512,9 +480,9 @@
                     <!-- Item 6 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="/images/picnic.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
-                                Julien SalomonJulien Salomon
+                                Julien Salomon
                                 <br>
                                 Data Engineer at Picnic Technologies
                                 <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>Efficiency seems to be Charles’s biggest drive and thus his strength: his dedication to ‘not waste anyone’s time’ as he puts it...
@@ -526,11 +494,11 @@
                     <!-- Item 7 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/background-3.jpg" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="/images/vuforia.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
-                                Joseph QinJoseph Qin
+                                Joseph Qin
                                 <br>
-                                Software Development Engineer-Augmented Reality at Vuforia
+                                Software Engineer-Augmented Reality at Vuforia
                                 <span class="hidden font-normal md:block md:text-md lg:text-lg"> <br>He knows how to bring the best out of the members of his team, by inspiring and mentoring them.
                                 </span></span>
                         </a>
@@ -561,6 +529,48 @@
                 </button>
             </div>
     </section> <!-- End Recommendations section -->
+
+    <!-- About Charles Section -->
+    <!-- @todo Add bg-slide parallax while scrolling -->
+    <section id="about" class="h-full bg-black">
+        <div class="flex flex-col font-alata p-12 justify-center lg:h-screen lg:flex-row lg:flex-wrap space-y-8 lg:p-32 ">
+    
+            <h2 class="text-4xl text-slate-50 font-bold uppercase flex-1">About Charles</h2>
+                    
+        <div id="blurb" class="text-slate-50 lg:bg-black/20 lg:shadow-slate-500 lg:p-6 lg:rounded-xl md:max-w-lg sm:w-auto flex-1 place-items-end">
+            <p>
+            Charles is an industry leader in healthcare NLP (Natural Language Processing) with nearly two decades of experience building commercial products, both in a hands-on capacity and as a technical manager.
+            <br>
+            <br>
+            As a player coach, Charles has led multimillion-dollar projects in health-tech Fortune 500s such as United Health, Philips, and AstraZeneca. 
+            <br>
+            <br>
+            Charles was also the co-founder and early employee of multiple Series-A and Series-B startup companies.
+            <br>
+            <br>
+            Charles has a Ph.D. in computational linguistics. With over a dozen publications and patents in his field, Charles is an authority in machine learning for named entity extraction and classification.
+            <br>
+            <br>
+            Charles’ expertise ranges from semantics, ontology, machine learning, and deep learning approaches for information classification and extraction.
+            <br>
+            Providing leadership, orchestration, and implementation to materialize domain experts’ scientific rationale into commercial products.
+            <br>
+            Uniquely versed in clinical trial protocol, oncology/pathology, EMR/EHR, and NLP-Assisted ICD coding.
+            <br>
+            Headed various companies’ R & D and infrastructure teams: Code review, building deep neural networks, model diagnosis, product and project management, end-to-end UAT and OAT, DevOps, recruitment-onboarding, aspirational speeches, and business acumen.
+            <br>
+            <br>
+            Well acclimated to large corporate culture. Nevertheless, full track record of entrepreneurship initiatives.
+        </p>
+        <br>
+        <!-- @todo Read More Button - do i want this to got to the about page? -->
+        <a href="about.html">
+            <button id="aboutBtn" class="px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">More About Charles</button>
+        </a>
+        
+        </div>
+    </div>
+    </section> <!-- End About Section -->
 
     <!-- Motto Section -->
     <!-- @todo Add bg-slide parallax while scrolling -->

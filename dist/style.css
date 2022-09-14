@@ -1476,6 +1476,24 @@ video {
   }
 } */
 
+#publications-page {
+  background-image: url('../images/author.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  //background-attachment: fixed;
+  background-overflow: hidden;
+}
+
+/* @media(max-width: 768px) {
+  #publications {
+  background-image: url('../images/charles-portrait-1.jpg');
+  background-position: center;
+  background-gradient: rgba(-180deg 0,0,0,0.8);
+  }
+} */
+
 /* Hamburger Menu */
 
 .hamburger {

@@ -13,15 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
     <script src="/js/script.js" defer></script>
-    <title>Charles Yee | Services</title>
+    <title>Charles Yee | Patents</title>
 </head>
 <body>
 
     <!-- Header Section -->
     <!-- @todo Insert Logo -->
     <!-- @todo Make Read More/Read Less Button Transition smoothly -->
-    <section id="services-page" class=" w-screen bg-fixed z-0">
-        <div class=" bg-black bg-opacity-60"> <!-- Gradient Overlay -->
+    <section id="patents-page" class="h-fit w-screen z-0">
+        <div class="h-fit bg-black bg-opacity-60"> <!-- Gradient Overlay -->
         
             <!-- Navigation -->
             <!-- Desktop Menu - Hidden to replace with burger on mobile -->
@@ -35,22 +35,26 @@
 
                     <!-- Desktop Menu - Hidden to replace with burger on mobile -->
                     <div class="hidden h-10 font-alata md:flex md:space-x-6">
-                        <!-- Menu Item 1 -->
+                        <!-- Menu Item Home -->
                         <div class="group">
                             <a href="index.html">Home</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
                         </div>
-                        <!-- Menu Item 3 -->
+                        <!-- Menu Item 1 -->
                         <div class="group">
                             <a href="about.html">About</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
                         </div>
                         <!-- Menu Item 2 -->
+                        <div class="group">
+                            <a href="services.html">Services</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Menu Item 3 -->
                         <div class="group">
                             <a href="projects.html">Projects</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
-                        
                         <!-- Menu Item 4 -->
                         <div class="group">
                             <a id="contact-btn" href="javascript:void(0)">Contact</a>
@@ -84,19 +88,19 @@
                 <div
                     id="menu"
                     class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
-                    <a href="index.html" class="hover:text-blue-600">Home</a>
                     <a href="about.html" class="hover:text-blue-600">About</a>
+                    <a href="services.html" class="hover:text-blue-600">Services</a>
                     <a href="projects.html" class="hover:text-blue-600">Projects</a>
                     <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600">Contact</a>
-                    <a target="_blank" href="https://calendly.com/charles-wj-yee" class="hover:text-blue-600">Appointment</a>
+                    <a target="_blank" id="appointments-btn" href="https://calendly.com/charles-wj-yee" class="hover:text-blue-600">Appointment</a>
                     <a target="_blank" href="/images/Charles Yee CV 2022.pdf" class="hover:text-blue-600">Resume</a>
-                    <a href="" class="hover:text-blue-600">You're the Services Page</a>
+                    <a href="" class="hover:text-blue-600">You're at Home</a>
                     <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
                 </div>
 
                 <!-- Hero Statement -->
-                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-auto md:text-4xl">
-                    services
+                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-center text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
+                    Patents
                 </div>
 
                 <!-- Subscription Sign Up Currently Not In Use -->
@@ -145,53 +149,135 @@
                 </div>
             </div> <!-- End Contact Form Wrapper -->
 
-            <!-- Services Description Section -->
-            <div class="block font-alata text-white px-12 mb-12 mx-auto max-w-2xl">
-                <p class=" text-2xl py-12 px-24">
-                    Charles Yee’s expertise is machine learning and backend development, with a strong emphasis on the healthcare industry. Throughout his career, he has proven to excel in the following responsibilities:
+            <!-- Patents Section -->
+        <div class="font-alata text-white p-8 text-right lg:p-32">
+            
+            <!-- First Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    METHOD AND SYSTEM FOR CANCER STAGE ANNOTATION WITHIN A MEDICAL TEXT
                     <br>
-                    <ul class="list-disc text-xl">
-                        <li>Hands-on, backend software development/troubleshooting</li>
-                        <br>
-                        <li>Technical audit, particularly for startup acquisition, pharmacovigilance, and regulatory</li>
-                        <br>
-                        <li>Machine learning, AI, data science. Building deep neural network models using structured and unstructured data
-                        </li>
-                        <br>
-                        <li>Create new business value proposition by utilizing big data, building predictive models and proof of concepts that help clients pivot to adjacent markets or open up new revenue streams</li>
-                        <br>
-                        <li>Product ownership. Interfacing with customers and end-users, defining technical requirements and conveying them to the engineering team
-                        </li>
-                        <br>
-                        <li>Project management (Agile) </li>
-                        <br>
-                        <li>Leading engineering teams in the position of interim CTO/ director/ VP of engineering</li>
-                        <br>
-                        <br>
-                    </ul>
-                </p>
-                <p class=" text-2xl py-12 px-24">
-                    Charles has worked in Fortune 100 and startup companies in the healthcare industry, they include:
+                    US PCT/EP2019/072816
                     <br>
-                    <ul class="list-disc text-xl">
-                        <li>Pharmaceutical, drug manufacturers
-                        </li>
-                        <br>
-                        <li>Health insurance
-                        </li>
-                        <br>
-                        <li>Bioinformatics- Oncology and pathology</li>
-                        <br>
-                        <li>Healthcare providers</li>
-                        <br>
-                        <li>Personalized nutrition</li>
-                        <br>
-                        <li>Customer support and retail R&D
-                        </li>
-                        <br>
-                    </ul>
-                </p>
-            </div> <!-- End Services Description Section -->
+                </span>
+                <span class="font-normal">
+                    Issued Mar 5, 2020
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Second Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    METHODS AND SYSTEMS FOR HEALTHCARE CLINICAL TRIALS
+                    <br>
+                    US WO/2019/068870
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Issued Apr 11, 2019 
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Third Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    A METHOD AND SYSTEM FOR MATCHING SUBJECTS TO CLINICAL TRIALS
+                    <br>
+                    US WO/2018/060838
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Issued May 4, 2018
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Fourth Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    NOMENCLATURE-INFORMED GENE NAME RECOGNITION
+                    <br>
+                    US PCT/EP2019/071747
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Filed Aug 13, 2019
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Fifth Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    A METHOD AND APPARATUS FOR GENOME SPELLING CORRECTION AND ACRONYM STANDARDIZATION
+                    <br>
+                    US PCT/EP2019/066322 
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Filed Jun 20, 2019
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Sixth Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    NATURAL LANGUAGE PROCESSING USING ONTOLOGY MAPPING
+                    <br>
+                    US PCT/EP2018/075263
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Filed Sep 19, 2018 
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Future Patent -->
+            <!-- <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    TITLE
+                    <br>
+                    US PCT/EP2019/072816
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Issued 
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div> -->
+            
+            <!-- Future Patent -->
+            <!-- <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    TITLE
+                    <br>
+                    US PCT/EP2019/072816
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Issued 
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div> -->
+            
+
+        </div> <!-- End Publications List -->
+    </section> <!-- End of Header Section -->
+
+
+    <!-- Fill -->
 
         <!-- Footer -->
         <!-- @todo Insert Logo -->
@@ -301,8 +387,7 @@
                 </div>
             </div>
         </footer> <!-- End Footer -->
-    </div>
-    </section> <!-- End of Header Section -->
+
     <!-- Javascript -->
 
 </body>
