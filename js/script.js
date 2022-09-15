@@ -18,9 +18,7 @@ const formSubmitButton = document.getElementById('submitBtn');
 
 contactForm.addEventListener('submit', function(event){
   event.preventDefault();
-})
-
-contactBtns
+});
 
 ([...contactBtns]).forEach(contactButton => {
   contactButton.addEventListener('click', contactToggle);
