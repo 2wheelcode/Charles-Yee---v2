@@ -10,7 +10,7 @@ function navToggle() {
     menu.classList.toggle('hidden');
 }
 
-// Open Contact Form Button
+// Open Contact Form Top Menu Button
 const contactBtn = document.getElementById('contact-btn');
 const contactFormWrapper = document.getElementById('contact-form-wrapper');
 const contactForm = document.getElementById('contact-form');
@@ -26,6 +26,24 @@ formSubmitButton.addEventListener('click', submitForm2);
 function contactToggle() {
     contactFormWrapper.classList.toggle('block');
     contactFormWrapper.classList.toggle('hidden');
+}
+
+// Open Contact Form Footer Button
+const footerContactBtn = document.getElementById('footer-contact-btn');
+const footerContactFormWrapper = document.getElementById('footer-contact-form-wrapper');
+const footerContactForm = document.getElementById('footer-contact-form');
+const footerFormSubmitButton = document.getElementById('footerSubmitBtn');
+
+footerContactForm.addEventListener('submit', function(event){
+  event.preventDefault();
+})
+
+footerContactBtn.addEventListener('click', contactToggle);
+footerFormSubmitButton.addEventListener('click', submitForm2);
+
+function contactToggle() {
+    footerContactFormWrapper.classList.toggle('block');
+    footerContactFormWrapper.classList.toggle('hidden');
 }
 
 // function submitForm1() {
@@ -158,7 +176,9 @@ function headerFunction() {
     }
   }
 
-// About Section Read More/Read Less Button Function  
+// About Section Read More/Read Less Button Function
+// @todo 
+// Not in use
 function aboutFunction() {
     let aboutDots = document.getElementById("about-dots");
     let moreText = document.getElementById("about-more");
