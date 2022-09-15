@@ -112,36 +112,49 @@
             <!-- Contact Form Insert, Hidden until clicked -->
             <span id="contact-dots"></span>
             <!-- Contact From -->
-            <div class="hidden" id="contact-form-wrapper">
-
-            <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
-                <form id="contact-form" class="px-10 py-6 space-y-4">
-                    <!-- Honeypot for spambots -->
-                    <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see" tabindex="-1" autocomplete="off">
-                    <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
-                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1" autocomplete="off"></label> <!-- End Honeypot -->
-
-                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"  type="text" placeholder="Name" required>
-                    <br>
-                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email" type="email" placeholder="Email" required>
-                    <br>
-                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject" id="subject" type="text" placeholder="Subject" required>
-                    <br>
-                    <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3" placeholder="Your message" name="Message" id="message" cols="40" rows="8" required></textarea>
-                    <button id="submitBtn" class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
-                </form>
-            </div> <!-- End of Contact Form -->
-                <div id="error-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
-                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                        There was an error sending your form.
-                    </p>
-                </div>
-                <div id="success-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
-                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                        Your message has been sent successfully, 
-                        <br>
-                        Charles will be in touch with you shortly.
-                    </p>
+            <div class="hidden relative" id="contact-form-wrapper">
+                <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+                <div class="fixed inset-0 z-10 overflow-y-auto">
+                    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                        <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
+                            <form id="contact-form" class="px-10 py-6 space-y-4">
+                                <!-- Honeypot for spambots -->
+                                <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see" tabindex="-1"
+                                    autocomplete="off">
+                                <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
+                                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1"
+                                        autocomplete="off"></label> <!-- End Honeypot -->
+            
+                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"
+                                    type="text" placeholder="Name" required>
+                                <br>
+                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email"
+                                    type="email" placeholder="Email" required>
+                                <br>
+                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject" id="subject"
+                                    type="text" placeholder="Subject" required>
+                                <br>
+                                <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
+                                    placeholder="Your message" name="Message" id="message" cols="40" rows="8" required></textarea>
+                                <button id="submitBtn"
+                                    class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
+                            </form>
+                        </div> <!-- End of Contact Form -->
+                        <div id="error-msg" class="w-auto h-auto mx-auto">
+                            <!-- @todo Add Hidden -->
+                            <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                                There was an error sending your form.
+                            </p>
+                        </div>
+                        <div id="success-msg" class="w-auto h-auto mx-auto">
+                            <!-- @todo Add Hidden -->
+                            <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                                Your message has been sent successfully,
+                                <br>
+                                Charles will be in touch with you shortly.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div> <!-- End Contact Form Wrapper -->
 
@@ -588,41 +601,6 @@
         <!-- @todo Insert Logo -->
         <!-- @todo Footer Contact Form Opens/Closes, just need functionality -->
         <footer id="footer" class="bg-black">
-            <!-- Contact Form Insert, Hidden until clicked -->
-            <span id="footer-contact"></span>
-            <!-- Contact From -->
-            <div class="hidden" id="footer-contact-form-wrapper"> <!-- class="hidden" -->
-
-            <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
-                <form id="footer-contact-form" class="px-10 py-6 space-y-4">
-                    <!-- Honeypot for spambots -->
-                    <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see" tabindex="-1" autocomplete="off">
-                    <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
-                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1" autocomplete="off"></label> <!-- End Honeypot -->
-
-                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"  type="text" placeholder="Name" required>
-                    <br>
-                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email" type="email" placeholder="Email" required>
-                    <br>
-                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject" id="subject" type="text" placeholder="Subject" required>
-                    <br>
-                    <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3" placeholder="Your message" name="Message" id="message" cols="40" rows="8" required></textarea>
-                    <button id="footerSubmitBtn" class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
-                </form>
-            </div> <!-- End of Contact Form -->
-                <div id="error-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
-                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                        There was an error sending your form.
-                    </p>
-                </div>
-                <div id="success-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
-                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                        Your message has been sent successfully, 
-                        <br>
-                        Charles will be in touch with you shortly.
-                    </p>
-                </div>
-            </div> <!-- End Contact Form Wrapper -->
             <!-- Container -->
             <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
                 <!-- Footer Flex Container -->

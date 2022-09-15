@@ -32,22 +32,22 @@ function contactToggle() {
 }
 
 // Open Contact Form Footer Button
-const footerContactBtn = document.getElementById('footer-contact-btn');
-const footerContactFormWrapper = document.getElementById('footer-contact-form-wrapper');
-const footerContactForm = document.getElementById('footer-contact-form');
-const footerFormSubmitButton = document.getElementById('footerSubmitBtn');
+// const footerContactBtn = document.getElementById('footer-contact-btn');
+// const footerContactFormWrapper = document.getElementById('footer-contact-form-wrapper');
+// const footerContactForm = document.getElementById('footer-contact-form');
+// const footerFormSubmitButton = document.getElementById('footerSubmitBtn');
 
-footerContactForm.addEventListener('submit', function(event){
-  event.preventDefault();
-})
+// footerContactForm.addEventListener('submit', function(event){
+//   event.preventDefault();
+// })
 
-footerContactBtn.addEventListener('click', contactToggle);
-footerFormSubmitButton.addEventListener('click', submitForm2);
+// footerContactBtn.addEventListener('click', contactToggle);
+// footerFormSubmitButton.addEventListener('click', submitForm2);
 
-function contactToggle() {
-    footerContactFormWrapper.classList.toggle('block');
-    footerContactFormWrapper.classList.toggle('hidden');
-}
+// function contactToggle() {
+//     footerContactFormWrapper.classList.toggle('block');
+//     footerContactFormWrapper.classList.toggle('hidden');
+// }
 
 // function submitForm1() {
 //   contactForm.requestSubmit()
