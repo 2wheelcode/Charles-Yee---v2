@@ -11,7 +11,7 @@ function navToggle() {
 }
 
 // Open Contact Form Top Menu Button
-const contactBtn = document.getElementById('contact-btn');
+const contactBtns = document.getElementsByClassName('contact-btns');
 const contactFormWrapper = document.getElementById('contact-form-wrapper');
 const contactForm = document.getElementById('contact-form');
 const formSubmitButton = document.getElementById('submitBtn');
@@ -20,7 +20,12 @@ contactForm.addEventListener('submit', function(event){
   event.preventDefault();
 })
 
-contactBtn.addEventListener('click', contactToggle);
+contactBtns
+
+([...contactBtns]).forEach(contactButton => {
+  contactButton.addEventListener('click', contactToggle);
+})
+//contactBtn.addEventListener('click', contactToggle);
 formSubmitButton.addEventListener('click', submitForm2);
 
 function contactToggle() {
