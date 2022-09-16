@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #hero {
-    background-image: url('/images/hero-1-vertical.jpg');
+    background-image: url('./images/hero-1-vertical.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,7 +14,7 @@
 
 @media(max-width: 768px) {
     #hero {
-    background-image: url('../images/hero-1-vertical.jpg');
+    background-image: url('./images/hero-1-vertical.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
@@ -71,7 +71,7 @@
 }
 
 #about-page {
-    background-image: url('../images/porsche-brick.jpg');
+    background-image: url('./images/porsche-brick.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -82,7 +82,7 @@
 
 @media(max-width: 768px) {
     #about-page {
-    background-image: url('../images/charles-portrait.jpg');
+    background-image: url('./images/charles-portrait.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
