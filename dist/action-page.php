@@ -33,8 +33,15 @@
             if(mail($mailTo, "Message from Charles' Website", $messageSubject, $body)){
                 header("HTTP/1.1 200 OK");
                 $message_sent = true;
+<<<<<<< HEAD
             } else {
                 header("HTTP/1.1 500 Send Error");
+=======
+                echo 'success';
+            } else {
+                header("HTTP/1.1 500 Send Error");
+                echo 'The server failed to send the message. Please try again later.';
+>>>>>>> 1685c8863df75661892a17b56a112324b5933160
             }
 
         } else {
@@ -46,10 +53,5 @@
 
 ?>
 
-<!-- if(mail($mailTo, "Message from Charles' Website", $messageSubject, $body)) {
-                echo 'success';
-            } else {
-                echo 'The server failed to send the message. Please try again later.';
-            } -->
 
                     

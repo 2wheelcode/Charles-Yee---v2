@@ -40,9 +40,12 @@ if (!empty($_REQUEST['contact_me_by_fax_only']) && (bool) $_REQUEST['contact_me_
             $body .= 'Subject: '.$messageSubject."\r\n";
             $body .= 'Message: '."\r\n".$message."\r\n";
 
-            mail($to, "Message from Digital Studio", $messageSubject, $body);
+            if(mail($to, "Message from Digital Studio", $messageSubject, $body)){
+                $message_sent = true;
+            } else {
+                $message_sent = false;
+            }
 
-            $message_sent = true;
         }
         else {
             $invalid_class_name = 'form-invalid';
