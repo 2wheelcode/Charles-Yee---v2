@@ -110,8 +110,8 @@
 
             <!-- Two Columns -->
             <!-- @todo make the right personal column not start until the bottom of the left column -->
-            <div class="flex flex-col font-alata text-gray-300 p-12 justify-center lg:h-fit lg:flex-row lg:flex-wrap space-y-8 lg:space-x-12 lg:px-24">
-                <div id="left-col" class="flex-1 py-8 px-8 font-alata md:max-w-lg">
+            <div class="grid md:grid-cols-2 font-alata text-gray-300 p-12 justify-center lg:h-fit lg:px-24">
+                <div id="left-col" class=" py-8 px-8 font-alata md:max-w-lg">
                     <p class="text-justify md:max-w-lg">
                         <span class="text-3xl text-slate-50 font-bold uppercase flex-1">About Charles</span>
                         <br>
@@ -138,7 +138,11 @@
                     </p>
                 </div>
 
-                <div id="right-col" class="flex-1 place-items-end py-8 px-8 font-alata md:max-w-lg">
+                <div></div>
+                <div class="max-w-2xl mr-4"></div>
+
+                <div class="flex justify-end md:max-w-3xl">
+                <div id="right-col" class="py-8 px-8 font-alata md:max-w-lg">
                     <p class="text-justify">
                         <span class="text-3xl text-slate-50 font-bold uppercase">Personal</span>
                         <br>
@@ -172,6 +176,8 @@
 
                     </p>    
                 </div>
+                </div>
+
             </div>
         </div>
 
