@@ -29,9 +29,7 @@
                 <!-- Menu/Logo Container -->
                 <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
                     <!-- Logo -->
-                    <!-- Place these inside a div to stack -->
-                    <!-- <img src="" alt="" class="w-36"> -->
-                    <h2 class="font-alata text-2xl text-center items-self-center font-bold text-white border-2 w-16 h-16 rounded-full md:text-4xl">LOGO</h2>
+                    <img src="../images/logo-transparent.png" id="logo-top"  class="w-24 h-24" alt="Charles' Logo">
 
                     <!-- Desktop Menu - Hidden to replace with burger on mobile -->
                     <div class="hidden h-10 font-alata md:flex md:space-x-6">
@@ -57,7 +55,7 @@
                         </div>
                         <!-- Menu Item 4 -->
                         <div class="group">
-                            <a id="contact-btn" href="javascript:void(0)">Contact</a>
+                            <a class="contact-btns" href="javascript:void(0)">Contact</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                         <!-- Menu Item 5 -->
@@ -92,7 +90,7 @@
                     <a href="about.html" class="hover:text-blue-600">About</a>
                     <a href="services.html" class="hover:text-blue-600">Services</a>
                     <a href="projects.html" class="hover:text-blue-600">Projects</a>
-                    <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600">Contact</a>
+                    <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
                     <a target="_blank" href="https://calendly.com/charles-wj-yee" class="hover:text-blue-600">Appointment</a>
                     <a target="_blank" href="/images/Charles Yee CV 2022.pdf" class="hover:text-blue-600">Resume</a>
                     <a href="" class="hover:text-blue-600">You're on the <br>Recommendations Page</a>
@@ -114,43 +112,8 @@
                 </div> --> <!-- End sub-form -->
             </nav>
 
-            <!-- Contact Form Insert, Hidden until clicked -->
-            <span id="contact-dots"></span>
-            <!-- Contact From -->
-            <div class="hidden" id="contact-form-wrapper">
+<!-- Recommendations Section -->
 
-            <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
-                <form id="contact-form" class="px-10 py-6 space-y-4">
-                    <!-- Honeypot for spambots -->
-                    <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see" tabindex="-1" autocomplete="off">
-                    <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
-                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1" autocomplete="off"></label> <!-- End Honeypot -->
-
-                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"  type="text" placeholder="Name" required>
-                    <br>
-                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email" type="email" placeholder="Email" required>
-                    <br>
-                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject" id="subject" type="text" placeholder="Subject" required>
-                    <br>
-                    <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3" placeholder="Your message" name="Message" id="message" cols="40" rows="8" required></textarea>
-                    <button id="submitBtn" class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
-                </form>
-            </div> <!-- End of Contact Form -->
-                <div id="error-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
-                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                        There was an error sending your form.
-                    </p>
-                </div>
-                <div id="success-msg" class="w-auto h-auto mx-auto"> <!-- @todo Add Hidden -->
-                    <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                        Your message has been sent successfully, 
-                        <br>
-                        Charles will be in touch with you shortly.
-                    </p>
-                </div>
-            </div> <!-- End Contact Form Wrapper -->
-
-            <!-- Recommendations Section -->
         <div class="font-alata text-white p-8 lg:p-32">
             <!-- First Recommendation -->
             <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
@@ -322,11 +285,7 @@
         </div>
     </section> <!-- End of Header Section -->
 
-
-    <!-- Fill -->
-
         <!-- Footer -->
-        <!-- @todo Insert Logo -->
         <footer id="footer" class="bg-black">
             <!-- Container -->
             <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
@@ -336,9 +295,9 @@
                     <div class="flex flex-col">
                         <!-- Logo & Title Container -->
                         <div>
-                            <a href="#hero">
-                            <!-- <img src="/images/charles-headshot.jpeg" alt="" class="block h-42 w-42 rounded-full"> -->
-                            <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2>
+                            <a href="#logo-top">
+                                <img src="../images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
+                            <!-- <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2> -->
                         </div>
                         <!-- Logo Title -->
                         <div>
@@ -374,34 +333,34 @@
                             </div> -->
                             
                         </div>
-
+                        <!-- Contact Form Button -->
                         <div class="mx-auto">
-                            <button id="contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Contact Form</button>
+                            <button id="footer-contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500 contact-btns">Contact Form</button>
                         </div>
                         
                     </div>
                     <!-- Social & Copy Container -->
                     <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
                         <!-- icons Container -->
-                        <div class="flex items-center justify-center mx-auto space-x-4 xl:space-x-12 md:justify-end">
+                        <div class="flex items-center justify-center mx-auto space-x-8 xl:space-x-12 md:justify-end">
                             <!-- Icon 1 -->
                             <div class="group h-8 mb-4">
                                 <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
-                                    <img src="/images/linkedin-128.gif" alt="" class="h-12 mb-2">
+                                    <img src="../images/linkedin-128.gif" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div>
                             <!-- Icon 2 -->
                             <div class="group h-8">
                                 <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
-                                    <img src="/images/toptal.png" alt="" class="h-12 mb-2">
+                                    <img src="../images/toptal.png" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div>
                             <!-- Icon 3 -->
                             <!-- <div class="group h-8 mb-4">
                                 <a target="_blank" href="https://github.com/CharlesWJYee">
-                                    <img src="/images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
+                                    <img src="../images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div> -->
@@ -433,6 +392,74 @@
                 </div>
             </div>
         </footer> <!-- End Footer -->
+
+    <!-- Contact From -->
+    <div class="hidden absolute z-50" id="contact-form-wrapper"> <!-- hidden -->
+        <div class="relative">
+            <div class="fixed inset-0 z-10 overflow-y-auto">
+                <div class="flex min-h-full items-start justify-center p-4 text-center sm:items-center sm:p-0">
+                    <div class="bg-gray-900 p-4 bg-opacity-75 transition-opacity"> <!-- Form container -->
+                         <!-- Close Button -->
+                    <div class="md:flex md:justify-end">
+                        <button id="contact-us-close-btn" type="button" class=" bg-black text-white p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-slate-400/20 border border-color-zinc-600 duration-500">
+                            <span class="sr-only">Close menu</span>
+                            <!-- X Icon -->
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div> <!-- End Close Button -->
+
+                    <!-- Contact Form Insert, Hidden until clicked -->
+                    <div>      
+                        <span id="contact-dots"></span>
+                        <div id="" class="h-auto w-96 mx-auto my-auto px-auto z-20">
+                            <form id="contact-form" class="px-10 pb-4 space-y-4">
+                                <!-- Honeypot for spambots -->
+                                <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see"
+                                    tabindex="-1" autocomplete="off">
+                                <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
+                                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1"
+                                        autocomplete="off"></label> <!-- End Honeypot -->
+        
+                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"
+                                    type="text" placeholder="Name" required>
+                                <br>
+                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email"
+                                    type="email" placeholder="Email" required>
+                                <br>
+                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject"
+                                    id="subject" type="text" placeholder="Subject" required>
+                                <br>
+                                <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
+                                    placeholder="Your message" name="Message" id="message" cols="40" rows="8"
+                                    required></textarea>
+                                <button id="submitBtn"
+                                    class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500">Submit</button>
+                            </form>
+                        </div> <!-- End of Contact Form -->
+                        <div id="error-msg" class="w-auto h-auto mx-auto">
+                            <!-- @todo Add Hidden -->
+                            <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                                There was an error sending your form.
+                            </p>
+                        </div>
+                        <div id="success-msg" class="w-auto h-auto mx-auto">
+                            <!-- @todo Add Hidden -->
+                            <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                                Your message has been sent successfully,
+                                <br>
+                                Charles will be in touch with you shortly.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    </div> <!-- Form container -->
+                
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Contact Form Wrapper -->
 
     <!-- Javascript -->
 

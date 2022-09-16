@@ -1477,12 +1477,13 @@ video {
 } */
 
 #publications-page {
+  background-color: #000;
   background-image: url('../images/author.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  //background-size: cover;
   background-position: center;
   position: relative;
-  //background-attachment: fixed;
+  background-attachment: fixed;
   background-overflow: hidden;
 }
 
@@ -1500,7 +1501,7 @@ video {
   background-size: cover;
   background-position: center;
   position: relative;
-  //background-attachment: fixed;
+  background-attachment: fixed;
   background-overflow: hidden;
 }
 

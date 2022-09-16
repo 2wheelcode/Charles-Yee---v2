@@ -35,24 +35,6 @@ function contactToggle() {
     contactFormWrapper.classList.toggle('hidden');
 }
 
-// Open Contact Form Footer Button
-// const footerContactBtn = document.getElementById('footer-contact-btn');
-// const footerContactFormWrapper = document.getElementById('footer-contact-form-wrapper');
-// const footerContactForm = document.getElementById('footer-contact-form');
-// const footerFormSubmitButton = document.getElementById('footerSubmitBtn');
-
-// footerContactForm.addEventListener('submit', function(event){
-//   event.preventDefault();
-// })
-
-// footerContactBtn.addEventListener('click', contactToggle);
-// footerFormSubmitButton.addEventListener('click', submitForm2);
-
-// function contactToggle() {
-//     footerContactFormWrapper.classList.toggle('block');
-//     footerContactFormWrapper.classList.toggle('hidden');
-// }
-
 // function submitForm1() {
 //   contactForm.requestSubmit()
 //   contactFormWrapper.classList.toggle('block');
@@ -141,39 +123,22 @@ function cleanUpForm(){
 
 
 // Subscribe Btn Action - Not In Use at this time
-/* const scriptURL = 'https://script.google.com/macros/s/AKfycbzbniPzDhvKO3kEIuSoImYI-vUPGLJudnuIRAdMNu1TYLQM1PDLSpJ4q5L7nKZNu5J-/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById('sub-msg')
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbzbniPzDhvKO3kEIuSoImYI-vUPGLJudnuIRAdMNu1TYLQM1PDLSpJ4q5L7nKZNu5J-/exec'
+// const form = document.forms['submit-to-google-sheet']
+// const msg = document.getElementById('sub-msg')
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML = 'Thank you for Subscribing!'
-        setTimeout(function() {
-            msg.innerHTML = ''
-        },3500)
-        form.reset()
-    })
-    .catch(error => console.error('Error!', error.message))
-}) */
-
-// Contact Form Toggle Function - 1st attempt
-/* function contactFromFunction() {
-    let contactDots = document.getElementById("contact-dots");
-    let moreText = document.getElementById("contact-from");
-    let btnText = document.getElementById("headerBtn");
-  
-    if (contactDots.style.display === "none") {
-      contactDots.style.display = "block";
-      btnText.innerHTML = "Read More...";
-      moreText.style.display = "none";
-    } else {
-      contactDots.style.display = "none";
-      btnText.innerHTML = "Read Less...";
-      moreText.style.display = "inline";
-    }
-  } */
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+//     .then(response => {
+//         msg.innerHTML = 'Thank you for Subscribing!'
+//         setTimeout(function() {
+//             msg.innerHTML = ''
+//         },3500)
+//         form.reset()
+//     })
+//     .catch(error => console.error('Error!', error.message))
+// })
 
 // Header Read More/Red Less Button Function  
 function headerFunction() {
@@ -195,21 +160,21 @@ function headerFunction() {
 // About Section Read More/Read Less Button Function
 // @todo 
 // Not in use
-function aboutFunction() {
-    let aboutDots = document.getElementById("about-dots");
-    let moreText = document.getElementById("about-more");
-    let btnText = document.getElementById("aboutBtn");
+// function aboutFunction() {
+//     let aboutDots = document.getElementById("about-dots");
+//     let moreText = document.getElementById("about-more");
+//     let btnText = document.getElementById("aboutBtn");
   
-    if (aboutDots.style.display === "none") {
-      aboutDots.style.display = "inline";
-      btnText.innerHTML = "Read More...";
-      moreText.style.display = "none";
-    } /* else {
-        aboutDots.style.display === "none";
-        btnText.innerHTML = "Read Less...";
-        moreText.style.display = "inline";
-      } */ else {
-      aboutBtn.style.display = "none";
-      moreText.style.display = "inline";
-    } /* Use this else stmt to not have a Read Less Button */
-  }
+//     if (aboutDots.style.display === "none") {
+//       aboutDots.style.display = "inline";
+//       btnText.innerHTML = "Read More...";
+//       moreText.style.display = "none";
+//     } /* else {
+//         aboutDots.style.display === "none";
+//         btnText.innerHTML = "Read Less...";
+//         moreText.style.display = "inline";
+//       } */ else {
+//       aboutBtn.style.display = "none";
+//       moreText.style.display = "inline";
+//     } /* Use this else stmt to not have a Read Less Button */
+//   }
