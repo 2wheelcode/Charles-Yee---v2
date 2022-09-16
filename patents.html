@@ -13,16 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
     <script src="/js/script.js" defer></script>
-    <title>Charles Yee | About</title>
+    <title>Charles Yee | Patents</title>
 </head>
 <body>
 
     <!-- Header Section -->
     <!-- @todo Insert Logo -->
     <!-- @todo Make Read More/Read Less Button Transition smoothly -->
-    <section id="about-page" class="w-screen z-0" >
-        <div class="bg-black bg-opacity-60"> <!-- Gradient Overlay -->
-         <!-- class="font-alata text-xl p-8 lg:p-24 z-0 relative bg-fixed bg-center bg-cover bg-no-repeat" style="background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/presentation-2.jpg)" -->
+    <section id="patents-page" class="h-fit w-screen z-0">
+        <div class="h-fit bg-black bg-opacity-60"> <!-- Gradient Overlay -->
         
             <!-- Navigation -->
             <!-- Desktop Menu - Hidden to replace with burger on mobile -->
@@ -30,13 +29,18 @@
                 <!-- Menu/Logo Container -->
                 <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
                     <!-- Logo -->
-                    <img src="../images/logo-transparent.png" id="logo-top"  class="w-24 h-24" alt="Charles' Logo">
+                    <img src="./images/logo-transparent.png" id="logo-top"  class="w-24 h-24" alt="Charles' Logo">
 
                     <!-- Desktop Menu - Hidden to replace with burger on mobile -->
                     <div class="hidden h-10 font-alata md:flex md:space-x-6">
-                        <!-- Menu Item 1 -->
+                        <!-- Menu Item Home -->
                         <div class="group">
                             <a href="index.html">Home</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                        </div>
+                        <!-- Menu Item 1 -->
+                        <div class="group">
+                            <a href="about.html">About</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
                         </div>
                         <!-- Menu Item 2 -->
@@ -83,17 +87,19 @@
                     id="menu"
                     class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
                     <a href="index.html" class="hover:text-blue-600">Home</a>
+                    <a href="about.html" class="hover:text-blue-600">About</a>
                     <a href="services.html" class="hover:text-blue-600">Services</a>
                     <a href="projects.html" class="hover:text-blue-600">Projects</a>
                     <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
+                    <a target="_blank" id="appointments-btn" href="https://calendly.com/charles-wj-yee" class="hover:text-blue-600">Appointment</a>
                     <a target="_blank" href="/images/Charles Yee CV 2022.pdf" class="hover:text-blue-600">Resume</a>
-                    <a href="" class="hover:text-blue-600">You're on the <br>About Page</a>
+                    <a href="" class="hover:text-blue-600">You're on the <br>Patents Page</a>
                     <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
                 </div>
 
                 <!-- Hero Statement -->
-                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
-                    <!-- * Here is where a tagline or a highlight may go  -->
+                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-center text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
+                    Charles' Patents
                 </div>
 
                 <!-- Subscription Sign Up Currently Not In Use -->
@@ -106,81 +112,134 @@
                 </div> --> <!-- End sub-form -->
             </nav>
 
-<!-- About Section -->
-
-            <!-- Two Columns -->
-            <!-- @todo make the right personal column not start until the bottom of the left column -->
-            <div class="grid md:grid-cols-2 font-alata text-gray-300 p-12 justify-center lg:h-fit lg:px-24">
-                <div id="left-col" class=" py-8 px-8 font-alata md:max-w-lg">
-                    <p class="text-justify md:max-w-lg">
-                        <span class="text-3xl text-slate-50 font-bold uppercase flex-1">About Charles</span>
-                        <br>
-                        <br>
-                        <span class="text-xl font-bold italic text-white">Charles is an industry leader in healthcare NLP (Natural Language Processing)</span> with nearly two decades of experience building commercial products, both in a hands-on capacity and as a technical manager.
-                        <br>
-                        <br>
-                        As a player coach, <span class="text-xl font-bold italic text-white">Charles has led multimillion-dollar projects in health-tech Fortune 500s such as United Health, Philips, and AstraZeneca.</span> Charles was also the co-founder and early employee of multiple Series-A and Series-B startup companies. Charles has a Ph.D. in computational linguistics.
-                        <br>
-                        <br>
-                        With over a dozen publications and patents in his field, <span class="text-xl font-bold italic text-white">Charles is an authority in machine learning for named entity extraction and classification.</span>
-                        <br>
-                        Charles’ expertise ranges from semantics, ontology, machine learning, and deep learning approaches for information classification and extraction. Provide leadership, orchestration, and implementation to materialize domain experts’ scientific rationale into commercial products.
-                        <br>
-                        <br>
-                        <span class="text-xl font-bold italic text-white">Uniquely versed in clinical trial protocol, oncology/pathology, EMR/EHR, and NLP-Assisted ICD coding.</span>
-                        <br>
-                        <br>
-                        Headed various companies’ R & D and infrastructure teams: Code review, <span class="text-xl font-bold italic text-white">building deep neural networks, model diagnosis, product and project management, end-to-end UAT and OAT, DevOps,</span> recruitment-onboarding, aspirational speeches, and business acumen.
-                        <br>
-                        <br>
-                        <span class="text-xl font-bold italic text-white">Well acclimated to large corporate culture.</span> Nevertheless, full track record of entrepreneurship initiatives.
-
-                    </p>
-                </div>
-
-                <!-- Spacing div's to create the layout -->
-                <div></div>
-                <div class="max-w-2xl mr-4"></div>
-
-                <div class="flex justify-end md:max-w-3xl">
-                <div id="right-col" class="py-8 px-8 font-alata md:max-w-lg">
-                    <p class="text-justify">
-                        <span class="text-3xl text-slate-50 font-bold uppercase">Personal</span>
-                        <br>
-                        <br>
-                        Charles grew up in Taipei, and left for Auckland, New Zealand at the age of 13 to learn English at the behest of his wise father. 
-                        <br>
-                        <br>
-                        He excelled at rugby and math, then went to Ohio to continue his love for nature and computer science. <span class="text-xl font-bold italic text-white">In his free time, he studied philosophy,</span> became fascinated by the works of Hermann Hesse, and was curious about the capabilities and the limitations of human language in conveying meaning. 
-                        <br>
-                        <br>
-                        <span class="text-xl font-bold italic text-white">What is “meaning”, are there different spectrums of meaning and experiences,</span>  and how much of it can we convince another of? Why are meanings often lost??
-                        <br>
-                        <br>
-                        While working on his MSc at King’s College London to try and answer those questions, he met a beautiful young violinist who he took lessons from. They fell in love. Without even knowing what umlauts are, Charles gave up everything and moved to Germany with her. They traveled around all of Europe stopping short of Russia on a single Interrail ticket (taking turns hiding in the WC). <span class="text-xl font-bold italic text-white">For a little while, Charles was a street musician,</span> and dumpster dived for the morsels Eastern Europe had to offer!
-                        <br>
-                        <br>
-                        Upon receiving his doctorate from University of Stuttgart, Charles came back to the US.
-                        <br>
-                        <br>
-                        As an adrenaline junkie, <span class="text-xl font-bold italic text-white">he likes to race cars and motorcycles,</span> and has a collection of Ducatis over his 20 years of riding career. 
-                        <br>
-                        <br>
-                        He’s explored 24 countries on two wheels, and rode across the United States twice.
-                        <br>
-                        Between renewing his passport, he is well known in the Tango and Salsa communities of Boston. 
-                        <br>
-                        He’s also been to Japan 3 times for his Iaijutsu certification. <span class="text-xl font-bold italic text-white">Fortunately, you won’t see him carrying the katana outside of a dojo.</span>
-                        <br>
-                        <br>
-                        <span class="text-xl font-bold italic text-white">Today, Charles is a technology mercenary</span> who flies south when the snow arrives, and keeps in touch with his friends from around the world. 
-
-                    </p>    
-                </div>
-                </div>
-
+<!-- Patents Section -->
+    
+        <div class="font-alata text-white p-8 text-right lg:p-32">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+            <!-- First Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    METHOD AND SYSTEM FOR CANCER STAGE ANNOTATION WITHIN A MEDICAL TEXT
+                    <br>
+                    US PCT/EP2019/072816
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Issued Mar 5, 2020
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
             </div>
-        </div>
+            
+            <!-- Second Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    METHODS AND SYSTEMS FOR HEALTHCARE CLINICAL TRIALS
+                    <br>
+                    US WO/2019/068870
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Issued Apr 11, 2019 
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Third Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    A METHOD AND SYSTEM FOR MATCHING SUBJECTS TO CLINICAL TRIALS
+                    <br>
+                    US WO/2018/060838
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Issued May 4, 2018
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Fourth Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    NOMENCLATURE-INFORMED GENE NAME RECOGNITION
+                    <br>
+                    US PCT/EP2019/071747
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Filed Aug 13, 2019
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Fifth Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    A METHOD AND APPARATUS FOR GENOME SPELLING CORRECTION AND ACRONYM STANDARDIZATION
+                    <br>
+                    US PCT/EP2019/066322 
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Filed Jun 20, 2019
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Sixth Patent -->
+            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    NATURAL LANGUAGE PROCESSING USING ONTOLOGY MAPPING
+                    <br>
+                    US PCT/EP2018/075263
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Filed Sep 19, 2018 
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div>
+            
+            <!-- Future Patent -->
+            <!-- <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    TITLE
+                    <br>
+                    US PCT/EP2019/072816
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Issued 
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div> -->
+            
+            <!-- Future Patent -->
+            <!-- <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <span class="text-2xl capitalize font-bold">
+                    TITLE
+                    <br>
+                    US PCT/EP2019/072816
+                    <br>
+                </span>
+                <span class="font-normal">
+                    Issued 
+                    <br>
+                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                </span>
+            </div> -->
+            
+        </div> <!-- End Grid Section -->
+        </div> <!-- End Publications List -->
+    
+    </section> <!-- End of Header Section -->
 
         <!-- Footer -->
         <footer id="footer" class="bg-black">
@@ -193,7 +252,7 @@
                         <!-- Logo & Title Container -->
                         <div>
                             <a href="#logo-top">
-                                <img src="../images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
+                                <img src="./images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
                             <!-- <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2> -->
                         </div>
                         <!-- Logo Title -->
@@ -243,21 +302,21 @@
                             <!-- Icon 1 -->
                             <div class="group h-8 mb-4">
                                 <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
-                                    <img src="../images/linkedin-128.gif" alt="" class="h-12 mb-2">
+                                    <img src="./images/linkedin-128.gif" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div>
                             <!-- Icon 2 -->
                             <div class="group h-8">
                                 <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
-                                    <img src="../images/toptal.png" alt="" class="h-12 mb-2">
+                                    <img src="./images/toptal.png" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div>
                             <!-- Icon 3 -->
                             <!-- <div class="group h-8 mb-4">
                                 <a target="_blank" href="https://github.com/CharlesWJYee">
-                                    <img src="../images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
+                                    <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div> -->
@@ -357,7 +416,6 @@
             </div>
         </div>
     </div> <!-- End Contact Form Wrapper -->
-    </section> <!-- End of Header Section -->
 
     <!-- Javascript -->
 

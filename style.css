@@ -1362,10 +1362,10 @@ video {
 }
 
 #hero {
-  //background-image: url('../images/background.png');
-  background-image: url('../images/bg-option-1.jpg');
-  //background-image: url('../images/bg-option-2.jpg');
-  //background-image: url('../images/ai_1.jpg');
+  //background-image: url('./images/background.png');
+  background-image: url('./images/bg-option-1.jpg');
+  //background-image: url('./images/bg-option-2.jpg');
+  //background-image: url('./images/ai_1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1376,7 +1376,7 @@ video {
 
 @media(max-width: 768px) {
   #hero {
-    background-image: url('../images/hero-1-vertical.jpg');
+    background-image: url('./images/hero-1-vertical.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
   }
@@ -1408,7 +1408,7 @@ video {
 }
 
 #about-page {
-    background-image: url('../images/porsche-brick.jpg');
+    background-image: url('./images/porsche-brick.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1419,14 +1419,14 @@ video {
 
 @media(max-width: 768px) {
     #about-page {
-    background-image: url('../images/charles-portrait-1.jpg');
+    background-image: url('./images/charles-portrait-1.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 }
 
 #services-page {
-    background-image: url('../images/presentation-1.jpg');
+    background-image: url('./images/presentation-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1437,14 +1437,14 @@ video {
 
 @media(max-width: 768px) {
     #services-page {
-    background-image: url('../images/presentation-portrait.jpg');
+    background-image: url('./images/presentation-portrait.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 }
 
 #projects-page {
-    background-image: url('../images/water.jpg');
+    background-image: url('./images/water.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1455,14 +1455,14 @@ video {
 
 /* @media(max-width: 768px) {
     #projects-page {
-    background-image: url('../images/presentation-portrait.jpg');
+    background-image: url('./images/presentation-portrait.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 } */
 
 #recommendations-page {
-  background-image: url('../images/porsche-brick.jpg');
+  background-image: url('./images/porsche-brick.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1473,7 +1473,7 @@ video {
 
 /* @media(max-width: 768px) {
   #recommendations {
-  background-image: url('../images/charles-portrait-1.jpg');
+  background-image: url('./images/charles-portrait-1.jpg');
   background-position: center;
   background-gradient: rgba(-180deg 0,0,0,0.8);
   }
@@ -1481,7 +1481,7 @@ video {
 
 #publications-page {
   background-color: #000;
-  background-image: url('../images/author.jpg');
+  background-image: url('./images/author.jpg');
   background-repeat: no-repeat;
   //background-size: cover;
   background-position: center;
@@ -1492,14 +1492,14 @@ video {
 
 /* @media(max-width: 768px) {
   #publications {
-  background-image: url('../images/charles-portrait-1.jpg');
+  background-image: url('./images/charles-portrait-1.jpg');
   background-position: center;
   background-gradient: rgba(-180deg 0,0,0,0.8);
   }
 } */
 
 #patents-page {
-  background-image: url('../images/ai_1.jpg');
+  background-image: url('./images/ai_1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1510,7 +1510,7 @@ video {
 
 @media(max-width: 768px) {
   #patents-page {
-  background-image: url('../images/ai_3.jpg');
+  background-image: url('./images/ai_3.jpg');
   background-position: center;
   background-gradient: rgba(-180deg 0,0,0,0.8);
   }
