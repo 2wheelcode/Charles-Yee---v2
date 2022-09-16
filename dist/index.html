@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/FavIcon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/FavIcon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/FavIcon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/FavIcon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/FavIcon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/FavIcon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
-    <script src="/js/script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="../js/script.js" defer></script>
     <title>Charles Yee</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
                     <!-- Place these inside a div to stack -->
                     <!-- <img src="" alt="" class="w-36"> -->
                     <!-- <h2 class="font-alata text-2xl text-center items-self-center font-bold text-white border-2 w-16 h-16 rounded-full md:text-4xl">LOGO</h2> -->
-                    <img src="/images/logo-transparent.png" class="w-24 h-24" alt="Charles' Logo">
+                    <img src="../images/logo-transparent.png" class="w-24 h-24" alt="Charles' Logo">
 
                     <!-- Desktop Menu - Hidden to replace with burger on mobile -->
                     <div class="hidden h-10 font-alata md:flex md:space-x-6">
@@ -63,7 +63,7 @@
                         </div>
                         <!-- Menu Item 6 -->
                         <div class="group">
-                            <a target="_blank" href="/images/Charles Yee CV 2022.pdf">Resume</a>
+                            <a target="_blank" href="../images/Charles Yee CV 2022.pdf">Resume</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                     <a href="projects.html" class="hover:text-blue-600">Projects</a>
                     <a href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
                     <a target="_blank" id="appointments-btn" href="https://calendly.com/charles-wj-yee" class="hover:text-blue-600">Appointment</a>
-                    <a target="_blank" href="/images/Charles Yee CV 2022.pdf" class="hover:text-blue-600">Resume</a>
+                    <a target="_blank" href="../images/Charles Yee CV 2022.pdf" class="hover:text-blue-600">Resume</a>
                     <a href="" class="hover:text-blue-600">You're at Home</a>
                     <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
                 </div>
@@ -109,61 +109,12 @@
                 </div> --> <!-- End sub-form -->
             </nav>
 
-            <!-- Contact Form Insert, Hidden until clicked -->
-            <span id="contact-dots"></span>
-            <!-- Contact From -->
-            <div class="hidden relative" id="contact-form-wrapper">
-                <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
-                <div class="fixed inset-0 z-10 overflow-y-auto">
-                    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                        <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
-                            <form id="contact-form" class="px-10 py-6 space-y-4">
-                                <!-- Honeypot for spambots -->
-                                <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see" tabindex="-1"
-                                    autocomplete="off">
-                                <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
-                                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1"
-                                        autocomplete="off"></label> <!-- End Honeypot -->
-            
-                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"
-                                    type="text" placeholder="Name" required>
-                                <br>
-                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email"
-                                    type="email" placeholder="Email" required>
-                                <br>
-                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject" id="subject"
-                                    type="text" placeholder="Subject" required>
-                                <br>
-                                <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
-                                    placeholder="Your message" name="Message" id="message" cols="40" rows="8" required></textarea>
-                                <button id="submitBtn"
-                                    class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
-                            </form>
-                        </div> <!-- End of Contact Form -->
-                        <div id="error-msg" class="w-auto h-auto mx-auto">
-                            <!-- @todo Add Hidden -->
-                            <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                                There was an error sending your form.
-                            </p>
-                        </div>
-                        <div id="success-msg" class="w-auto h-auto mx-auto">
-                            <!-- @todo Add Hidden -->
-                            <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                                Your message has been sent successfully,
-                                <br>
-                                Charles will be in touch with you shortly.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- End Contact Form Wrapper -->
-
             <!-- Hero and Title section -->
             <div class="mx-auto">
                 <div class="flex flex-col lg:flex-row lg:px-6">
                     <!-- Image Container -->
                     <div class="mx-auto my-auto md:shrink-0">
-                        <img class="w-72 rounded-full object-cover lg:w-96" src="/images/charles-hero-square.jpg" alt="Photo of Charles Yee">
+                        <img class="w-72 rounded-full object-cover lg:w-96" src="../images/charles-hero-square.jpg" alt="Photo of Charles Yee">
                     </div>
                     <div id="title" class="mx-auto px-10 py-8 md:max-w-3xl md:py-0">
                         <p class="font-alata font-extrabold text-3xl mt-4 text-slate-100">Charles Yee</p>
@@ -437,7 +388,7 @@
                     <!-- Item 1 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
                         <a href="recommendations.html">
-                            <img src="/images/iquaratic.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto  -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="../images/iquaratic.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto  -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Ze Jiang 
                                 <br>
@@ -448,7 +399,7 @@
                     <!-- Item 2 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">    
-                            <img src="/images/inside.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="../images/inside.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Gil Blander
                                 <br>
@@ -459,7 +410,7 @@
                     <!-- Item 3 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/google.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="../images/google.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Rohit Patwa
                                 <br>
@@ -470,7 +421,7 @@
                     <!-- Item 4 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/hypatos.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="../images/hypatos.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Agniva Banerjee
                                 <br>
@@ -481,7 +432,7 @@
                     <!-- Item 5 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/spdb.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="../images/spdb.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Bowei Wei
                                 <br>
@@ -493,7 +444,7 @@
                     <!-- Item 6 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/picnic.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="../images/picnic.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Julien Salomon
                                 <br>
@@ -507,7 +458,7 @@
                     <!-- Item 7 -->
                     <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                         <a href="recommendations.html">
-                            <img src="/images/vuforia.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <img src="../images/vuforia.png" class="block absolute opacity-60 top-1/2 left-1/2 h-full w-auto lg:w-full lg:h-auto -translate-x-1/2 -translate-y-1/2" alt="...">
                             <span class="absolute top-1/2 left-1/2 text-lg font-bold text-white -translate-x-1/2 -translate-y-1/2 lg:text-4xl dark:text-gray-800">
                                 Joseph Qin
                                 <br>
@@ -610,7 +561,7 @@
                         <!-- Logo & Title Container -->
                         <div>
                             <a href="#hero">
-                                <img src="/images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
+                                <img src="../images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
                             <!-- <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2> -->
                         </div>
                         <!-- Logo Title -->
@@ -660,21 +611,21 @@
                             <!-- Icon 1 -->
                             <div class="group h-8 mb-4">
                                 <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
-                                    <img src="/images/linkedin-128.gif" alt="" class="h-12 mb-2">
+                                    <img src="../images/linkedin-128.gif" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div>
                             <!-- Icon 2 -->
                             <div class="group h-8">
                                 <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
-                                    <img src="/images/toptal.png" alt="" class="h-12 mb-2">
+                                    <img src="../images/toptal.png" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div>
                             <!-- Icon 3 -->
                             <!-- <div class="group h-8 mb-4">
                                 <a target="_blank" href="https://github.com/CharlesWJYee">
-                                    <img src="/images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
+                                    <img src="../images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
                                 </a>
                                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                             </div> -->
@@ -706,7 +657,61 @@
                 </div>
             </div>
         </footer> <!-- End Footer -->
+    <!-- Contact From -->
 
+    <div class="hidden absolute z-50" id="contact-form-wrapper">
+        <div class="relative">
+            <div class="fixed inset-0 bg-gray-800 bg-opacity-75 transition-opacity"></div>
+            <div class="fixed inset-0 z-10 overflow-y-auto">
+                <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                    <div>
+                    <div><button id="contact-us-close-btn" class="text-white"> X</button></div>
+                    <!-- Contact Form Insert, Hidden until clicked -->
+                    <span id="contact-dots"></span>
+                    <div id="" class=" h-auto w-96 mx-auto my-auto px-auto z-20">
+                        <form id="contact-form" class="px-10 py-6 space-y-4">
+                            <!-- Honeypot for spambots -->
+                            <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see"
+                                tabindex="-1" autocomplete="off">
+                            <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
+                                <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1"
+                                    autocomplete="off"></label> <!-- End Honeypot -->
+    
+                            <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"
+                                type="text" placeholder="Name" required>
+                            <br>
+                            <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email"
+                                type="email" placeholder="Email" required>
+                            <br>
+                            <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject"
+                                id="subject" type="text" placeholder="Subject" required>
+                            <br>
+                            <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
+                                placeholder="Your message" name="Message" id="message" cols="40" rows="8"
+                                required></textarea>
+                            <button id="submitBtn"
+                                class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 hover:text-white duration-500">Submit</button>
+                        </form>
+                    </div> <!-- End of Contact Form -->
+                    <div id="error-msg" class="w-auto h-auto mx-auto">
+                        <!-- @todo Add Hidden -->
+                        <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                            There was an error sending your form.
+                        </p>
+                    </div>
+                    <div id="success-msg" class="w-auto h-auto mx-auto">
+                        <!-- @todo Add Hidden -->
+                        <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                            Your message has been sent successfully,
+                            <br>
+                            Charles will be in touch with you shortly.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Contact Form Wrapper -->
     <!-- Javascript -->
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 

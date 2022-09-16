@@ -12,6 +12,7 @@ function navToggle() {
 
 // Open Contact Form Top Menu Button
 const contactBtns = document.getElementsByClassName('contact-btns');
+const contactFormCloseButton = document.getElementById('contact-us-close-btn');
 const contactFormWrapper = document.getElementById('contact-form-wrapper');
 const contactForm = document.getElementById('contact-form');
 const formSubmitButton = document.getElementById('submitBtn');
@@ -23,10 +24,13 @@ contactForm.addEventListener('submit', function(event){
 ([...contactBtns]).forEach(contactButton => {
   contactButton.addEventListener('click', contactToggle);
 })
+
+contactFormCloseButton.addEventListener('click', contactToggle)
 //contactBtn.addEventListener('click', contactToggle);
 formSubmitButton.addEventListener('click', submitForm2);
 
 function contactToggle() {
+    document.getElementsByTagName('body').item(0).classList.toggle('overflow-hidden');
     contactFormWrapper.classList.toggle('block');
     contactFormWrapper.classList.toggle('hidden');
 }
@@ -70,41 +74,40 @@ function contactToggle() {
 // }
 
 
-function submitForm3(){
-  const request = new XMLHttpRequest();
-  const successMsg = document.getElementById('success-msg');
-  // addListeners(request);
-  request.open("POST", "/action-page.php");
-  request.addEventListener('loadend', function(){
-    if(request.status === 200){
-      //hide contact form
-      contactFormWrapper.classList.toggle('block');
-      //contactFormWrapper.classList.toggle('hidden');
-      //clear out form values
-      contactForm.reset()
-      //TODO: show a 'message sent dialog' 
-      console.log('Message Successfully Sent');
-      // Timeout the Success Message   
-      setTimeout(() => {
-        contactFormWrapper.classList.toggle('block');
-      }, '1500')
-        contactFormWrapper.classList.toggle('hidden');
+// function submitForm3(){
+//   const request = new XMLHttpRequest();
+//   const successMsg = document.getElementById('success-msg');
+//   // addListeners(request);
+//   request.open("POST", "/action-page.php");
+//   request.addEventListener('loadend', function(){
+//     if(request.status === 200){
+//       //hide contact form
+//       contactFormWrapper.classList.toggle('block');
+//       //contactFormWrapper.classList.toggle('hidden');
+//       //clear out form values
+//       contactForm.reset()
+//       //TODO: show a 'message sent dialog' 
+//       console.log('Message Successfully Sent');
+//       // Timeout the Success Message   
+//       setTimeout(() => {
+//         contactFormWrapper.classList.toggle('block');
+//       }, '1500')
+//         contactFormWrapper.classList.toggle('hidden');
         
-    }
-    if(request.status !== 200){
-      console.log('error', request.statusText, request.status)
-      setTimeout(() => {
-        contactFormWrapper.classList.toggle('block');
-      }, '1500')
-        contactFormWrapper.classList.toggle('hidden');
-    }
-  });
-  request.send(new FormData(contactForm));
-}
+//     }
+//     if(request.status !== 200){
+//       console.log('error', request.statusText, request.status)
+//       setTimeout(() => {
+//         contactFormWrapper.classList.toggle('block');
+//       }, '1500')
+//         contactFormWrapper.classList.toggle('hidden');
+//     }
+//   });
+//   request.send(new FormData(contactForm));
+// }
 
 // Contact Form with Ajax & PHP
 function submitForm2() {
-  document.getElementById('contact-btn').disabled = true;
   document.getElementById('contact-dots').innerHTML = 'please wait...';
   let formdata = new FormData();
   formdata.append('name', document.getElementById('name').value);
@@ -113,17 +116,27 @@ function submitForm2() {
   formdata.append('message', document.getElementById('message').value);
   let ajax = new XMLHttpRequest();
   ajax.open('POST', 'action-page.php');
-  ajax.onreadystatechange = function() {
+  ajax.onloadend = function() {
     if(ajax.readyState == 4 && ajax.status === 200) {
       if(ajax.responseText === 'success') {
         document.getElementById('contact-dots').innerHTML = '<h2>Thanks ' + document.getElementById('name').value + ', your message has been sent. <br>Charles will be in touch with you shortly</h2>';
       } else {
-        document.getElementById('status').innerHTML = ajax.responseText;
-        document.getElementById('contact-btn').disabled = false;
+        //document.getElementById('status').innerHTML = ajax.responseText;
       }
     }
+    contactToggle();
+    cleanUpForm();
+  }
+  ajax.onerror = function(error){
+    contactToggle();
+    cleanUpForm();
   }
   ajax.send(formdata);
+}
+
+function cleanUpForm(){
+  document.getElementById('contact-dots').innerHTML = '';
+  contactForm.reset()
 }
 
 

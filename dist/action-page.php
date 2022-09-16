@@ -30,9 +30,14 @@
             $body .= 'Subject: '.$messageSubject."\r\n";
             $body .= 'Message: '."\r\n".$message."\r\n";
 
-            mail($mailTo, "Message from Charles' Website", $messageSubject, $body);
-            header("HTTP/1.1 200 OK");
-            $message_sent = true;
+            if(mail($mailTo, "Message from Charles' Website", $messageSubject, $body)){
+                header("HTTP/1.1 200 OK");
+                $message_sent = true;
+                echo 'success';
+            } else {
+                header("HTTP/1.1 500 Send Error");
+                echo 'The server failed to send the message. Please try again later.';
+            }
 
         } else {
             header("HTTP/1.1 400 Bad Request");
@@ -43,10 +48,5 @@
 
 ?>
 
-<!-- if(mail($mailTo, "Message from Charles' Website", $messageSubject, $body)) {
-                echo 'success';
-            } else {
-                echo 'The server failed to send the message. Please try again later.';
-            } -->
 
                     
