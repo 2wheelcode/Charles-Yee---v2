@@ -1362,7 +1362,10 @@ video {
 }
 
 #hero {
-  background-image: url('../images/background-1.jpg');
+  //background-image: url('../images/background.png');
+  background-image: url('../images/bg-option-1.jpg');
+  //background-image: url('../images/bg-option-2.jpg');
+  //background-image: url('../images/ai_1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
