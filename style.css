@@ -1423,7 +1423,7 @@ video {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vw;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 }
