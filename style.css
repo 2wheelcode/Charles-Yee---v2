@@ -1441,7 +1441,10 @@ video {
 @media(max-width: 768px) {
     #services-page {
     background-image: url('./images/presentation-portrait.jpg');
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: 100vw;
+    background-attachment: scroll;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 }
