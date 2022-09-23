@@ -1412,7 +1412,7 @@ video {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
+    //position: relative;
     background-attachment: fixed;
     background-overflow: hidden;
 }
@@ -1420,7 +1420,10 @@ video {
 @media(max-width: 768px) {
     #about-page {
     background-image: url('./images/charles-portrait-1.jpg');
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: fit;
+    background-attachment: fixed;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 }
