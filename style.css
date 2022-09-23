@@ -1422,7 +1422,7 @@ video {
     background-image: url('./images/charles-portrait-1.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: fit;
+    background-size: 100vw;
     background-attachment: fixed;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
