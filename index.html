@@ -164,7 +164,7 @@
 
     <!-- Principle Why's -->
     <!-- @Charles Approval: Added a linear gradient overlay to smooth transition -->
-    <section id="why-work-with-charles" class="font-alata grid grid-cols-1 divide-x divide-y lg:grid-cols-2  bg-gray-300" style="background-image:linear-gradient(rgba(0,0,255,.1), rgba(0,0,255,.1));">
+    <section id="why-work-with-charles" class="font-alata grid grid-cols-1 divide-x divide-y lg:grid-cols-2  bg-gray-300" style="background-image:linear-gradient(rgba(139,69,19,.6), rgba(139,69,19,.9), rgba(139,69,19,.6)), url(./images/alt-image-inverted.png);"> 
         <div id="leader" class="px-12 py-8 lg:p-24">
             <!-- Icon -->
             <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat" style="background-image: url(./images/logo-transparent-b-and-b.png)">
@@ -187,9 +187,9 @@
                 
              </p>
         </div>
-        <div id="services" class="px-12 py-8 lg:p-24">
+        <div id="services" class="px-12 py-8 lg:p-24 text-white">
             <!-- Icon -->
-            <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat" style="background-image: url(./images/services.png)">
+            <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat" style="background-image: url(./images/services-white.png)">
             </div>
             <!-- Services -->
             <h2 class="text-3xl uppercase font-bold">Services</h2>
@@ -202,69 +202,11 @@
                     <li>Hands-on, backend software development/troubleshooting </li>
                     <li>Technical audit, particularly for startup acquisition, pharmacovigilance, and regulatory</li>
                     <li>Machine learning, AI, data science. Building deep neural network models using structured and unstructured data</li>
-                    <a href="services.html" class="text-blue-700 underline">Services</a>
+                    <a href="services.html" class="text-blue-900 underline">Services</a>
                 </ul>
                 </p>
         </div>
-        <div id="patent-holder" class="px-12 py-8 lg:p-24">
-            <!-- Icon -->
-            <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat" style="background-image: url(./images/patent.png)">
-            </div>
-            <!-- Patent -->
-            <h2 class="text-3xl uppercase font-bold">PATENT HOLDER</h2>
-            <br>
-            <p class="text-xl">Charles' focus on Healthcare & Technology has been instrumental in advancing the field he holds Intellectual Property rights.
-                <br>
-                <br>
-                <ul class="list-disc">
-                    <li>
-                        METHOD AND SYSTEM FOR CANCER STAGE ANNOTATION WITHIN A MEDICAL TEXT
-                        <br>
-                        US PCT/EP2019/072816
-                    </li>
-                    <li>
-                        METHODS AND SYSTEMS FOR HEALTHCARE CLINICAL TRIALS
-                        <br>
-                        US WO/2019/068870
-                    </li>
-                    <li>
-                        A METHOD AND SYSTEM FOR MATCHING SUBJECTS TO CLINICAL TRIALS 
-                        <br>
-                        US WO/2018/060838
-                    </li>                    
-                    <a href="patents.html" class="text-blue-700 underline">Patents</a>
-                </ul>
-            </p>
-        </div>
-        <div id="publications" class="px-12 py-8 lg:p-24">
-            <!-- Icon -->
-            <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat" style="background-image: url(./images/author.png)">
-            </div>
-            <!-- Published -->
-            <h2 class="text-3xl uppercase font-bold">PUBLISHED AUTHOR </h2>
-            <br>
-            <p class="text-xl">
-                Charles' expertise and Due Diligence have lead him to publish articles in respected journals and educational publications 
-            <br>
-            <br>
-                <ul class="list-disc">
-                    <li>A Domain Knowledge-Enhanced LSTM-CRF Model for Disease Named Entity Recognition
-                        <br>
-                        AMIA · Mar 25, 2019
-                    </li>
-                    <li>Human-Algorithm Interaction To Define Variables from Free-Text Notes in Electronic Health Records.
-                        <br>
-                        Aug 31, 2015
-                    </li>
-                    <li>Automated Scoring for High Stakes Assessments: Ready for Prime Time?
-                        <br>
-                        CCSSO 2012 · Jun 29, 2012
-                    </li>
-                    <a href="publications.html" class="text-blue-700 underline">Publications</a>
-                </ul>
-                 
-                </p>
-        </div>
+
     </section> <!-- End Principle Why Section -->
 
     <!-- Credentials Section -->
@@ -489,11 +431,11 @@
     <!-- @todo Add bg-slide parallax while scrolling having trouble figuring this out -->
     <!-- @Charles Approval: suggested a different image -->
     <section id="about" class="bg-black">
-        <div class="flex flex-col font-alata p-12 justify-center lg:h-screen lg:flex-row lg:flex-wrap space-y-8 lg:p-32" style="background-image:linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.0)), url(./images/charles-b-w.jpg)">
+        <div class="flex flex-col font-alata p-12 justify-center lg:h-screen lg:flex-row lg:flex-wrap space-y-8 lg:p-32 bg-cover" style="background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./images/alt-about.jpg)"> <!-- url(./images/charles-b-w.jpg) -->
     
             <h2 class="text-4xl text-slate-50 font-bold uppercase flex-1">About Charles</h2>
                     
-        <div id="blurb" class="text-slate-50 lg:bg-black/20 lg:shadow-slate-500 lg:p-6 lg:rounded-xl md:max-w-lg sm:w-auto flex-1 place-items-end">
+        <div id="blurb" class="text-slate-50  lg:shadow-slate-500 lg:p-6 lg:rounded-xl md:max-w-lg sm:w-auto flex-1 place-items-end"> <!-- lg:bg-black/20 -->
             <p>
             Charles is an industry leader in healthcare NLP (Natural Language Processing) with nearly two decades of experience building commercial products, both in a hands-on capacity and as a technical manager.
             <br>
@@ -528,16 +470,6 @@
     </div>
     </section> <!-- End About Section -->
 
-    <!-- Motto Section -->
-    <!-- @todo Add bg-slide parallax while scrolling -->
-    <section id="moto" class="font-alata p-12 h-fit lg:p-48 bg-center bg-cover bg-no-repeat" style="background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./images/porsche-5.jpg)"> <!-- Alternate Image url(/images/porsche-4.jpg)  -->
-         <!-- Quote -->
-            <p class="max-w-2xl mx-auto font-alata text-slate-200/70 italic text-center text-5xl">
-            We are all flying around space on this massive rock for no particular reason.
-            <br>
-             Everyone on this rock is just a friend I haven’t met, yet.</p><br>
-            <p class="text-slate-100 font-semibold italic text-right">- Charles' Motto</p>    
-    </section> <!-- End Motto Section -->
 
         <!-- Footer -->
         <footer id="footer" class="bg-black">

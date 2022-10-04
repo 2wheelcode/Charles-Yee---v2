@@ -1421,9 +1421,9 @@ video {
     #about-page {
     background-image: url('./images/charles-portrait-1.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: relative;
     background-size: 100vw;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 }
