@@ -35,6 +35,15 @@ function contactToggle() {
     contactFormWrapper.classList.toggle('hidden');
 }
 
+let parallaxRight = document.getElementsByClassName('parallax-right');
+new simpleParallax(parallaxRight, {
+    orientation: 'right'
+});
+let parallaxUp = document.getElementsByClassName('parallax-up');
+new simpleParallax(parallaxUp, {
+    orientation: 'up'
+});
+
 // function submitForm1() {
 //   contactForm.requestSubmit()
 //   contactFormWrapper.classList.toggle('block');

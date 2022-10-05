@@ -2,21 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.background-image{
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    display: block;
+    height: 100%;
+}
+.background-image + div {
+   position: relative;
+    top:0;
+}
 #hero {
-    background-image: url('./images/hero-1-vertical.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    /*background-image: url('./images/hero-1-vertical.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
     position: relative;
-    background-attachment: fixed;
-    background-overflow: hidden;
+    height: fit-content;
+    overflow-y:hidden;
+    /*background-attachment: fixed;*/
+    /*background-overflow: hidden;*/
 }
 
 @media(max-width: 768px) {
     #hero {
-    background-image: url('./images/hero-1-vertical.jpg');
-    background-position: center;
-    background-gradient: rgba(-180deg 0,0,0,0.8);
+    /*background-image: url('./images/hero-1-vertical.jpg');*/
+    /*background-position: center;*/
+    /*background-gradient: rgba(-180deg 0,0,0,0.8);*/
     }
 }
 
