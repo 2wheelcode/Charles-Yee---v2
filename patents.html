@@ -18,8 +18,6 @@
 <body>
 
     <!-- Header Section -->
-    <!-- @todo Insert Logo -->
-    <!-- @todo Make Read More/Read Less Button Transition smoothly -->
     <section id="patents-page" class="h-fit w-screen z-0">
         <div class="h-fit bg-black bg-opacity-60"> <!-- Gradient Overlay -->
         
@@ -33,16 +31,11 @@
 
                     <!-- Desktop Menu - Hidden to replace with burger on mobile -->
                     <div class="hidden h-10 font-alata md:flex md:space-x-6">
-                        <!-- Menu Item Home -->
+                        <!-- Menu Item 1 -->
                         <div class="group">
                             <a href="index.html">Home</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
-                        </div>
-                        <!-- Menu Item 1 -->
-                        <div class="group">
-                            <a href="about.html">About</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
-                        </div>
+                        </div>                    
                         <!-- Menu Item 2 -->
                         <div class="group">
                             <a href="services.html">Services</a>
@@ -55,17 +48,12 @@
                         </div>
                         <!-- Menu Item 4 -->
                         <div class="group">
-                            <a class="contact-btns" href="javascript:void(0)">Contact</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            <a href="about.html">About</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
                         </div>
                         <!-- Menu Item 5 -->
                         <div class="group">
-                            <a target="_blank" id="appointment-btn" href="https://calendly.com/charles-wj-yee">Appointment</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
-                        <!-- Menu Item 6 -->
-                        <div class="group">
-                            <a target="_blank" href="/images/Charles Yee CV 2022.pdf">Resume</a>
+                            <a class="contact-btns" href="javascript:void(0)">Contact</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                     </div>
@@ -87,142 +75,259 @@
                     id="menu"
                     class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
                     <a href="index.html" class="hover:text-blue-600">Home</a>
-                    <a href="about.html" class="hover:text-blue-600">About</a>
                     <a href="services.html" class="hover:text-blue-600">Services</a>
                     <a href="projects.html" class="hover:text-blue-600">Projects</a>
+                    <a href="" class="text-blue-600 underline">Publications</a>
+                    <a href="about.html" class="hover:text-blue-600">About</a>
                     <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
-                    <a target="_blank" id="appointments-btn" href="https://calendly.com/charles-wj-yee" class="hover:text-blue-600">Appointment</a>
-                    <a target="_blank" href="/images/Charles Yee CV 2022.pdf" class="hover:text-blue-600">Resume</a>
-                    <a href="" class="hover:text-blue-600">You're on the <br>Patents Page</a>
+                  
                     <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
                 </div>
 
-                <!-- Hero Statement -->
-                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-center text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
-                    Charles' Patents
-                </div>
-
-                <!-- Subscription Sign Up Currently Not In Use -->
-                <!-- <div id="sub-form" class="flex flex-col mt-5 md:justify-end">
-                    <form name="submit-to-google-sheet" action="" method="post" class="flex flex-col mt-5 space-y-4 md:justify-end md:flex-row md:space-y-0">
-                    <input type="email" name="Email" placeholder="Subscribe to Charles' Blog" class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none hover:cursor-pointer">
-                    <button class="px-5 py-3 text-xs text-white bg-black border border-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Subscribe</button>
-                </form>
-                    <div id="sub-msg" class="text-white text-sm font-alata text-right"></div>
-                </div> --> <!-- End sub-form -->
+                
             </nav>
+<!-- Publications Section -->
+
+        <!-- Hero Statement -->
+        <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata font-bold text-center text-2xl text-blue-700 uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-4xl">
+            Publications
+        </div>
+
+        <div class="font-alata text-white p-8 text-right lg:p-32">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+                        <!-- First Publication -->
+                        <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                            <span class="text-2xl capitalize font-bold">
+                                A Domain Knowledge-Enhanced LSTM-CRF Model for Disease Named Entity Recognition.
+                                <br>
+                                AMIA Joint Summits on Translational Science proceedings;
+                                <br>
+                                2019;2019:761-770.
+                            </span>
+                            <br>
+                            <br>
+                            <span class="font-normal">
+                                Fellow Authors: 
+                                <br>
+                                Ling Y, Hasan SA, Farri O, et al.
+                                <br>
+                                Accessed August 30, 2022. 
+                                <br>
+                                <a target="_blank" class="text-blue-500 underline" href="https://pubmed.ncbi.nlm.nih.gov/31259033/">A Domain Knowledge-Enhanced LSTM-CRF Model for Disease Named Entity Recognition</a>                   
+                            </span>
+                        </div>
+                        <!-- Second Publication -->
+                        <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                            <span class="text-2xl capitalize font-bold">
+                                Human-Algorithm Interaction To Define Variables from Free-Text Notes in Electronic Health Records.
+                                <br>
+                                Presented at: 31st International Conference on Pharmacoepidemiology and Therapeutic Risk Management (ICPE);
+                                <br>
+                                August 31, 2015.
+                            </span>
+                            <br>
+                            <br>
+                            <span class="font-normal">
+                                Fellow Authors:
+                                <br>
+                                Dore D,
+                                <br>
+                                Yee C,
+                                <br>
+                                Nunes A, 
+                                <br>
+                                Walker A.
+                                <!-- <br>
+                                <a target="_blank" class="text-blue-500 underline" href="">Is there a link for this article?</a>   -->          
+                            </span>
+                        </div>
+                        <!-- Third Publication -->
+                        <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                            <span class="text-2xl capitalize font-bold">
+                                Automated Scoring for High Stakes Assessments: Ready for Prime Time? 
+                                <br>
+                                Presented at: Council of Chief State School Officers 2012 Meeting;
+                                <br>
+                                June 29, 2012.
+                            </span>
+                            <br>
+                            <br>
+                            <span class="font-normal">
+                                Fellow Authors:
+                                <br>
+                                Lotteridge S, 
+                                <br>
+                                Yee C.
+                                <!-- <br>
+                                <a target="_blank" class="text-blue-500 underline" href="">Is there a link for this article?</a>  -->                                 
+                            </span>
+                        </div>
+                        <!-- Fourth Publication -->
+                        <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                            <span class="text-2xl capitalize font-bold">
+                                A Lexical Approach to Presupposition and Meaning.
+                                <br>
+                                Online Publikationsverbund Universität Stuttgart (OPUS);
+                                <br>
+                                2011.
+                            </span>
+                            <br>
+                            <br>
+                            <span class="font-normal">
+                                Author:
+                                <br>
+                                Yee C.
+                                <br>
+                                <a target="_blank" class="text-blue-500 underline" href="https://elib.uni-stuttgart.de/handle/11682/2757">A Lexical Approach to Presupposition and Meaning</a>
+                                <br>
+                                           
+                            </span>
+                        </div>
+                        <!-- Fifth Publication -->
+                        <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                            <span class="text-2xl capitalize font-bold">
+                                Building DRT Lexical Entries for Superlatives and Ordinal Numbers.
+                                <br>
+                                Düsseldorf University Press.
+                                <br>
+                                Published online 2010. 
+                            </span>
+                            <br>
+                            <br>
+                            <span class="font-normal">
+                                Author:
+                                <br>
+                                Yee C.
+                                <br>
+                                <a target="_blank" class="text-blue-500 underline" href="https://www.semanticscholar.org/paper/Building-DRT-Lexical-Entries-for-Superlatives-and-Yee/1cf5f4db28ae9600a712d10cb41bfc4a69586139#citing-papers">Building DRT Lexical Entries for Superlatives and Ordinal Numbers</a>              
+                            </span>
+                        </div>
+                        <!-- Future Publication -->
+                        <!-- <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                            <span class="text-2xl capitalize font-bold">
+                                Title
+                                <br>
+                                Publication
+                                <br>
+                                Date 
+                            </span>
+                            <br>
+                            <br>
+                            <span class="font-normal">
+                                Author:
+                                <br>
+                                Yee C.
+                                <br>
+                                <a target="_blank" class="text-blue-500 underline" href="">Title</a>              
+                            </span>
+                        </div> -->
+            
+            </div> <!-- End Publications List -->
+        </div>
 
 <!-- Patents Section -->
+<!-- Hero Statement -->
+<div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata font-bold text-center text-2xl text-blue-700 uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-4xl">
+    Charles' Patents
+</div>
     
         <div class="font-alata text-white p-8 text-right lg:p-32">
             <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
-            <!-- First Patent -->
-            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
-                <span class="text-2xl capitalize font-bold">
-                    METHOD AND SYSTEM FOR CANCER STAGE ANNOTATION WITHIN A MEDICAL TEXT
-                    <br>
-                    US PCT/EP2019/072816
-                    <br>
-                </span>
-                <span class="font-normal">
-                    Issued Mar 5, 2020
-                    <br>
-                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
-                </span>
-            </div>
-            
-            <!-- Second Patent -->
-            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
-                <span class="text-2xl capitalize font-bold">
-                    METHODS AND SYSTEMS FOR HEALTHCARE CLINICAL TRIALS
-                    <br>
-                    US WO/2019/068870
-                    <br>
-                </span>
-                <span class="font-normal">
-                    Issued Apr 11, 2019 
-                    <br>
-                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
-                </span>
-            </div>
-            
-            <!-- Third Patent -->
-            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
-                <span class="text-2xl capitalize font-bold">
-                    A METHOD AND SYSTEM FOR MATCHING SUBJECTS TO CLINICAL TRIALS
-                    <br>
-                    US WO/2018/060838
-                    <br>
-                </span>
-                <span class="font-normal">
-                    Issued May 4, 2018
-                    <br>
-                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
-                </span>
-            </div>
-            
-            <!-- Fourth Patent -->
-            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
-                <span class="text-2xl capitalize font-bold">
-                    NOMENCLATURE-INFORMED GENE NAME RECOGNITION
-                    <br>
-                    US PCT/EP2019/071747
-                    <br>
-                </span>
-                <span class="font-normal">
-                    Filed Aug 13, 2019
-                    <br>
-                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
-                </span>
-            </div>
-            
-            <!-- Fifth Patent -->
-            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
-                <span class="text-2xl capitalize font-bold">
-                    A METHOD AND APPARATUS FOR GENOME SPELLING CORRECTION AND ACRONYM STANDARDIZATION
-                    <br>
-                    US PCT/EP2019/066322 
-                    <br>
-                </span>
-                <span class="font-normal">
-                    Filed Jun 20, 2019
-                    <br>
-                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
-                </span>
-            </div>
-            
-            <!-- Sixth Patent -->
-            <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
-                <span class="text-2xl capitalize font-bold">
-                    NATURAL LANGUAGE PROCESSING USING ONTOLOGY MAPPING
-                    <br>
-                    US PCT/EP2018/075263
-                    <br>
-                </span>
-                <span class="font-normal">
-                    Filed Sep 19, 2018 
-                    <br>
-                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
-                </span>
-            </div>
-            
-            <!-- Future Patent -->
-            <!-- <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
-                <span class="text-2xl capitalize font-bold">
-                    TITLE
-                    <br>
-                    US PCT/EP2019/072816
-                    <br>
-                </span>
-                <span class="font-normal">
-                    Issued 
-                    <br>
-                    <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
-                </span>
-            </div> -->
-            
-            <!-- Future Patent -->
-            <!-- <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                <!-- First Patent -->
+                <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                    <span class="text-2xl capitalize font-bold">
+                        METHOD AND SYSTEM FOR CANCER STAGE ANNOTATION WITHIN A MEDICAL TEXT
+                        <br>
+                        US PCT/EP2019/072816
+                        <br>
+                    </span>
+                    <span class="font-normal">
+                        Issued Mar 5, 2020                   
+                    </span>
+                </div>
+                
+                <!-- Second Patent -->
+                <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                    <span class="text-2xl capitalize font-bold">
+                        METHODS AND SYSTEMS FOR HEALTHCARE CLINICAL TRIALS
+                        <br>
+                        US WO/2019/068870
+                        <br>
+                    </span>
+                    <span class="font-normal">
+                        Issued Apr 11, 2019                  
+                    </span>
+                </div>
+                
+                <!-- Third Patent -->
+                <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                    <span class="text-2xl capitalize font-bold">
+                        A METHOD AND SYSTEM FOR MATCHING SUBJECTS TO CLINICAL TRIALS
+                        <br>
+                        US WO/2018/060838
+                        <br>
+                    </span>
+                    <span class="font-normal">
+                        Issued May 4, 2018                
+                    </span>
+                </div>
+                
+                <!-- Fourth Patent -->
+                <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                    <span class="text-2xl capitalize font-bold">
+                        NOMENCLATURE-INFORMED GENE NAME RECOGNITION
+                        <br>
+                        US PCT/EP2019/071747
+                        <br>
+                    </span>
+                    <span class="font-normal">
+                        Filed Aug 13, 2019                   
+                    </span>
+                </div>
+                
+                <!-- Fifth Patent -->
+                <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                    <span class="text-2xl capitalize font-bold">
+                        A METHOD AND APPARATUS FOR GENOME SPELLING CORRECTION AND ACRONYM STANDARDIZATION
+                        <br>
+                        US PCT/EP2019/066322 
+                        <br>
+                    </span>
+                    <span class="font-normal">
+                        Filed Jun 20, 2019                  
+                    </span>
+                </div>
+                
+                <!-- Sixth Patent -->
+                <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                    <span class="text-2xl capitalize font-bold">
+                        NATURAL LANGUAGE PROCESSING USING ONTOLOGY MAPPING
+                        <br>
+                        US PCT/EP2018/075263
+                        <br>
+                    </span>
+                    <span class="font-normal">
+                        Filed Sep 19, 2018                  
+                    </span>
+                </div>
+                
+                <!-- Future Patent -->
+                <!-- <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+                    <span class="text-2xl capitalize font-bold">
+                        TITLE
+                        <br>
+                        US PCT/EP2019/072816
+                        <br>
+                    </span>
+                    <span class="font-normal">
+                        Issued 
+                        <br>
+                        <a target="_blank" class="text-blue-500 underline" href="#">Link to Patent</a>                   
+                    </span>
+                </div> -->
+                
+                <!-- Future Patent -->
+                <!-- <div class="max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
                 <span class="text-2xl capitalize font-bold">
                     TITLE
                     <br>
@@ -241,114 +346,113 @@
     
     </section> <!-- End of Header Section -->
 
-        <!-- Footer -->
-        <footer id="footer" class="bg-black">
-            <!-- Container -->
-            <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
-                <!-- Footer Flex Container -->
-                <div class="flex flex-col font-alata mx-auto mb-8 space-y-6 lg:flex-row lg:mx-0 lg:space-y-0 lg:justify-between lg:items-end">
-                    <!-- Logo & Title -->
-                    <div class="flex flex-col">
-                        <!-- Logo & Title Container -->
-                        <div>
-                            <a href="#logo-top">
-                                <img src="./images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
-                            <!-- <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2> -->
-                        </div>
-                        <!-- Logo Title -->
-                        <div>
-                            <h2 class="font-alata text-3xl text-center lg:justify-start text-white lg:text-6xl">Charles Yee</h2>
-                        </div>
-                    </div> <!-- End Logo & Title -->
-                        
-
-                    <!-- Menu Container -->
-                    <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-8">
-                        
-                            <!-- Contact Container -->
-                        <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
-                            <!-- Item 1 -->
-                            <div class="group h-16 text-center cursor-default">
-                                <a href=""class="cursor-default"></a>
-                                <div class="text-white">
-                                    (720)771-1828
-                                    <br>
-                                    charles.wj.yee@gmail.com
-                                </div>
-                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+            <!-- Footer -->
+            <footer id="footer" class="bg-black">
+                <!-- Container -->
+                <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
+                    <!-- Footer Flex Container -->
+                    <div class="flex flex-col font-alata mx-auto mb-8 space-y-6 lg:flex-row lg:mx-0 lg:space-y-0 lg:justify-between lg:items-end">
+                        <!-- Logo & Title -->
+                        <div class="flex flex-col">
+                            <!-- Logo & Title Container -->
+                            <div>
+                                <a href="#hero">
+                                    <img src="./images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
+                                <!-- <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2> -->
                             </div>
-                            <!-- Item 3 -->
-                            <!-- <div class="group h-16 text-center cursor-default">
-                                <a href="" class="cursor-default"></a>
-                                <div class="text-white">
-                                    123 Any Street
-                                    <br>
-                                    Boston, MA 00000
+                            <!-- Logo Title -->
+                            <div>
+                                <h2 class="font-alata text-3xl text-center lg:justify-start text-white lg:text-6xl">
+                                    Charles Yee
+                                </h2>
+                            </div>
+                        </div> <!-- End Logo & Title -->
+                            
+    
+                        <!-- Menu Container -->
+                        <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-8">
+                            
+                                <!-- Contact Container -->
+                            <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
+                                <!-- Item 1 -->
+                                <div class="group h-16 text-center cursor-default">
+                                    <a href=""class="cursor-default"></a>
+                                    <div class="text-white">
+                                        charles.wj.yee@gmail.com
+                                    </div>
+                                    <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
                                 </div>
-                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div> -->
+                                <!-- Item 3 -->
+                                <!-- <div class="group h-16 text-center cursor-default">
+                                    <a href="" class="cursor-default"></a>
+                                    <div class="text-white">
+                                        123 Any Street
+                                        <br>
+                                        Boston, MA 00000
+                                    </div>
+                                    <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                                </div> -->
+                                
+                            </div>
+                            <!-- Contact Form Button -->
+                            <div class="mx-auto">
+                                <button id="footer-contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500 contact-btns">Contact Form</button>
+                            </div>
                             
                         </div>
-                        <!-- Contact Form Button -->
-                        <div class="mx-auto">
-                            <button id="footer-contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500 contact-btns">Contact Form</button>
-                        </div>
-                        
-                    </div>
-                    <!-- Social & Copy Container -->
-                    <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
-                        <!-- icons Container -->
-                        <div class="flex items-center justify-center mx-auto space-x-8 xl:space-x-12 md:justify-end">
-                            <!-- Icon 1 -->
-                            <div class="group h-8 mb-4">
-                                <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
-                                    <img src="./images/linkedin-128.gif" alt="" class="h-12 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div>
-                            <!-- Icon 2 -->
-                            <div class="group h-8">
-                                <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
-                                    <img src="./images/toptal.png" alt="" class="h-12 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div>
-                            <!-- Icon 3 -->
-                            <!-- <div class="group h-8 mb-4">
-                                <a target="_blank" href="https://github.com/CharlesWJYee">
-                                    <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div> -->
-                            
-                            <!-- Icon 4 -->
-                            <!-- <div class="group h-8">
-                                <a target="_blank" href="#">
-                                    <img src="" alt="" class="h-6 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div> -->
-                        </div>
-        
-                        <!-- Copyright -->
-                        <div class="font-bold text-center px-3">
-                            Charles Yee &copy; 2022
-                            <br>
-                            All Rights Reserved
-                            <br>
-                            <div class="group h-16 text-center cursor-pointer">
-                                <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built & powered by
-                                    <br>
-                                    summit web creations
-                                </a>
-                                <div class="mx-8 group-hover:border-b group-hover:border-blue-50"></div>
+                        <!-- Social & Copy Container -->
+                        <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
+                            <!-- icons Container -->
+                            <div class="flex items-center justify-center mx-auto space-x-8 xl:space-x-12 md:justify-end">
+                                <!-- Icon 1 -->
+                                <div class="group h-8 mb-4">
+                                    <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
+                                        <img src="./images/linkedin-128.gif" alt="" class="h-12 mb-2">
+                                    </a>
+                                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                                 </div>
+                                <!-- Icon 2 -->
+                                <div class="group h-8">
+                                    <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
+                                        <img src="./images/toptal.png" alt="" class="h-12 mb-2">
+                                    </a>
+                                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                                </div>
+                                <!-- Icon 3 -->
+                                <!-- <div class="group h-8 mb-4">
+                                    <a target="_blank" href="https://github.com/CharlesWJYee">
+                                        <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
+                                    </a>
+                                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                                </div> -->
+                                
+                                <!-- Icon 4 -->
+                                <!-- <div class="group h-8">
+                                    <a target="_blank" href="#">
+                                        <img src="" alt="" class="h-6 mb-2">
+                                    </a>
+                                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                                </div> -->
+                            </div>
+            
+                            <!-- Copyright -->
+                            <div class="font-bold text-center px-3">
+                                Charles Yee &copy; 2022
+                                <br>
+                                All Rights Reserved
+                                <br>
+                                <div class="group h-16 text-center cursor-pointer">
+                                    <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built & powered by
+                                        <br>
+                                        summit web creations
+                                    </a>
+                                    <div class="mx-8 group-hover:border-b group-hover:border-blue-50"></div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer> <!-- End Footer -->
-
+            </footer> <!-- End Footer -->
     <!-- Contact From -->
     <div class="hidden absolute z-50" id="contact-form-wrapper"> <!-- hidden -->
         <div class="relative">
@@ -366,11 +470,24 @@
                         </button>
                     </div> <!-- End Close Button -->
 
+                    <!-- Calendly Link -->
+                    <div class="mt-8 mb-12 w-f">
+                        <a id="appointment" class="w-full px-8 py-5 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500" target="_blank" href="https://calendly.com/charles-wj-yee">
+                            Book an Appointment with Charles
+                        </a>
+                    </div>
+                    
+                    <div class="text-white mx-auto font-bold">
+                        or send a message
+                    </div>
+
                     <!-- Contact Form Insert, Hidden until clicked -->
                     <div>      
                         <span id="contact-dots"></span>
                         <div id="" class="h-auto w-96 mx-auto my-auto px-auto z-20">
                             <form id="contact-form" class="px-10 pb-4 space-y-4">
+                                
+
                                 <!-- Honeypot for spambots -->
                                 <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see"
                                     tabindex="-1" autocomplete="off">
@@ -388,7 +505,7 @@
                                     id="subject" type="text" placeholder="Subject" required>
                                 <br>
                                 <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
-                                    placeholder="Your message" name="Message" id="message" cols="40" rows="8"
+                                    placeholder="Your message" name="Message" id="message" cols="40" rows="5"
                                     required></textarea>
                                 <button id="submitBtn"
                                     class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500">Submit</button>
