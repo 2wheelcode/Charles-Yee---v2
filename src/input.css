@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.background-image{
+.background-image {
+
     position: absolute;
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     display: block;
     height: 100%;
 }
+
+.background-image img, .simpleParallax  {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
 .background-image + div {
    position: relative;
     top:0;

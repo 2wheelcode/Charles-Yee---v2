@@ -41,7 +41,8 @@ new simpleParallax(parallaxRight, {
 });
 let parallaxUp = document.getElementsByClassName('parallax-up');
 new simpleParallax(parallaxUp, {
-    orientation: 'up'
+    orientation: 'up',
+    scale: 1.5
 });
 
 // function submitForm1() {
