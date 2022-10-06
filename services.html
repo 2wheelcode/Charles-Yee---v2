@@ -81,16 +81,15 @@
                     <a href="about.html" class="hover:text-blue-600">About</a>
                     <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
                 </div>
-
-                <!-- Hero Statement -->
-                <div id="hero-statement" class=" mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:text-4xl">
-                    services
-                </div>
             </nav>
-
+<!-- Services Title -->
+<!-- Hero Statement -->
+    <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata font-bold text-center text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-4xl">
+        services
+    </div>
 <!-- Services Description Section -->
             <div class="block font-alata text-white px-12 mb-12 mx-auto max-w-4xl">
-                <p class=" text-2xl py-12 px-24">
+                <p class="py-6 text-2xl md:py-12 md:px-24">
                     Charles Yee’s expertise is machine learning and backend development, with a strong emphasis on the healthcare industry. Throughout his career, he has proven to excel in the following responsibilities:
                     <br>
                     <ul class="list-disc text-xl">
@@ -113,7 +112,7 @@
                         <br>
                     </ul>
                 </p>
-                <p class=" text-2xl py-12 px-24">
+                <p class="py-6 text-2xl md:py-12 md:px-24">
                     Charles has worked in Fortune 100 and startup companies in the healthcare industry, they include:
                     <br>
                     <ul class="list-disc text-xl">
@@ -139,13 +138,13 @@
 <!-- Recommendations Section -->
 <!-- @todo Format with thumbnail image and title similar to LinkedIn -->
     <!-- Hero Statement -->
-    <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-center text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
+    <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata font-bold text-center text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-4xl">
         Recommendations
     </div>
 
-    <div class="grid lg:grid-cols-2 gap-y-12 gap-x-16 font-alata text-white p-8 lg:p-32">
+    <div class="grid lg:grid-cols-2 gap-y-12 md:-gap-y-12 gap-x-16 font-alata text-white p-8 lg:p-32">
         <!-- First Recommendation -->
-        <div class="flex space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
+        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
                 <!-- Recommend Photo -->
                 <div class="flex flex-col mr-3 space-y-2">
                     <img class="h-12 w-12 mb-4 rounded-full" src="./images/ze-jiang.jpeg" alt="">
@@ -180,44 +179,41 @@
         <div class=""></div>
 
         <!-- Second Recommendation -->
-        <!-- Shift Right div -->
-        <div class="pl-12">
-            <div class="flex space-x-2 text-right max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
-                <!-- Title & Recommendation -->
-                <div class="flex-1">
-                    <span class="text-2xl capitalize font-bold">
-                        Gil Blander
-                        <br>
-                        CSO at Insidetracker
-                    </span>
-                    <br>
-                    <br>
-                    <span class="font-normal">
-                        Charles worked as a part-time data science consultant for Insidetracker over the course of 10 months. We are looking to expand our nutrition and fitness recommendation capabilities by using big data and giving evidence-based recommendations that we can show to our users in real-time.
-                        <br>
-                        <br>
-                        Charles helped build various proofs of concepts with that purpose in mind. He was able to demonstrate various correlations and anomalies in the data, and how we could model these discoveries to give our users tips that positively impact their wellbeing.
-                        <br>
-                        <br>
-                        <span class="text-xl font-bold italic text-white">Charles comes with lots of domain expertise in personalized nutrition, as well as the ability to demonstrate points through hands-on coding and statistical modeling.</span> 
-                        <br>
-                        <br>
-                        It was a pleasure working with him.                    
-                    </span>
-                </div>
-                <!-- Recommend Photo -->
-                <div class="flex flex-col mx-auto space-y-2">
-                    <img class="h-12 w-12 mx-auto rounded-full" src="./images/gil-blander.jpeg" alt="">
-                    <img src="./images/inside-logo.png" alt="" class="w-14 h-auto">
-                </div>
-            </div>
-        </div>
-
-        <!-- Third Recommendation -->
-        <div class="flex space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl">
+        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
             <!-- Recommend Photo -->
-            <div class="flex flex-col mx-auto space-y-2">
-                <img class="h-12 w-12 mx-auto rounded-full" src="./images/rohit.jpeg" alt="">
+            <div class="flex flex-col mr-3 space-y-2">
+                <img class="h-12 w-12 mb-4 rounded-full" src="./images/gil-blander.jpeg" alt="">
+                <img src="./images/inside-logo.png" alt="" class="w-14 h-auto mb-2 mr-2">
+            </div>
+            <!-- Title & Recommendation -->
+            <div class="flex-1">
+                <span class="text-2xl capitalize font-bold">
+                    Gil Blander
+                    <br>
+                    CSO at Insidetracker
+                </span>
+                <br>
+                <br>
+                <span class="font-normal">
+                    Charles worked as a part-time data science consultant for Insidetracker over the course of 10 months. We are looking to expand our nutrition and fitness recommendation capabilities by using big data and giving evidence-based recommendations that we can show to our users in real-time.
+                    <br>
+                    <br>
+                    Charles helped build various proofs of concepts with that purpose in mind. He was able to demonstrate various correlations and anomalies in the data, and how we could model these discoveries to give our users tips that positively impact their wellbeing.
+                    <br>
+                    <br>
+                    <span class="text-xl font-bold italic text-white">Charles comes with lots of domain expertise in personalized nutrition, as well as the ability to demonstrate points through hands-on coding and statistical modeling.</span> 
+                    <br>
+                    <br>
+                    It was a pleasure working with him.                    
+                </span>
+            </div>
+        </div> <!-- End 2nd -->
+
+        <!-- Third Recommendation -->      
+        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
+            <!-- Recommend Photo -->
+            <div class="flex flex-col mr-3 space-y-2">
+                <img class="h-12 w-12 mb-4 rounded-full" src="./images/rohit.jpeg" alt="">
                 <img src="./images/google-logo.png" alt="" class="w-16">
             </div>
             <div class="flex-1">
@@ -246,9 +242,12 @@
         <div class=""></div>
 
         <!-- Fourth Recommendation -->
-        <!-- Shift Right div -->
-        <div class="text-right pl-12">
-        <div class="flex space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
+        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
+            <!-- Recommend Photo -->
+            <div class="flex flex-col mr-3 space-y-2">
+                <img class="h-12 w-12 mb-4 rounded-full" src="./images/agniva-b.jpeg" alt="">
+                <img src="./images/hypatos.png" alt="" class="w-12">
+            </div>
             <!-- Title & Recommendation -->
             <div class="flex-1">
                 <span class="text-2xl capitalize font-bold">
@@ -277,25 +276,20 @@
                     I believe Charles would be an asset to any organization, and I can recommend him without a moment's hesitation.             
                 </span>
             </div>
-            <!-- Recommend Photo -->
-            <div class="flex flex-col space-y-2">
-                <img class="h-12 w-12 mx-auto mb-3 rounded-full" src="./images/agniva-b.jpeg" alt="">
-                <img src="./images/hypatos.png" alt="" class="w-12">
-            </div>
-        </div>
-        </div>
+        </div> <!-- End 4th -->
 
         <!-- Spacer div's -->
         <div class=""></div>
         <div class=""></div>
 
         <!-- Fifth Recommendation -->
-        <div class="flex space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
+        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
             <!-- Recommend Photo -->
-            <div class="flex flex-col space-y-2">
-                <img class="h-12 w-12 mx-auto rounded-full" src="./images/bowei-wei.jpeg" alt="">
+            <div class="flex flex-col mr-3 space-y-2">
+                <img class="h-12 w-12 mb-4 rounded-full" src="./images/bowei-wei.jpeg" alt="">
                 <img src="./images/spd-bank.png" alt="" class="w-14">
             </div>
+            
             <div class="flex-1">
                 <span class="text-2xl capitalize font-bold">
                     Bowei Wei
@@ -319,9 +313,12 @@
         <div class=""></div>
 
         <!-- Sixth Recommendation -->
-        <!-- Shift Right div -->
-        <div class="pl-12">
-        <div class="flex space-x-2 text-right max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
+        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
+            <!-- Recommend Photo -->
+            <div class="flex flex-col mr-3 space-y-2">
+                <img class="h-12 w-12 mb-4 rounded-full" src="./images/julien-soloman.jpeg" alt="">
+                <img src="./images/picnic-logo.png" alt="" class="w-12">
+            </div>
             <!-- Title & Recommendation -->
             <div class="flex-1">
                 <span class="text-2xl capitalize font-bold">
@@ -341,23 +338,17 @@
                     Anyone would be lucky to have Charles as a manager, a person that is both motivating and fun, both professional and friendly, making it a pleasure not only to work for him, but also to get to know him.                 
                 </span>
             </div>
-            <!-- Recommend Photo -->
-            <div class="flex flex-col space-y-2">
-                <img class="h-12 w-12 mx-auto rounded-full" src="./images/julien-soloman.jpeg" alt="">
-                <img src="./images/picnic-logo.png" alt="" class="w-12">
-            </div>
-        </div>
-        </div>
+        </div> <!-- End 6th -->
 
         <!-- Spacer div's -->
         <div class=""></div>
         <div class=""></div>
 
         <!-- Seventh Recommendation -->
-        <div class="flex space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
+        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent shadow-neutral-100 shadow-2xl ">
             <!-- Recommend Photo -->
-            <div class="flex flex-col space-y-2">
-                <img class="h-12 w-12 mx-auto rounded-full" src="./images/joseph-qin.jpeg" alt="">
+            <div class="flex flex-col mr-3 space-y-2">
+                <img class="h-12 w-12 mb-4 rounded-full" src="./images/joseph-qin.jpeg" alt="">
                 <img src="./images/vuforia-logo.png" alt="" class="w-12">
             </div>
             <div class="flex-1">
