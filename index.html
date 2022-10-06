@@ -3,215 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Charles Yee
     NLP, Machine Learning
     Backend Consulting
     Leader in Machine Learning/Deep Neural Networks for Natural Language Processing. Specialized in Healthcare Industry">
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/FavIcon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/FavIcon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/FavIcon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+          rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
     <script src="./js/script.js" defer></script>
     <title>Charles Yee</title>
 </head>
 <body>
-    
-    <!-- Header Section -->
-    <!-- @todo Make Read More/Read Less Button Transition smoothly -->
-    <section id="hero" class="h-fit w-screen bg-fixed z-0">
-        <div class="h-fit bg-black bg-opacity-60"> <!-- Gradient Overlay -->
-        
-            <!-- Navigation -->
-            <!-- Desktop Menu - Hidden to replace with burger on mobile -->
-            <nav class="mx-auto px-6 py-2 screen-full">
-                <!-- Menu/Logo Container -->
-                <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
-                    <!-- Logo -->
-                    <img src="./images/logo-transparent.png" class="w-24 h-24" alt="Charles' Logo">
 
-                    <!-- Desktop Menu - Hidden to replace with burger on mobile -->
-                    <div class="hidden h-10 font-alata md:flex md:space-x-6">
-                        <!-- Menu Item 1 -->
-                        <div class="group">
-                            <a href="services.html">Services</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
+<!-- Header Section -->
+<!-- @todo Insert Logo -->
+<!-- @todo Make Read More/Read Less Button Transition smoothly -->
+<section id="hero" class="h-fit w-screen bg-fixed z-0">
+    <div class="background-image">
+        <img src="./images/bg-option-1.jpg" class="parallax-up"/>
+    </div>
+    <div class="h-fit bg-black bg-opacity-60"> <!-- Gradient Overlay -->
+
+        <!-- Navigation -->
+        <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+        <nav class="mx-auto px-6 py-2 screen-full">
+            <!-- Menu/Logo Container -->
+            <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
+                <!-- Logo -->
+                <img src="./images/logo-transparent.png" class="w-24 h-24" alt="Charles' Logo">
+
+                <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-6">
+                    <!-- Menu Item 1 -->
+                    <div class="group">
                         <!-- Menu Item 2 -->
-                        <div class="group">
-                            <a href="projects.html">Projects</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
-                        <!-- Menu Item 3 -->
-                        <div class="group">
-                            <a href="patents.html">Publications</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
-                        <!-- Menu Item 4 -->
-                        <div class="group">
-                            <a href="about.html">About</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
-                        </div>
-                        <!-- Menu Item 5 -->
-                        <div class="group">
-                            <a class="contact-btns" href="javascript:void(0)">Contact</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
+                        <a href="services.html">Services</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
-                    <!-- Hamburger Button -->
-                    <div class="md:hidden">
-                        <button
-                        id="menu-btn"
-                        type="button"
-                        class="z-40 block hamburger lg:hidden focus:ouline-none">
-                            <span class="hamburger-top"></span>
-                            <span class="hamburger-middle"></span>
-                            <span class="hamburger-bottom"></span>
-                        </button>
+                    <!-- Menu Item 3 -->
+                    <div class="group">
+                        <a href="projects.html">Projects</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
-                </nav>
-                
-                <!-- Mobile Menu -->
-                <div
-                    id="menu"
-                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
-                    <a href="" class="text-blue-600 underline">Home</a>
-                    <a href="services.html" class="hover:text-blue-600">Services</a>
-                    <a href="projects.html" class="hover:text-blue-600">Projects</a>
-                    <a href="patents.html" class="hover:text-blue-600">Publications</a>
-                    <a href="about.html" class="hover:text-blue-600">About</a>
-                    <a href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
-                    
-                    <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
+                    <!-- Menu Item 4 -->
+                    <div class="group">
+                        <a href="patents.html">Publications</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <!-- Menu Item 5 -->
+                    <div class="group">
+                        <a href="about.html">About</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                    </div>
+                    <!-- Menu Item 6 -->
+                    <div class="group">
+                        <a class="contact-btns" href="javascript:void(0)">Contact</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
                 </div>
-
-                <!-- Hero Statement -->
-                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
-                    In any project- there is Time, Quality, and Cost- You can have two, but not all three…
+                <!-- Hamburger Button -->
+                <div class="md:hidden">
+                    <button
+                            id="menu-btn"
+                            type="button"
+                            class="z-40 block hamburger lg:hidden focus:ouline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
                 </div>
             </nav>
 
-            <!-- Hero and Title section -->
-            <div class="mx-auto">
-                <div class="flex flex-col lg:flex-row lg:px-6">
-                    <!-- Image Container -->
-                    <div class="mx-auto my-auto md:shrink-0">
-                        <img class="w-72 rounded-full object-cover lg:w-96" src="./images/charles-hero-square.jpg" alt="Photo of Charles Yee">
-                    </div>
-                    <!-- Title & Headline Section -->
-                    <div id="title" class="mx-auto px-10 py-8 md:max-w-3xl md:py-0">
-                        <p class="font-alata font-extrabold text-3xl mt-4 text-slate-100">Charles Yee</p>
-                        <p class="mt-2 text-xl text-slate-100">
-                            Leader in Machine Learning/Deep Neural Networks for Natural Language Processing.
-                            <br>
-                            Specialized in Healthcare Industry.
-                            <br>
-                            <br>
-                        </p>
-                        <div class="text-lg mt-2 text-slate-100">
-                            Is your software team struggling to deliver projects on time? Too many bugs?
+            <!-- Mobile Menu -->
+            <div
+                    id="menu"
+                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
+                <a href="" class="text-blue-600 underline">Home</a>
+                <a href="services.html" class="hover:text-blue-600">Services</a>
+                <a href="projects.html" class="hover:text-blue-600">Projects</a>
+                <a href="patents.html" class="hover:text-blue-600">Publications</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
 
-                            Do you have problematic stakeholders on your team, anti-patterns in your backend, or poorly documented code that you would like to scale up, but could not?
-                            <br>
-                            <br>
-                            Would you like to pivot your business by using insights from big data?
-                            <br>
-                            Do you want to apply machine learning to automate manual components in your workflow, but don’t know how?
+                <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
+            </div>
+
+            <!-- Hero Statement -->
+            <div id="hero-statement"
+                 class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
+                In any project- there is Time, Quality, and Cost- You can have two, but not all three…
+            </div>
+            <!-- Subscription Sign Up Currently Not In Use -->
+            <!-- <div id="sub-form" class="flex flex-col mt-5 md:justify-end">
+                <form name="submit-to-google-sheet" action="" method="post" class="flex flex-col mt-5 space-y-4 md:justify-end md:flex-row md:space-y-0">
+                <input type="email" name="Email" placeholder="Subscribe to Charles' Blog" class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none hover:cursor-pointer">
+                <button class="px-5 py-3 text-xs text-white bg-black border border-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Subscribe</button>
+            </form>
+                <div id="sub-msg" class="text-white text-sm font-alata text-right"></div>
+            </div> --> <!-- End sub-form -->
+        </nav>
+
+        <!-- Hero and Title section -->
+        <div class="mx-auto">
+            <div class="flex flex-col lg:flex-row lg:px-6">
+                <!-- Image Container -->
+                <div class="mx-auto my-auto md:shrink-0">
+                    <img class="w-72 rounded-full object-cover lg:w-96" src="./images/charles-hero-square.jpg"
+                         alt="Photo of Charles Yee">
+                </div>
+                <!-- Title & Headline Section -->
+                <div id="title" class="mx-auto px-10 py-8 md:max-w-3xl md:py-0">
+                    <p class="font-alata font-extrabold text-3xl mt-4 text-slate-100">Charles Yee</p>
+                    <p class="mt-2 text-xl text-slate-100">
+                        Leader in Machine Learning/Deep Neural Networks for Natural Language Processing.
+                        <br/>
+                        Specialized in Healthcare Industry.
+                        <br/>
+                        <br/>
+                        <!-- Principal Scientist at AstraZeneca<br>
+                        University of Stuttgart <br>
+                        Boston, Massachusetts, United States. -->
+                    </p>
+                    <div class="text-lg mt-2 text-slate-100">
+                        Is your software team struggling to deliver projects on time? Too many bugs?
+
+                        Do you have problematic stakeholders on your team, anti-patterns in your backend, or poorly
+                        documented code that you would like to scale up, but could not?
+                        <br/>
+                        <br/>
+                        Would you like to pivot your business by using insights from big data?
+                        <br/>
+                        Do you want to apply machine learning to automate manual components in your workflow, but don’t
+                        know how?
                         <span id="header-dots"></span>
                         <!-- Learn How Read More/Read Less -->
                         <span class="hidden" id="header-more">
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
                             Entrepreneurs, startups, and Fortune 500 corporations come to me to help transform their data science and backend infrastructure from a frustrating mess, or low-tech prototype, into a state-of-the-art, well-oiled machine that delivers value to customers. I have a track record of solving challenging technology and product problems for my clients, increasing their revenue, mitigating risks, and significantly reducing costs. 
 
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
                             Well acclimated to large corporate culture. Nevertheless, full track record of entrepreneurship initiatives.
                         </span>
-                        <br>
-                        <br>
-                        </p>
-                        <button onclick="headerFunction()" id="headerBtn" class="px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Read More...</button>
+                        <br/>
+                        <br/>
+                        <button onclick="headerFunction()" id="headerBtn"
+                                class="px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">
+                            Read More...
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-    </section> <!-- End of Header Section -->
+    </div>
+</section> <!-- End of Header Section -->
 
 
-    <!-- Principle Why's -->
-    <!-- @Charles Approval: Added a linear gradient overlay to smooth transition -->
-    <!-- @todo as per Charles, less brown, more beige bg-gradient -->
-    <section id="why-work-with-charles" class="font-alata text-white grid grid-cols-1 divide-y divide-x lg:grid-cols-2  bg-gray-300 bg-center bg-cover bg-no-repeat" style="background-image:linear-gradient(rgba(139,69,19,.6), rgba(139,69,19,.9), rgba(139,69,19,.6)), url(./images/alt-image-inverted.png);"> 
-        <div id="leader" class="px-12 py-8 lg:p-24">
-            <!-- Icon -->
-            <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat" style="background-image: url(./images/logo-transparent.png)">
-            </div>
-            <!-- Leader -->
-            <h2 class="text-3xl uppercase font-bold">Leader In Healthcare Tech</h2>
-            <br>
-            <p class="text-xl">
-                Deep Neural Network, Backend engineering in Natural Language Programming applications:
-                <br>
-                <br>
-                <ul class="list-disc">
-                    <li>Domain expertise in healthcare, insurance, provider, oncology, personalized nutrition</li>
-                    <li>Hands-on work with Python and Tensorflow</li>
-                    <li>Technical leadership, team management, mentorship</li>
-                    <!-- <a href="#" class="text-blue-500 underline">The Why is obvious with these 4 major points</a> -->
-                </ul>
-                 
-                <br>
-                
-             </p>
+<!-- Principle Why's -->
+<!-- @Charles Approval: Added a linear gradient overlay to smooth transition -->
+<!-- @todo as per Charles, less brown, more beige bg-gradient -->
+<section id="why-work-with-charles"
+         class="font-alata text-white grid grid-cols-1 divide-y divide-x lg:grid-cols-2  bg-gray-300 bg-center bg-cover bg-no-repeat"
+         style="background-image:linear-gradient(rgba(139,69,19,.6), rgba(139,69,19,.9), rgba(139,69,19,.6)), url(./images/alt-image-inverted.png);">
+    <div id="leader" class="px-12 py-8 lg:p-24">
+        <!-- Icon -->
+        <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat"
+             style="background-image: url(./images/logo-transparent.png)">
         </div>
-        <div id="services" class="px-12 py-8 lg:p-24 text-white">
-            <!-- Icon -->
-            <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat" style="background-image: url(./images/services-white.png)">
-            </div>
-            <!-- Services -->
-            <h2 class="text-3xl uppercase font-bold">Services</h2>
-            <br>
-            <p class="text-xl">
-                Charles' expertise is machine learning and backend development, with a strong emphasis on the healthcare industry. Throughout his career, he has proven to excel in the following responsibilities:
-            <br>
-            <br>
-                <ul class="list-disc">
-                    <li>Hands-on, backend software development/troubleshooting </li>
-                    <li>Technical audit, particularly for startup acquisition, pharmacovigilance, and regulatory</li>
-                    <li>Machine learning, AI, data science. Building deep neural network models using structured and unstructured data</li>
-                    <a href="services.html" class="text-blue-500 underline">Services</a>
-                </ul>
-                </p>
-        </div>
+        <!-- Leader -->
+        <h2 class="text-3xl uppercase font-bold">Leader In Healthcare Tech</h2>
+        <br/>
+        <p class="text-xl">
+            Deep Neural Network, Backend engineering in Natural Language Programming applications:
+            <br/>
+            <br/>
+        <ul class="list-disc">
+            <li>Domain expertise in healthcare, insurance, provider, oncology, personalized nutrition</li>
+            <li>Hands-on work with Python and Tensorflow</li>
+            <li>Technical leadership, team management, mentorship</li>
+            <!-- <a href="#" class="text-blue-500 underline">The Why is obvious with these 4 major points</a> -->
+        </ul>
 
-    </section> <!-- End Principle Why Section -->
+        <br/>
 
-    <!-- Credentials Section -->
-    <!-- @todo Add bg-slide parallax while scrolling having trouble figuring this out -->
-    <!-- @todo 4 Subsections should be: 1 Patents 2 Publications 3 Projects 4 Education -->
-    <section id="credentials" class="text-white font-alata text-xl p-8 lg:p-24 z-0 relative bg-fixed bg-center bg-cover bg-no-repeat" style="background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./images/presentation-2.jpg)">
-        <div class="bg-white/20 mb-12">
-            <h2 class="font-alata font-bold uppercase text-4xl text-white shadow-zinc-400 text-center py-12">credentials</h2>
+        </p>
+    </div>
+    <div id="services" class="px-12 py-8 lg:p-24 text-white">
+        <!-- Icon -->
+        <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat"
+             style="background-image: url(./images/services-white.png)">
         </div>
-        
-        <div id="boxes" class="grid lg:grid-cols-2 md:grid-cols-1 gap-12">
-        
-            <!-- Patents Container 1st -->
-            <div id="patents" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
-                <a href="patents.html">
-                    <span class="text-2xl uppercase font-bold">patents</span>
-                    <br>
-                    <span class="font-normal">
-                        <br>
+        <!-- Services -->
+        <h2 class="text-3xl uppercase font-bold">Services</h2>
+        <br/>
+        <p class="text-xl">
+            Charles' expertise is machine learning and backend development, with a strong emphasis on the healthcare
+            industry. Throughout his career, he has proven to excel in the following responsibilities:
+            <br/>
+            <br/>
+        <ul class="list-disc">
+            <li>Hands-on, backend software development/troubleshooting</li>
+            <li>Technical audit, particularly for startup acquisition, pharmacovigilance, and regulatory</li>
+            <li>Machine learning, AI, data science. Building deep neural network models using structured and
+                unstructured data
+            </li>
+            <a href="services.html" class="text-blue-500 underline">Services</a>
+        </ul>
+        </p>
+    </div>
+
+</section> <!-- End Principle Why Section -->
+
+<!-- Credentials Section -->
+<!-- @todo Add bg-slide parallax while scrolling having trouble figuring this out -->
+<!-- @todo 4 Subsections should be: 1 Patents 2 Publications 3 Projects 4 Education -->
+<section id="credentials"
+         class="text-white font-alata text-xl p-8 lg:p-24 z-0 relative bg-fixed bg-center bg-cover bg-no-repeat"
+         style="background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./images/presentation-2.jpg)">
+    <img src="./images/presentation-2.jpg" class="parallax-right">
+    <div class="bg-white/20 mb-12">
+        <h2 class="font-alata font-bold uppercase text-4xl text-white shadow-zinc-400 text-center py-12">
+            credentials</h2>
+    </div>
+
+    <div id="boxes" class="grid lg:grid-cols-2 md:grid-cols-1 gap-12">
+        <!-- Projects Container -->
+        <!-- Patents Container -->
+        <div id="patents" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
+            <a href="patents.html">
+                <span class="text-2xl uppercase font-bold">patents</span>
+                <br/>
+                <span class="font-normal">
+                        <br/>
                         <ul class="list-disc">
                             <li>Method & System for Cancer Stage Annotation Within a Medical Text
-                                <br>
+                                <br/>
                                 US PCT/EP2019/072816
                             </li>
                             <br>
@@ -230,14 +265,14 @@
                             </li>
                         </ul>
                     </span>
-                </a>
-            </div>
-            <!-- Publications Container 2nd -->
-            <div id="publications" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
-                <a href="patents.html">
-                    <span class="text-2xl uppercase font-bold">publications</span>
-                    <br>
-                    <span class="font-normal">
+            </a>
+        </div>
+        <!-- Recommendations Container -->
+        <div id="publications" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
+            <a href="patents.html">
+                <span class="text-2xl uppercase font-bold">publications</span>
+                <br>
+                <span class="font-normal">
                             <br>
                             <ul class="list-disc font-bold">
                                 <li>
@@ -268,14 +303,14 @@
                                 </li>
                             </ul>
                     </span>
-                </a>
-            </div>
-            <!-- Projects Container 3rd -->
-            <div id="projects"  class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
-                <a href="projects.html">
-                    <span class="text-2xl uppercase font-bold">projects</span>
-                    <br>
-                    <span class="font-normal">
+            </a>
+        </div>
+        <!-- Projects Container 3rd -->
+        <div id="projects" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
+            <a href="projects.html">
+                <span class="text-2xl uppercase font-bold">projects</span>
+                <br>
+                <span class="font-normal">
                         <br>
                         <ul class="list-disc">
                             <li>Manufacturing Lot-Based Analysis to Detect Adverse Event Signals</li>
@@ -289,18 +324,18 @@
                             <li>A Method and Apparatus for Genome Spelling Correction and Acronym Standardization</li>
                         </ul>
                     </span>
-                </a>
-            </div>
-            <!-- Education Container 4th -->
-            <div id="education" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
-                <a href="">
-                    <span class="text-2xl uppercase font-bold">education</span>
-                    <br>
-                    <span class="font-normal"> 
-                        <br>
+            </a>
+        </div>
+        <!-- Education Container -->
+        <div id="education" class="bg-white/20 text-xl p-6 shadow-2xl lg:p-20">
+            <a href="">
+                <span class="text-2xl uppercase font-bold">education</span>
+                <br/>
+                <span class="font-normal">
+                        <br/>
                         <ul class="list-disc">
                             <li>Ph.D. Computational Linguistics, NLP
-                                <br>
+                                <br/>
                                 University of Stuttgart
                             </li>
                             <br>
@@ -315,439 +350,499 @@
                             </li>
                         </ul>
                     </span>
-                </a>
-            </div>
+            </a>
         </div>
-    </section> <!-- End Credentials Section -->
+    </div>
+</section> <!-- End Credentials Section -->
 
-    <!-- Recommendations Section -->
-    <section id="recommendations" class="bg-black h-fit px-8">
-        <h2 class="font-alata uppercase text-4xl font-bold text-slate-100 text-center pt-24" >recommendations</h2>
+<!-- Recommendations Section -->
+<section id="recommendations" class="bg-black h-fit px-8 overflow-x-hidden">
+    <h2 class="font-alata uppercase text-4xl font-bold text-slate-100 text-center pt-24">recommendations</h2>
 
-            <div id="default-carousel duration-5000 ease-in-out" class="relative py-16 lg:px-32" data-carousel="slide">
-                <!-- Carousel wrapper -->
-                <div class="font-alata overflow-hidden relative h-48 rounded-lg md:h-96">
-                    <!-- Item 1 -->
-                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700" data-carousel-item="active">
-                        <a href="recommendations.html">
-                            <!-- Recommend Data -->
-                            <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
-                                <div class="flex">
-                                    <!-- Recommend Photo -->
-                                <div class="flex flex-col mr-3 space-y-2">
-                                    <img class="h-12 w-12 mb-4 rounded-full" src="./images/ze-jiang.jpeg" alt="">
-                                    <img src="./images/iquartic-logo.png" alt="" class="h-auto w-14">
-                                </div>
-                                <div class="flex-1 text-xl font-bold  lg:text-4xl">
-                                    Ze Jiang 
-                                    <br>
-                                    <span class="text-lg lg:text-2xl">
+    <div id="default-carousel duration-5000 ease-in-out" class="relative py-16 lg:px-32" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="font-alata overflow-hidden relative h-48 rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700"
+                 data-carousel-item="active">
+                <a href="recommendations.html">
+                    <!-- Recommend Data -->
+                    <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex">
+                            <!-- Recommend Photo -->
+                            <div class="flex flex-col mr-3 space-y-2">
+                                <img class="h-12 w-12 mb-4 rounded-full" src="./images/ze-jiang.jpeg" alt="">
+                                <img src="./images/iquartic-logo.png" alt="" class="h-auto w-14">
+                            </div>
+                            <div class="flex-1 text-xl font-bold  lg:text-4xl">
+                                Ze Jiang
+                                <br>
+                                <span class="text-lg lg:text-2xl">
                                         CEO at iQuartic
                                     </span>
-                                    <span class="hidden font-normal md:text-md md:flex lg:text-lg">
+                                <span class="hidden font-normal md:text-md md:flex lg:text-lg">
                                         <br>
                                         Charles is dedicated and highly competent in his field; he is beloved by his team; he excelled at product ownership through his interactions with our customers.
                                     </span>
-                                </div>
-                                </div>
-                            </div>                        
-                        </a>   
+                            </div>
+                        </div>
                     </div>
-                    <!-- Item 2 -->
-                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700" data-carousel-item="active">
-                        <a href="recommendations.html">
-                            <!-- Recommend Data -->
-                            <div class="absolute top-1/2 mr-3 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
-                                <div class="flex">
-                                    <!-- Recommend Photo -->
-                                <div class="flex flex-col mx-auto space-y-2">
-                                    <img class="h-12 w-12 mx-auto rounded-full" src="./images/gil-blander.jpeg" alt="">
-                                    <img src="./images/inside-logo.png" alt="" class="h-14">
-                                </div>
-                                <div class="flex-1 text-xl font-bold  lg:text-4xl">
-                                    Gil Blander 
-                                    <br>
-                                    <span class="text-lg lg:text-2xl">
+                </a>
+            </div>
+            <!-- Item 2 -->
+            <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700"
+                 data-carousel-item="active">
+                <a href="recommendations.html">
+                    <!-- Recommend Data -->
+                    <div class="absolute top-1/2 mr-3 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex">
+                            <!-- Recommend Photo -->
+                            <div class="flex flex-col mx-auto space-y-2">
+                                <img class="h-12 w-12 mx-auto rounded-full" src="./images/gil-blander.jpeg" alt="">
+                                <img src="./images/inside-logo.png" alt="" class="h-14">
+                            </div>
+                            <div class="flex-1 text-xl font-bold  lg:text-4xl">
+                                Gil Blander
+                                <br>
+                                <span class="text-lg lg:text-2xl">
                                         CSO at Insidetracker  
                                     </span>
-                                    <span class="hidden font-normal md:text-md md:flex lg:text-lg">
+                                <span class="hidden font-normal md:text-md md:flex lg:text-lg">
                                         <br>
                                         Charles comes with lots of domain expertise in personalized nutrition, as well as the ability to demonstrate points through hands-on coding and statistical modeling.
                                     </span>
-                                </div>
-                                </div>
-                            </div>                        
-                        </a>   
+                            </div>
+                        </div>
                     </div>
-                    <!-- Item 3 -->
-                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700" data-carousel-item="active">
-                        <a href="recommendations.html">
-                            <!-- Recommend Data -->
-                            <div class="absolute top-1/2 mr-3 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
-                                <div class="flex">
-                                    <!-- Recommend Photo -->
-                                <div class="flex flex-col mx-auto space-y-2">
-                                    <img class="h-12 w-12 mx-auto rounded-full" src="./images/rohit.jpeg" alt="">
-                                    <img src="./images/google-logo.png" alt="" class="w-16">
-                                </div>
-                                <div class="flex-1 text-xl font-bold  lg:text-4xl">
-                                    Rohit Patwa 
-                                    <br>
-                                    <span class="text-lg lg:text-2xl">
+                </a>
+            </div>
+            <!-- Item 3 -->
+            <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700"
+                 data-carousel-item="active">
+                <a href="recommendations.html">
+                    <!-- Recommend Data -->
+                    <div class="absolute top-1/2 mr-3 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex">
+                            <!-- Recommend Photo -->
+                            <div class="flex flex-col mx-auto space-y-2">
+                                <img class="h-12 w-12 mx-auto rounded-full" src="./images/rohit.jpeg" alt="">
+                                <img src="./images/google-logo.png" alt="" class="w-16">
+                            </div>
+                            <div class="flex-1 text-xl font-bold  lg:text-4xl">
+                                Rohit Patwa
+                                <br>
+                                <span class="text-lg lg:text-2xl">
                                         Software Engineer at Google  
                                     </span>
-                                    <span class="hidden font-normal md:text-md md:flex lg:text-lg">
+                                <span class="hidden font-normal md:text-md md:flex lg:text-lg">
                                         <br>
                                         Charles has an exceptional ability to communicate technical claims to non-technical audiences and served as a critical bridge between the research and operations teams.
                                     </span>
-                                </div>
-                                </div>
-                            </div>                        
-                        </a>   
+                            </div>
+                        </div>
                     </div>
-                    <!-- Item 4 -->
-                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700" data-carousel-item="active">
-                        <a href="recommendations.html">
-                            <!-- Recommend Data -->
-                            <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
-                                <div class="flex space-x-2">
-                                    <!-- Recommend Photo -->
-                                <div class="flex flex-col space-y-2">
-                                    <img class="h-12 w-12 mx-auto mb-3 rounded-full" src="./images/agniva-b.jpeg" alt="">
-                                    <img src="./images/hypatos.png" alt="" class="w-12">
-                                </div>
-                                <div class="flex-1 text-xl font-bold  lg:text-4xl">
-                                    Agniva Banerjee 
-                                    <br>
-                                    <span class="text-lg lg:text-2xl">
+                </a>
+            </div>
+            <!-- Item 4 -->
+            <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700"
+                 data-carousel-item="active">
+                <a href="recommendations.html">
+                    <!-- Recommend Data -->
+                    <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex space-x-2">
+                            <!-- Recommend Photo -->
+                            <div class="flex flex-col space-y-2">
+                                <img class="h-12 w-12 mx-auto mb-3 rounded-full" src="./images/agniva-b.jpeg" alt="">
+                                <img src="./images/hypatos.png" alt="" class="w-12">
+                            </div>
+                            <div class="flex-1 text-xl font-bold  lg:text-4xl">
+                                Agniva Banerjee
+                                <br>
+                                <span class="text-lg lg:text-2xl">
                                         Data Scientist at Hypatos 
                                     </span>
-                                    <span class="hidden font-normal md:text-md md:flex lg:text-lg">
+                                <span class="hidden font-normal md:text-md md:flex lg:text-lg">
                                         <br>
                                         Under Charles tutelage I had the freedom to look for creative solutions to repurpose and implement various state-of-the-art machine learning and deep-learning algorithms directly.
                                     </span>
-                                </div>
-                                </div>
-                            </div>                        
-                        </a>   
+                            </div>
+                        </div>
                     </div>
-                    <!-- Item 5 -->
-                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700" data-carousel-item="active">
-                        <a href="recommendations.html">
-                            <!-- Recommend Data -->
-                            <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
-                                <div class="flex space-x-2">
-                                    <!-- Recommend Photo -->
-                                <div class="flex flex-col space-y-2">
-                                    <img class="h-12 w-12 mx-auto rounded-full" src="./images/bowei-wei.jpeg" alt="">
-                                    <img src="./images/spd-bank.png" alt="" class="w-14">
-                                </div>
-                                <div class="flex-1 text-xl font-bold  lg:text-4xl">
-                                    Bowei Wei 
-                                    <br>
-                                    <span class="text-lg lg:text-2xl">
+                </a>
+            </div>
+            <!-- Item 5 -->
+            <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700"
+                 data-carousel-item="active">
+                <a href="recommendations.html">
+                    <!-- Recommend Data -->
+                    <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex space-x-2">
+                            <!-- Recommend Photo -->
+                            <div class="flex flex-col space-y-2">
+                                <img class="h-12 w-12 mx-auto rounded-full" src="./images/bowei-wei.jpeg" alt="">
+                                <img src="./images/spd-bank.png" alt="" class="w-14">
+                            </div>
+                            <div class="flex-1 text-xl font-bold  lg:text-4xl">
+                                Bowei Wei
+                                <br>
+                                <span class="text-lg lg:text-2xl">
                                         Back End Developer at Shanghai Pudong Development Bank
                                     </span>
-                                    <span class="hidden font-normal md:text-md md:flex lg:text-lg">
+                                <span class="hidden font-normal md:text-md md:flex lg:text-lg">
                                         <br>
                                         Really smart guy with a clear mind in his head. Always give me the best advice at work!
                                     </span>
-                                </div>
-                                </div>
-                            </div>                        
-                        </a>   
+                            </div>
+                        </div>
                     </div>
-                    <!-- Item 6 -->
-                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700" data-carousel-item="active">
-                        <a href="recommendations.html">
-                            <!-- Recommend Data -->
-                            <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
-                                <div class="flex space-x-2">
-                                    <!-- Recommend Photo -->
-                                <div class="flex flex-col space-y-2">
-                                    <img class="h-12 w-12 mx-auto rounded-full" src="./images/julien-soloman.jpeg" alt="">
-                                    <img src="./images/picnic-logo.png" alt="" class="w-12">
-                                </div>
-                                <div class="flex-1 text-xl font-bold  lg:text-4xl">
-                                    Julien Salomon
-                                    <br>
-                                    <span class="text-lg lg:text-2xl">
+                </a>
+            </div>
+            <!-- Item 6 -->
+            <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700"
+                 data-carousel-item="active">
+                <a href="recommendations.html">
+                    <!-- Recommend Data -->
+                    <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex space-x-2">
+                            <!-- Recommend Photo -->
+                            <div class="flex flex-col space-y-2">
+                                <img class="h-12 w-12 mx-auto rounded-full" src="./images/julien-soloman.jpeg" alt="">
+                                <img src="./images/picnic-logo.png" alt="" class="w-12">
+                            </div>
+                            <div class="flex-1 text-xl font-bold  lg:text-4xl">
+                                Julien Salomon
+                                <br>
+                                <span class="text-lg lg:text-2xl">
                                         Data Engineer at Picnic Technologies
                                     </span>
-                                    <span class="hidden font-normal md:text-md md:flex lg:text-lg">
+                                <span class="hidden font-normal md:text-md md:flex lg:text-lg">
                                         <br>
                                         Efficiency seems to be Charles’s biggest drive and thus his strength: his dedication to ‘not waste anyone’s time’ as he puts it...
                                 <br>
                                 As a manager, Charles expected me to meet his standards. As a mentor, he taught me how to meet them.
                                     </span>
-                                </div>
-                                </div>
-                            </div>                        
-                        </a>   
+                            </div>
+                        </div>
                     </div>
-                    <!-- Item 7 -->
-                    <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700" data-carousel-item="active">
-                        <a href="recommendations.html">
-                            <!-- Recommend Data -->
-                            <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
-                                <div class="flex space-x-2">
-                                    <!-- Recommend Photo -->
-                                <div class="flex flex-col space-y-2">
-                                    <img class="h-12 w-12 mx-auto rounded-full" src="./images/joseph-qin.jpeg" alt="">
-                                    <img src="./images/vuforia-logo.png" alt="" class="w-12">
-                                </div>
-                                <div class="flex-1 text-xl font-bold  lg:text-4xl">
-                                    Joseph Qin
-                                    <br>
-                                    <span class="text-lg lg:text-2xl">
+                </a>
+            </div>
+            <!-- Item 7 -->
+            <div class="duration-1000 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-gray-300 bg-gradient-to-r from-cyan-500 to-blue-700"
+                 data-carousel-item="active">
+                <a href="recommendations.html">
+                    <!-- Recommend Data -->
+                    <div class="absolute top-1/2 left-1/2 font-alata text-gray-800 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex space-x-2">
+                            <!-- Recommend Photo -->
+                            <div class="flex flex-col space-y-2">
+                                <img class="h-12 w-12 mx-auto rounded-full" src="./images/joseph-qin.jpeg" alt="">
+                                <img src="./images/vuforia-logo.png" alt="" class="w-12">
+                            </div>
+                            <div class="flex-1 text-xl font-bold  lg:text-4xl">
+                                Joseph Qin
+                                <br>
+                                <span class="text-lg lg:text-2xl">
                                         Software Engineer-Augmented Reality at Vuforia
                                     </span>
-                                    <span class="hidden font-normal md:text-md md:flex lg:text-lg">
+                                <span class="hidden font-normal md:text-md md:flex lg:text-lg">
                                         <br>
                                         Charles’s knows how to bring the best out of the members of his team, by inspiring and mentoring them.
                                     </span>
-                                </div>
-                                </div>
-                            </div>                        
-                        </a>   
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Slider indicators -->
-                <div class="hidden lg:flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-                    <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="3"></button>
-                </div>
-                <!-- Slider controls -->
-                <button type="button" class="hidden lg:flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
+                </a>
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="hidden lg:flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true"
+                    aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button"
+                    class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                    aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button"
+                    class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                    aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button"
+                    class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                    aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button"
+                    class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                    aria-current="false" aria-label="Slide 5" data-carousel-slide-to="3"></button>
+            <button type="button"
+                    class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                    aria-current="false" aria-label="Slide 6" data-carousel-slide-to="3"></button>
+            <button type="button"
+                    class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                    aria-current="false" aria-label="Slide 7" data-carousel-slide-to="3"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+                class="hidden lg:flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                data-carousel-prev="">
                     <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                             stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 19l-7-7 7-7"></path></svg>
                         <span class="sr-only">Previous</span>
                     </span>
-                </button>
-                <button type="button" class="hidden lg:flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
+        </button>
+        <button type="button"
+                class="hidden lg:flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                data-carousel-next="">
                     <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                             stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         <span class="sr-only">Next</span>
                     </span>
-                </button>
-            </div>
-    </section> <!-- End Recommendations section -->
+        </button>
+    </div>
+</section> <!-- End Recommendations section -->
 
-    <!-- About Charles Section -->
-    <!-- @todo Add bg-slide parallax while scrolling having trouble figuring this out -->
-    <!-- @Charles Approval: suggested a different image -->
-    <section id="about" class="bg-black">
-        <div class="flex flex-col font-alata p-12 justify-center lg:h-screen lg:flex-row lg:flex-wrap space-y-8 lg:p-32 bg-cover" style="background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./images/alt-about.jpg)"> 
-    
-            <h2 class="text-4xl text-slate-50 font-bold uppercase flex-1">
-                About Charles
-            </h2>
-                    
-        <div id="blurb" class="text-slate-50  lg:shadow-slate-500 lg:p-6 lg:rounded-xl md:max-w-lg sm:w-auto flex-1 place-items-end">
+<!-- About Charles Section -->
+<!-- @todo Add bg-slide parallax while scrolling having trouble figuring this out -->
+<!-- @Charles Approval: suggested a different image -->
+<section id="about" class="bg-black">
+    <div class="flex flex-col font-alata p-12 justify-center lg:h-screen lg:flex-row lg:flex-wrap space-y-8 lg:p-32 bg-cover"
+         style="background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./images/alt-about.jpg)">
+        <!-- url(./images/charles-b-w.jpg) -->
+
+        <h2 class="text-4xl text-slate-50 font-bold uppercase flex-1">
+            About Charles
+        </h2>
+
+        <div id="blurb"
+             class="text-slate-50  lg:shadow-slate-500 lg:p-6 lg:rounded-xl md:max-w-lg sm:w-auto flex-1 place-items-end">
+            <!-- lg:bg-black/20 -->
             <p>
-            Charles is an industry leader in healthcare NLP (Natural Language Processing) with nearly two decades of experience building commercial products, both in a hands-on capacity and as a technical manager.
-            <br>
-            <br>
-            As a player coach, Charles has led multimillion-dollar projects in health-tech Fortune 500s such as United Health, Philips, and AstraZeneca. 
-            <br>
-            <br>
-            Charles was also the co-founder and early employee of multiple Series-A and Series-B startup companies.
-            <br>
-            <br>
-            Charles has a Ph.D. in computational linguistics. With over a dozen publications and patents in his field, Charles is an authority in machine learning for named entity extraction and classification.
-            <br>
-            <br>
-            Charles’ expertise ranges from semantics, ontology, machine learning, and deep learning approaches for information classification and extraction.
-            <br>
-            Providing leadership, orchestration, and implementation to materialize domain experts’ scientific rationale into commercial products.
-            <br>
-            Uniquely versed in clinical trial protocol, oncology/pathology, EMR/EHR, and NLP-Assisted ICD coding.
-            <br>
-            Headed various companies’ R & D and infrastructure teams: Code review, building deep neural networks, model diagnosis, product and project management, end-to-end UAT and OAT, DevOps, recruitment-onboarding, aspirational speeches, and business acumen.
-            <br>
-            <br>
-            Well acclimated to large corporate culture. Nevertheless, full track record of entrepreneurship initiatives.
-        </p>
-        <br>
-        <!-- Read More Button to About Page -->
-        <a href="about.html">
-            <button id="aboutBtn" class="px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">More About Charles</button>
-        </a>
-        
+                Charles is an industry leader in healthcare NLP (Natural Language Processing) with nearly two decades of
+                experience building commercial products, both in a hands-on capacity and as a technical manager.
+                <br/>
+                <br/>
+                As a player coach, Charles has led multimillion-dollar projects in health-tech Fortune 500s such as
+                United Health, Philips, and AstraZeneca.
+                <br/>
+                <br/>
+                Charles was also the co-founder and early employee of multiple Series-A and Series-B startup companies.
+                <br/>
+                <br/>
+                Charles has a Ph.D. in computational linguistics. With over a dozen publications and patents in his
+                field, Charles is an authority in machine learning for named entity extraction and classification.
+                <br/>
+                <br/>
+                Charles’ expertise ranges from semantics, ontology, machine learning, and deep learning approaches for
+                information classification and extraction.
+                <br/>
+                Providing leadership, orchestration, and implementation to materialize domain experts’ scientific
+                rationale into commercial products.
+                <br/>
+                Uniquely versed in clinical trial protocol, oncology/pathology, EMR/EHR, and NLP-Assisted ICD coding.
+                <br/>
+                Headed various companies’ R & D and infrastructure teams: Code review, building deep neural networks,
+                model diagnosis, product and project management, end-to-end UAT and OAT, DevOps, recruitment-onboarding,
+                aspirational speeches, and business acumen.
+                <br/>
+                <br/>
+                Well acclimated to large corporate culture. Nevertheless, full track record of entrepreneurship
+                initiatives.
+            </p>
+            <br/>
+            <!-- Read More Button to About Page -->
+            <a href="about.html">
+                <button id="aboutBtn"
+                        class="px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">
+                    More About Charles
+                </button>
+            </a>
+
         </div>
     </div>
-    </section> <!-- End About Section -->
+</section> <!-- End About Section -->
 
 
-        <!-- Footer -->
-        <footer id="footer" class="bg-black">
-            <!-- Container -->
-            <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
-                <!-- Footer Flex Container -->
-                <div class="flex flex-col font-alata mx-auto mb-8 space-y-6 lg:flex-row lg:mx-0 lg:space-y-0 lg:justify-between lg:items-end">
-                    <!-- Logo & Title -->
-                    <div class="flex flex-col">
-                        <!-- Logo & Title Container -->
-                        <div>
-                            <a href="#hero">
-                                <img src="./images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
-                            <!-- <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2> -->
-                        </div>
-                        <!-- Logo Title -->
-                        <div>
-                            <h2 class="font-alata text-3xl text-center lg:justify-start text-white lg:text-6xl">
-                                Charles Yee
-                            </h2>
-                        </div>
-                    </div> <!-- End Logo & Title -->
-                        
+<!-- Footer -->
+<footer id="footer" class="bg-black">
+    <!-- Container -->
+    <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
+        <!-- Footer Flex Container -->
+        <div class="flex flex-col font-alata mx-auto mb-8 space-y-6 lg:flex-row lg:mx-0 lg:space-y-0 lg:justify-between lg:items-end">
+            <!-- Logo & Title -->
+            <div class="flex flex-col">
+                <!-- Logo & Title Container -->
+                <div>
+                    <a href="#hero">
 
-                    <!-- Menu Container -->
-                    <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-8">
-                        
-                            <!-- Contact Container -->
-                        <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
-                            <!-- Item 1 -->
-                            <div class="group h-16 text-center cursor-default">
-                                <a href=""class="cursor-default"></a>
-                                <div class="text-white">
-                                    charles.wj.yee@gmail.com
-                                </div>
-                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div>
-                            <!-- Item 3 -->
-                            <!-- <div class="group h-16 text-center cursor-default">
-                                <a href="" class="cursor-default"></a>
-                                <div class="text-white">
-                                    123 Any Street
-                                    <br>
-                                    Boston, MA 00000
-                                </div>
-                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div> -->
-                            
+                        <img src="./images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
+                    </a>
+                    <!-- <h2 class="font-alata text-2xl text-center mx-auto font-bold text-white border-2 w-16 h-16 mb-12 rounded-full">LOGO</h2> -->
+                </div>
+                <!-- Logo Title -->
+                <div>
+                    <h2 class="font-alata text-3xl text-center lg:justify-start text-white lg:text-6xl">
+                        Charles Yee
+                    </h2>
+                </div>
+            </div> <!-- End Logo & Title -->
+
+
+            <!-- Menu Container -->
+            <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-8">
+
+                <!-- Contact Container -->
+                <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
+                    <!-- Item 1 -->
+                    <div class="group h-16 text-center cursor-default">
+                        <a href="" class="cursor-default"></a>
+                        <div class="text-white">
+                            charles.wj.yee@gmail.com
                         </div>
-                        <!-- Contact Form Button -->
-                        <div class="mx-auto">
-                            <button id="footer-contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500 contact-btns">Contact Form</button>
-                        </div>
-                        
+                        <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
-                    <!-- Social & Copy Container -->
-                    <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
-                        <!-- icons Container -->
-                        <div class="flex items-center justify-center mx-auto space-x-8 xl:space-x-12 md:justify-end">
-                            <!-- Icon 1 -->
-                            <div class="group h-8 mb-4">
-                                <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
-                                    <img src="./images/linkedin-128.gif" alt="" class="h-12 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div>
-                            <!-- Icon 2 -->
-                            <div class="group h-8">
-                                <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
-                                    <img src="./images/toptal.png" alt="" class="h-12 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div>
-                            <!-- Icon 3 -->
-                            <!-- <div class="group h-8 mb-4">
-                                <a target="_blank" href="https://github.com/CharlesWJYee">
-                                    <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div> -->
-                            
-                            <!-- Icon 4 -->
-                            <!-- <div class="group h-8">
-                                <a target="_blank" href="#">
-                                    <img src="" alt="" class="h-6 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div> -->
+                    <!-- Item 3 -->
+                    <!-- <div class="group h-16 text-center cursor-default">
+                        <a href="" class="cursor-default"></a>
+                        <div class="text-white">
+                            123 Any Street
+                            <br/>
+                            Boston, MA 00000
                         </div>
-        
-                        <!-- Copyright -->
-                        <div class="font-bold text-center px-3">
-                            Charles Yee &copy; 2022
-                            <br>
-                            All Rights Reserved
-                            <br>
-                            <div class="group h-16 text-center cursor-pointer">
-                                <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built & powered by
-                                    <br>
-                                    summit web creations
-                                </a>
-                                <div class="mx-8 group-hover:border-b group-hover:border-blue-50"></div>
-                                </div>
-                        </div>
+                        <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div> -->
+
+                </div>
+                <!-- Contact Form Button -->
+                <div class="mx-auto">
+                    <button id="footer-contact-btn"
+                            class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500 contact-btns">
+                        Contact Form
+                    </button>
+                </div>
+
+            </div>
+            <!-- Social & Copy Container -->
+            <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
+                <!-- icons Container -->
+                <div class="flex items-center justify-center mx-auto space-x-8 xl:space-x-12 md:justify-end">
+                    <!-- Icon 1 -->
+                    <div class="group h-8 mb-4">
+                        <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
+                            <img src="./images/linkedin-128.gif" alt="" class="h-12 mb-2">
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <!-- Icon 2 -->
+                    <div class="group h-8">
+                        <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
+                            <img src="./images/toptal.png" alt="" class="h-12 mb-2">
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <!-- Icon 3 -->
+                    <!-- <div class="group h-8 mb-4">
+                        <a target="_blank" href="https://github.com/CharlesWJYee">
+                            <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="" class="h-12 mb-2">
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div> -->
+
+                    <!-- Icon 4 -->
+                    <!-- <div class="group h-8">
+                        <a target="_blank" href="#">
+                            <img src="" alt="" class="h-6 mb-2">
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div> -->
+                </div>
+
+                <!-- Copyright -->
+                <div class="font-bold text-center px-3">
+                    Charles Yee &copy; 2022
+                    <br/>
+                    All Rights Reserved
+                    <br/>
+                    <div class="group h-16 text-center cursor-pointer">
+                        <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built & powered
+                            by
+                            <br/>
+                            summit web creations
+                        </a>
+                        <div class="mx-8 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                 </div>
             </div>
-        </footer> <!-- End Footer -->
+        </div>
+    </div>
+</footer> <!-- End Footer -->
 
-    <!-- Contact From -->
-    <div class="hidden absolute z-50" id="contact-form-wrapper"> <!-- hidden -->
-        <div class="relative">
-            <div class="fixed inset-0 z-10 overflow-y-auto">
-                <div class="flex min-h-full items-start justify-center p-4 text-center sm:items-center sm:p-0">
-                    <div class="bg-gray-900 p-4 bg-opacity-75 transition-opacity"> <!-- Form container -->
-                         <!-- Close Button -->
+<!-- Contact From -->
+<div class="hidden absolute z-50" id="contact-form-wrapper"> <!-- hidden -->
+    <div class="relative">
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-start justify-center p-4 text-center sm:items-center sm:p-0">
+                <div class="bg-gray-900 p-4 bg-opacity-75 transition-opacity"> <!-- Form container -->
+                    <!-- Close Button -->
                     <div class="md:flex md:justify-end">
-                        <button id="contact-us-close-btn" type="button" class=" bg-black text-white p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-slate-400/20 border border-color-zinc-600 duration-500">
+                        <button id="contact-us-close-btn" type="button"
+                                class=" bg-black text-white p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-slate-400/20 border border-color-zinc-600 duration-500">
                             <span class="sr-only">Close menu</span>
                             <!-- X Icon -->
-                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M6 18L18 6M6 6l12 12"/>
                             </svg>
                         </button>
                     </div> <!-- End Close Button -->
 
                     <!-- Calendly Link -->
                     <div class="mt-8 mb-12 w-f">
-                        <a id="appointment" class="w-full px-8 py-5 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500" target="_blank" href="https://calendly.com/charles-wj-yee">
+                        <a id="appointment"
+                           class="w-full px-8 py-5 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500"
+                           target="_blank" href="https://calendly.com/charles-wj-yee">
                             Book an Appointment with Charles
                         </a>
                     </div>
-                    
+
                     <div class="text-white mx-auto font-bold">
                         or send a message
                     </div>
 
                     <!-- Contact Form Insert, Hidden until clicked -->
-                    <div>      
+                    <div>
                         <span id="contact-dots"></span>
                         <div id="" class="h-auto w-96 mx-auto my-auto px-auto z-20">
                             <form id="contact-form" class="px-10 pb-4 space-y-4">
-                                
+
 
                                 <!-- Honeypot for spambots -->
                                 <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see"
-                                    tabindex="-1" autocomplete="off">
+                                       tabindex="-1" autocomplete="off">
                                 <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
-                                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1"
-                                        autocomplete="off"></label> <!-- End Honeypot -->
-        
-                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"
-                                    type="text" placeholder="Name" required>
-                                <br>
-                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email"
-                                    type="email" placeholder="Email" required>
-                                <br>
+                                    <input type="text" name="nickname" id="nickname" class="user-cannot-see"
+                                           tabindex="-1"
+                                           autocomplete="off"></label> <!-- End Honeypot -->
+
+                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name"
+                                       id="name"
+                                       type="text" placeholder="Name" required>
+                                <br/>
+                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email"
+                                       id="email"
+                                       type="email" placeholder="Email" required>
+                                <br/>
                                 <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject"
-                                    id="subject" type="text" placeholder="Subject" required>
+                                       id="subject" type="text" placeholder="Subject" required>
                                 <br>
                                 <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
-                                    placeholder="Your message" name="Message" id="message" cols="40" rows="5"
-                                    required></textarea>
+                                          placeholder="Your message" name="Message" id="message" cols="40" rows="5"
+                                          required></textarea>
                                 <button id="submitBtn"
-                                    class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500">Submit</button>
+                                        class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500">
+                                    Submit
+                                </button>
                             </form>
                         </div> <!-- End of Contact Form -->
                         <div id="error-msg" class="w-auto h-auto mx-auto">
@@ -760,20 +855,20 @@
                             <!-- @todo Add Hidden -->
                             <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
                                 Your message has been sent successfully,
-                                <br>
+                                <br/>
                                 Charles will be in touch with you shortly.
                             </p>
                         </div>
                     </div>
-                    
-                    </div> <!-- Form container -->
-                
-                </div>
+
+                </div> <!-- Form container -->
+
             </div>
         </div>
-    </div> <!-- End Contact Form Wrapper -->
-    <!-- Javascript -->
-    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    </div>
+</div> <!-- End Contact Form Wrapper -->
+<!-- Javascript -->
+<script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 
 </body>
 </html>
