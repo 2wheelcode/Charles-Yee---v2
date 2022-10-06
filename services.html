@@ -18,8 +18,6 @@
 <body>
 
     <!-- Header Section -->
-    <!-- @todo Insert Logo -->
-    <!-- @todo Make Read More/Read Less Button Transition smoothly -->
     <section id="services-page" class=" w-screen bg-fixed z-0">
         <div class=" bg-black bg-opacity-60"> <!-- Gradient Overlay -->
         
@@ -38,32 +36,26 @@
                             <a href="index.html">Home</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
                         </div>
-                        <!-- Menu Item 3 -->
-                        <div class="group">
-                            <a href="about.html">About</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
                         <!-- Menu Item 2 -->
                         <div class="group">
                             <a href="projects.html">Projects</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
-                        
+                        <!-- Menu Item 3 -->
+                        <div class="group">
+                            <a href="patents.html">Publications</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
                         <!-- Menu Item 4 -->
                         <div class="group">
-                            <a class="contact-btns" href="javascript:void(0)">Contact</a>
+                            <a href="about.html">About</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                         <!-- Menu Item 5 -->
                         <div class="group">
-                            <a target="_blank" id="appointment-btn" href="https://calendly.com/charles-wj-yee">Appointment</a>
+                            <a class="contact-btns" href="javascript:void(0)">Contact</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
-                        <!-- Menu Item 6 -->
-                        <div class="group">
-                            <a target="_blank" href="/images/Charles Yee CV 2022.pdf">Resume</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
+                        </div>                        
                     </div>
                     <!-- Hamburger Button -->
                     <div class="md:hidden">
@@ -81,34 +73,22 @@
                 <!-- Mobile Menu -->
                 <div
                     id="menu"
-                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
+                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black"> <!-- hidden -->
                     <a href="index.html" class="hover:text-blue-600">Home</a>
-                    <a href="about.html" class="hover:text-blue-600">About</a>
+                    <a href="" class="text-blue-600 underline">Services</a>
                     <a href="projects.html" class="hover:text-blue-600">Projects</a>
+                    <a href="about.html" class="hover:text-blue-600">About</a>
                     <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
-                    <a target="_blank" href="https://calendly.com/charles-wj-yee" class="hover:text-blue-600">Appointment</a>
-                    <a target="_blank" href="/images/Charles Yee CV 2022.pdf" class="hover:text-blue-600">Resume</a>
-                    <a href="" class="hover:text-blue-600">You're on the <br>Services Page</a>
-                    <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
                 </div>
 
                 <!-- Hero Statement -->
                 <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-auto md:text-4xl">
                     services
                 </div>
-
-                <!-- Subscription Sign Up Currently Not In Use -->
-                <!-- <div id="sub-form" class="flex flex-col mt-5 md:justify-end">
-                    <form name="submit-to-google-sheet" action="" method="post" class="flex flex-col mt-5 space-y-4 md:justify-end md:flex-row md:space-y-0">
-                    <input type="email" name="Email" placeholder="Subscribe to Charles' Blog" class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none hover:cursor-pointer">
-                    <button class="px-5 py-3 text-xs text-white bg-black border border-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">Subscribe</button>
-                </form>
-                    <div id="sub-msg" class="text-white text-sm font-alata text-right"></div>
-                </div> --> <!-- End sub-form -->
             </nav>
 
 <!-- Services Description Section -->
-            <div class="block font-alata text-white px-12 mb-12 mx-auto max-w-2xl">
+            <div class="block font-alata text-white px-12 mb-12 mx-auto max-w-4xl">
                 <p class=" text-2xl py-12 px-24">
                     Charles Yee’s expertise is machine learning and backend development, with a strong emphasis on the healthcare industry. Throughout his career, he has proven to excel in the following responsibilities:
                     <br>
@@ -280,11 +260,24 @@
                         </button>
                     </div> <!-- End Close Button -->
 
+                    <!-- Calendly Link -->
+                    <div class="mt-8 mb-12 w-f">
+                        <a id="appointment" class="w-full px-8 py-5 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500" target="_blank" href="https://calendly.com/charles-wj-yee">
+                            Book an Appointment with Charles
+                        </a>
+                    </div>
+                    
+                    <div class="text-white mx-auto font-bold">
+                        or send a message
+                    </div>
+
                     <!-- Contact Form Insert, Hidden until clicked -->
                     <div>      
                         <span id="contact-dots"></span>
                         <div id="" class="h-auto w-96 mx-auto my-auto px-auto z-20">
                             <form id="contact-form" class="px-10 pb-4 space-y-4">
+                                
+
                                 <!-- Honeypot for spambots -->
                                 <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see"
                                     tabindex="-1" autocomplete="off">
@@ -302,7 +295,7 @@
                                     id="subject" type="text" placeholder="Subject" required>
                                 <br>
                                 <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
-                                    placeholder="Your message" name="Message" id="message" cols="40" rows="8"
+                                    placeholder="Your message" name="Message" id="message" cols="40" rows="5"
                                     required></textarea>
                                 <button id="submitBtn"
                                     class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500">Submit</button>

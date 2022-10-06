@@ -16,6 +16,7 @@ const contactFormCloseButton = document.getElementById('contact-us-close-btn');
 const contactFormWrapper = document.getElementById('contact-form-wrapper');
 const contactForm = document.getElementById('contact-form');
 const formSubmitButton = document.getElementById('submitBtn');
+const appointmentBtn = document.getElementById('appointment');
 
 contactForm.addEventListener('submit', function(event){
   event.preventDefault();
@@ -26,7 +27,7 @@ contactForm.addEventListener('submit', function(event){
 })
 
 contactFormCloseButton.addEventListener('click', contactToggle)
-//contactBtn.addEventListener('click', contactToggle);
+appointmentBtn.addEventListener('click', contactToggle);
 formSubmitButton.addEventListener('click', submitForm2);
 
 function contactToggle() {
