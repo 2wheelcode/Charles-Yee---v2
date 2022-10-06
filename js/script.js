@@ -41,6 +41,11 @@ new simpleParallax(parallaxRight, {
     scale:1.1,
     orientation: 'right'
 });
+let parallaxLeft = document.getElementsByClassName('parallax-left');
+new simpleParallax(parallaxRight, {
+    scale:1.1,
+    orientation: 'left'
+});
 let parallaxUp = document.getElementsByClassName('parallax-up');
 new simpleParallax(parallaxUp, {
     orientation: 'up',
@@ -133,25 +138,6 @@ function cleanUpForm(){
   contactForm.reset()
 }
 
-
-// Subscribe Btn Action - Not In Use at this time
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbzbniPzDhvKO3kEIuSoImYI-vUPGLJudnuIRAdMNu1TYLQM1PDLSpJ4q5L7nKZNu5J-/exec'
-// const form = document.forms['submit-to-google-sheet']
-// const msg = document.getElementById('sub-msg')
-
-// form.addEventListener('submit', e => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-//     .then(response => {
-//         msg.innerHTML = 'Thank you for Subscribing!'
-//         setTimeout(function() {
-//             msg.innerHTML = ''
-//         },3500)
-//         form.reset()
-//     })
-//     .catch(error => console.error('Error!', error.message))
-// })
-
 // Header Read More/Red Less Button Function  
 function headerFunction() {
     let dots = document.getElementById("header-dots");
@@ -168,25 +154,3 @@ function headerFunction() {
       moreText.style.display = "inline";
     }
   }
-
-// About Section Read More/Read Less Button Function
-// @todo 
-// Not in use
-// function aboutFunction() {
-//     let aboutDots = document.getElementById("about-dots");
-//     let moreText = document.getElementById("about-more");
-//     let btnText = document.getElementById("aboutBtn");
-  
-//     if (aboutDots.style.display === "none") {
-//       aboutDots.style.display = "inline";
-//       btnText.innerHTML = "Read More...";
-//       moreText.style.display = "none";
-//     } /* else {
-//         aboutDots.style.display === "none";
-//         btnText.innerHTML = "Read Less...";
-//         moreText.style.display = "inline";
-//       } */ else {
-//       aboutBtn.style.display = "none";
-//       moreText.style.display = "inline";
-//     } /* Use this else stmt to not have a Read Less Button */
-//   }
