@@ -38,6 +38,7 @@ function contactToggle() {
 
 let parallaxRight = document.getElementsByClassName('parallax-right');
 new simpleParallax(parallaxRight, {
+    scale:1.1,
     orientation: 'right'
 });
 let parallaxUp = document.getElementsByClassName('parallax-up');

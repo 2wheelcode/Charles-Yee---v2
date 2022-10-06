@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-.background-image {
-
+.background-image-parallax {
     position: absolute;
     object-fit: cover;
-    width: 100%;
     display: block;
     height: 100%;
+    width: 100%;
 }
 
-.background-image img, .simpleParallax  {
+.background-image-parallax img, .simpleParallax  {
     object-fit: cover;
-    width: 100%;
+    width: calc(100% + 30vw);
+    max-width: unset;
     display: block;
     height: 100%;
 }
 
-.background-image + div {
-   position: relative;
+.background-image-parallax + div {
+    position: relative;
     top:0;
 }
+@media(max-width: 768px) {
+    .background-image-parallax img.charles-presentation{
+        width: 2216px;
+        object-position: top right;
+    }
+}
+
+@media(max-width: 400px) {
+    .background-image-parallax img.charles-presentation{
+        width: 2550px;
+        object-position: top right;
+    }
+}
+/*.background-ios-fix:after{*/
+/*    content:"";*/
+/*    position:fixed; !* stretch a fixed position to the whole screen *!*/
+/*    top:0;*/
+/*    height:100vh; !* fix for mobile browser address bar appearing disappearing *!*/
+/*    left:0;*/
+/*    right:0;*/
+/*    z-index:-1; !* needed to keep in the background *!*/
+/*    -webkit-background-size: cover;*/
+/*    -moz-background-size: cover;*/
+/*    -o-background-size: cover;*/
+/*    background-size: cover;*/
+/*}*/
+
 #hero {
     /*background-image: url('./images/hero-1-vertical.jpg');*/
     /*background-repeat: no-repeat;*/
@@ -29,7 +56,7 @@
     /*background-position: center;*/
     position: relative;
     height: fit-content;
-    overflow-y:hidden;
+    overflow:hidden;
     /*background-attachment: fixed;*/
     /*background-overflow: hidden;*/
 }
