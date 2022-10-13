@@ -42,7 +42,7 @@ new simpleParallax(parallaxRight, {
     orientation: 'right'
 });
 let parallaxLeft = document.getElementsByClassName('parallax-left');
-new simpleParallax(parallaxRight, {
+new simpleParallax(parallaxLeft, {
     scale:1.1,
     orientation: 'left'
 });

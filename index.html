@@ -25,7 +25,7 @@
 
 <!-- Header Section -->
 <!-- @todo Make Read More/Read Less Button Transition smoothly -->
-<section id="hero" class="h-fit w-screen bg-fixed z-0">
+<section id="hero" class="h-fit w-full bg-fixed z-0">
     <div class="background-image-parallax">
         <img src="./images/bg-option-1.jpg" class="parallax-up"/>
     </div>
@@ -603,9 +603,12 @@
 
 <!-- About Charles Section -->
 <!-- @todo Add bg-slide parallax while scrolling having trouble figuring this out -->
-<section id="about" class="bg-black">
-    <div class="flex flex-col font-alata p-12 justify-center h-fit lg:flex-row lg:flex-wrap space-y-8 lg:p-32 bg-cover"
-         style="background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./images/alt-about.jpg)">
+<section id="about" class="w-full overflow-hidden relative">
+    <div class="background-image-parallax">
+        <img src="./images/alt-about.jpg" class="parallax-left charles-motorcycle"/>
+    </div>
+    <div class="flex flex-col font-alata p-12 justify-center h-fit lg:flex-row lg:flex-wrap space-y-8 lg:p-32 bg-cover bg-scroll "
+        style="background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7))" >
 
         <h2 class="text-4xl text-slate-50 font-bold uppercase flex-1">
             About Charles
@@ -771,7 +774,7 @@
                                 class=" bg-black text-white p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-slate-400/20 border border-color-zinc-600 duration-500">
                             <span class="sr-only">Close menu</span>
                             <!-- X Icon -->
-                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/ svg" fill="none" viewBox="0 0 24 24"
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M6 18L18 6M6 6l12 12"/>

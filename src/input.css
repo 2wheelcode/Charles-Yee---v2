@@ -4,13 +4,26 @@
 
 .background-image-parallax {
     position: absolute;
-    object-fit: cover;
     display: block;
     height: 100%;
     width: 100%;
 }
 
-.background-image-parallax img, .simpleParallax  {
+.background-image-parallax img.parallax-right  {
+    object-fit: cover;
+    width: calc(100% + 30vw);
+    max-width: unset;
+    display: block;
+    height: 100%;
+    margin: 0 calc(-3vw);
+}
+
+.background-image-parallax + div {
+    position: relative;
+    top:0;
+}
+
+.background-image-parallax img.parallax-up {
     object-fit: cover;
     width: calc(100% + 30vw);
     max-width: unset;
@@ -18,10 +31,25 @@
     height: 100%;
 }
 
-.background-image-parallax + div {
-    position: relative;
-    top:0;
+.background-image-parallax img.parallax-left {
+    object-fit: cover;
+    object-position: top center ;
+    width: calc(100% + 90vw);
+    max-width: unset;
+    display: block;
+    height: 100%;
+    margin: 0 calc(-3vw);
 }
+
+.simpleParallax  {
+    max-width: unset;
+    display: block;
+    height: 100%;
+}
+
+
+
+
 @media(max-width: 768px) {
     .background-image-parallax img.charles-presentation{
         width: 2216px;
@@ -29,12 +57,34 @@
     }
 }
 
+@media(max-width: 650px) {
+    .background-image-parallax img.charles-presentation{
+        width: 2367px;
+        object-position: top right;
+    }
+}
+
+
 @media(max-width: 400px) {
     .background-image-parallax img.charles-presentation{
         width: 2550px;
         object-position: top right;
     }
 }
+
+@media(max-width: 300px) {
+    .background-image-parallax img.charles-presentation{
+        width: 2730px;
+        object-position: top right;
+    }
+    .background-image-parallax img.charles-motorcycle{
+        width: calc(100% + 206vw);
+        margin: 0 calc(-31vw);
+    }
+}
+
+
+
 /*.background-ios-fix:after{*/
 /*    content:"";*/
 /*    position:fixed; !* stretch a fixed position to the whole screen *!*/
