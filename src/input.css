@@ -169,8 +169,59 @@
     display: none;
 }
 
+#services-page {
+    background-image: url('./images/presentation-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-overflow: hidden;
+}
+
+@media(max-width: 768px) {
+    #services-page {
+    background-image: url('./images/services-v2.jpg');
+    background-position: center;
+    background-gradient: rgba(-180deg 0,0,0,0.8);
+    }
+}
+
+#projects-page {
+    background-image: url('./images/projects-pg-v1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-overflow: hidden;
+}
+
+@media(max-width: 768px) {
+    #projects-page {
+    background-image: url('./images/services-v2.jpg');
+    background-position: center;
+    background-gradient: rgba(-180deg 0,0,0,0.8);
+    }
+}
+
+#patents-page {
+    background-image: url('./images/patents-pg-v1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-overflow: hidden;
+}
+
+@media(max-width: 768px) {
+    #patents-page {
+    background-image: url('./images/services-v2.jpg');
+    background-position: center;
+    background-gradient: rgba(-180deg 0,0,0,0.8);
+    }
+}
+
 #about-page {
-    background-image: url('./images/porsche-brick.jpg');
+    background-image: url('./images/about-pg-v1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
