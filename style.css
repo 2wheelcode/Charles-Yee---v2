@@ -1175,6 +1175,10 @@ video {
   --tw-bg-opacity: 0.6;
 }
 
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
@@ -1707,7 +1711,7 @@ video {
 
 @media(max-width: 768px) {
   #projects-page {
-    background-image: url('./images/services-v2.jpg');
+    background-image: url('./images/projects-pg-v2.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
   }
@@ -1724,7 +1728,7 @@ video {
 
 @media(max-width: 768px) {
   #patents-page {
-    background-image: url('./images/services-v2.jpg');
+    background-image: url('./images/patents-pg-v2.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
   }
@@ -1742,7 +1746,7 @@ video {
 
 @media(max-width: 768px) {
   #about-page {
-    background-image: url('./images/charles-portrait.jpg');
+    background-image: url('./images/about-pg-v2.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
   }
