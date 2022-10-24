@@ -856,10 +856,6 @@ video {
   min-height: 100%;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .w-24 {
   width: 6rem;
 }
@@ -1173,10 +1169,6 @@ video {
 
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
 }
 
 .bg-opacity-40 {
@@ -1751,6 +1743,12 @@ video {
     background-gradient: rgba(-180deg 0,0,0,0.8);
   }
 }
+
+/*body{*/
+
+/*    text-shadow: 0 1px 3px #000000;*/
+
+/*}*/
 
 .placeholder\:text-center::-moz-placeholder {
   text-align: center;
