@@ -1733,6 +1733,18 @@ video {
   background-overflow: hidden;
 }
 
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+
+  #services-page {
+    /*background-image: url('./images/services-v2.jpg');*/
+    /*background-position: center;*/
+    /*background-attachment: scroll;*/
+    /*background-size: 100vw;*/
+    /*background-gradient: rgba(-180deg 0,0,0,0.8);*/
+  }
+}
+
 @media(max-width: 768px) {
   #services-page {
     background-image: url('./images/services-v2.jpg');
