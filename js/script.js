@@ -10,18 +10,6 @@ function navToggle() {
     menu.classList.toggle('hidden');
 }
 
-// Accordion Menu Burger/X Button Toggle
-// const accBtn = document.getElementsByClassName('accordion-btn');
-// const accCont = document.getElementsByClassName('accordion-content');
-
-// accBtn.addEventListener('click', accToggle, console.log('accBtn clicked'));
-
-// function accToggle() {
-//     btn.classList.toggle('open');
-//     menu.classList.toggle('flex');
-//     menu.classList.toggle('hidden');
-// }
-
 // Accordion Button
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
@@ -48,7 +36,7 @@ accordionItemHeaders.forEach(accordionItemHeader => {
   });
 });
 
-// Open Contact Form Top Menu Button
+// Open Contact Form
 const contactBtns = document.getElementsByClassName('contact-btns');
 const contactFormCloseButton = document.getElementById('contact-us-close-btn');
 const contactFormWrapper = document.getElementById('contact-form-wrapper');
