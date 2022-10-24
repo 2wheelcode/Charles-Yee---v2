@@ -177,8 +177,6 @@
 }
 
  /*Accordion*/
-
-
   .accordion-item-header {
     position: relative;
     cursor: pointer;
@@ -187,7 +185,7 @@
     content: "\002B";
     font-size: 2rem;
     position: absolute;
-    right: 1rem;
+    right: .5rem;
   }
   .accordion-item-header.active::after {
     content: "\2212";
@@ -195,9 +193,13 @@
   .accordion-item-body {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-in-out;
   }
-  .accordion-item-body-content {  }
+  .accordion-item-body-content {
+    margin-top: 12px;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
 /*End Accordion*/
 
 .user-cannot-see {

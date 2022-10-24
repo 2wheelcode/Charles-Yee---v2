@@ -136,29 +136,39 @@
     </div> <!-- End Services Description Section -->
 
 <!-- Recommendations Section -->
-<!-- @REMOVE THE UNWANTED CHOICE!! -->
 
     <!-- Hero Statement -->
     <div id="recommendations" class="max-w-md mt-8 mx-auto p-4 font-alata font-bold text-center text-2xl text-white text-shadow uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-4xl">
         Recommendations
     </div>
 
-    <div class="grid lg:grid-cols-2 gap-y-12 md:-gap-y-12 gap-x-16 font-alata text-white p-8 lg:p-32">
+    <div class="grid grid-cols gap-y-12 font-alata text-white p-8 lg:p-32">
+
         <!-- First Recommendation -->
-        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent text-shadow shadow-neutral-100 shadow-2xl ">
+        <div class="accordion-item max-w-2xl p-6 bg-white/30 text-shadow shadow-neutral-100 shadow-lg mx-auto">
+            <div class="accordion-item-header flex">
                 <!-- Recommend Photo -->
-                <div class="flex flex-col mr-3 space-y-2">
-                    <img class="h-12 w-12 mb-4 rounded-full" src="./images/ze-jiang.jpeg" alt="">
-                    <img src="./images/iquartic-logo.png" alt="" class="h-auto w-14">
-                </div>
+                <div class="flex flex-col md:flex-row mr-3 space-y-2 md:space-x-4">
+                    <div>
+                        <img class="h-12 w-12 mb-4 rounded-full" src="./images/ze-jiang.jpeg" alt="">
+                        <img src="./images/iquartic-logo.png" alt="" class="h-auto w-14">
+                    </div>
                 <!-- Title & Recommendation -->
                 <div class="flex-1">
                     <span class="text-2xl capitalize font-bold">
                         Ze Jiang
                         <br>
+                        <div class="hidden md:block"><br></div>
                         CEO at iQuartic
                     </span>
-                    <br>
+                <!-- +/- symbol in CSS -->
+                <br>
+                </div>
+            </div>
+            </div> <!-- End accordion-item-header -->
+            <div class="accordion-item-body">
+                <br>
+                <div class="font-normal accordion-item-body-content">
                     <br>
                     <span class="font-normal">
                         Charles was my director of data science, and was responsible for advancing our machine learning based NLP system. 
@@ -172,26 +182,37 @@
                         <br>
                         I would be very happy to work on future ventures partnering up with Charles again.                    
                     </span>
-                </div>
-        </div>
+                </div> <!-- End accordion-item-body-content -->
+            </div> <!-- End accordion-item-body -->
+        </div> <!-- End accordion-item -->
+        <!-- End 1st -->
 
         <!-- Second Recommendation -->
-        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent text-shadow shadow-neutral-100 shadow-2xl ">
-            <!-- Recommend Photo -->
-            <div class="flex flex-col mr-3 space-y-2">
-                <img class="h-12 w-12 mb-4 rounded-full" src="./images/gil-blander.jpeg" alt="">
-                <img src="./images/inside-logo.png" alt="" class="w-14 h-auto mb-2 mr-2">
+        <div class="accordion-item max-w-2xl p-6 bg-white/30 text-shadow shadow-neutral-100 shadow-lg mx-auto">
+            <div class="accordion-item-header flex">
+                <!-- Recommend Photo -->
+                <div class="flex flex-col md:flex-row mr-3 space-y-2 md:space-x-4">
+                    <div>
+                        <img class="h-12 w-12 mb-4 rounded-full" src="./images/gil-blander.jpeg" alt="">
+                        <img src="./images/inside-logo.png" alt="" class="w-14 h-auto mb-2 mr-2">
+                    </div>
+                <!-- Title & Recommendation -->
+                <div class="flex-1">
+                    <span class="text-2xl capitalize font-bold">
+                        Gil Blander
+                        <br>
+                        <div class="hidden md:block"><br></div>
+                        CSO at Insidetracker
+                    </span>
+                <!-- +/- symbol in CSS -->
+                <br>
+                </div>
             </div>
-            <!-- Title & Recommendation -->
-            <div class="flex-1">
-                <span class="text-2xl capitalize font-bold">
-                    Gil Blander
+            </div> <!-- End accordion-item-header -->
+            <div class="accordion-item-body">
+                <br>
+                <div class="font-normal accordion-item-body-content">
                     <br>
-                    CSO at Insidetracker
-                </span>
-                <br>
-                <br>
-                <span class="font-normal">
                     Charles worked as a part-time data science consultant for Insidetracker over the course of 10 months. We are looking to expand our nutrition and fitness recommendation capabilities by using big data and giving evidence-based recommendations that we can show to our users in real-time.
                     <br>
                     <br>
@@ -201,157 +222,203 @@
                     <span class="font-bold italic">Charles comes with lots of domain expertise in personalized nutrition, as well as the ability to demonstrate points through hands-on coding and statistical modeling.</span> 
                     <br>
                     <br>
-                    It was a pleasure working with him.                    
-                </span>
-            </div>
-        </div> <!-- End 2nd -->
+                    It was a pleasure working with him.
+                </div> <!-- End accordion-item-body-content -->
+            </div> <!-- End accordion-item-body -->
+        </div> <!-- End accordion-item -->
+        <!-- End 2nd -->
 
-        <!-- Third Recommendation -->      
-        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent text-shadow shadow-neutral-100 shadow-2xl ">
-            <!-- Recommend Photo -->
-            <div class="flex flex-col mr-3 space-y-2">
-                <img class="h-12 w-12 mb-4 rounded-full" src="./images/rohit.jpeg" alt="">
-                <img src="./images/google-logo.png" alt="" class="w-16">
+        <!-- Third Recommendation -->
+        <div class="accordion-item max-w-2xl p-6 bg-white/30 text-shadow shadow-neutral-100 shadow-lg mx-auto">
+            <div class="accordion-item-header flex">
+                <!-- Recommend Photo -->
+                <div class="flex flex-col md:flex-row mr-3 space-y-2 md:space-x-4">
+                    <div>
+                        <img class="h-12 w-12 mb-4 rounded-full" src="./images/rohit.jpeg" alt="">
+                        <img src="./images/google-logo.png" alt="" class="w-16">
+                    </div>
+                <!-- Title & Recommendation -->
+                <div class="flex-1">
+                    <span class="text-2xl capitalize font-bold">
+                        Rohit Patwa
+                        <br>
+                        <div class="hidden md:block"><br></div>
+                        Software Engineer at Google
+                    </span>
+                <!-- +/- symbol in CSS -->
+                <br>
+                </div>
             </div>
-            <div class="flex-1">
-                <span class="text-2xl capitalize font-bold">
-                    Rohit Patwa
+            </div> <!-- End accordion-item-header -->
+            <div class="accordion-item-body">
+                <br>
+                <div class="font-normal accordion-item-body-content">
                     <br>
-                    Software Engineer at Google
-                </span>
-                <br>
-                <br>
-                <span class="font-normal">
                     I had the absolute pleasure of working with Charles at iQuartic. We worked on developing an NLP engine and enhancing the existing Optical Character Recognition pipeline. I relied heavily on him, not just for his technical contributions but also for his thought partnership in designing and solving various complex problems. He laid a strong emphasis on maintaining employees' satisfaction along with prioritizing the company's work.
                     <br>
                     <br>
                     <span class="font-bold italic">He has an exceptional ability to communicate technical claims to non-technical audiences and served as a critical bridge between the research and operations teams. </span> 
                     <br>
                     <br>
-                    Other than his sharp technical skills, he helped the teams on the management side as well. He's respectful, smart, and a wonderful team player - I very much look forward to working with him again in the future!                    
-                </span>
-            </div>
-            
-        </div>
-
+                    Other than his sharp technical skills, he helped the teams on the management side as well. He's respectful, smart, and a wonderful team player - I very much look forward to working with him again in the future!
+                </div> <!-- End accordion-item-body-content -->
+            </div> <!-- End accordion-item-body -->
+        </div> <!-- End accordion-item -->
+        <!-- End 3rd -->
+      
         <!-- Fourth Recommendation -->
-        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent text-shadow shadow-neutral-100 shadow-2xl ">
-            <!-- Recommend Photo -->
-            <div class="flex flex-col mr-3 space-y-2">
-                <img class="h-12 w-12 mb-4 rounded-full" src="./images/agniva-b.jpeg" alt="">
-                <img src="./images/hypatos.png" alt="" class="w-12">
+        <div class="accordion-item max-w-2xl p-6 bg-white/30 text-shadow shadow-neutral-100 shadow-lg mx-auto">
+            <div class="accordion-item-header flex">
+                <!-- Recommend Photo -->
+                <div class="flex flex-col md:flex-row mr-3 space-y-2 md:space-x-4">
+                    <div>
+                        <img class="h-12 w-12 mb-4 rounded-full" src="./images/agniva-b.jpeg" alt="">
+                        <img src="./images/hypatos.png" alt="" class="w-12">
+                    </div>
+                <!-- Title & Recommendation -->
+                <div class="flex-1">
+                    <span class="text-2xl capitalize font-bold">
+                        Agniva Banerjee
+                        <br>
+                        <div class="hidden md:block"><br></div>
+                        Data Scientist at Hypatos
+                    </span>
+                <!-- +/- symbol in CSS -->
+                <br>
+                </div>
             </div>
-            <!-- Title & Recommendation -->
-            <div class="flex-1">
-                <span class="text-2xl capitalize font-bold">
-                    Agniva Banerjee
+            </div> <!-- End accordion-item-header -->
+            <div class="accordion-item-body">
+                <br>
+                <div class="font-normal accordion-item-body-content">
                     <br>
-                    Data Scientist at Hypatos
-                </span>
-                <br>
-                <br>
-                <span class="font-normal">
                     I had the distinct privilege to work under his direct supervision as an NLP Engineer when Charles was employed as the Director of Data Science at iQuartic. I can attest to his skills, both as a manager and as an engineer.
                     <br>
                     <br>
                     When I joined iQuartic, Charles provided guidance to me for understanding the product. He always made sure that I had the necessary tools and support for getting my tasks done.
-                    <br>
-                    <br>
-                    <span class="font-bold italic">It is under his tutelage I had the freedom and flexibility to look for creative solutions, which is how I learned to repurpose and implement various state-of-the-art machine learning and deep-learning algorithms directly into our product.</span> 
-                    <br>
-                    <br>
+                    <span class="font-bold italic"> 
+                    It is under his tutelage I had the freedom and flexibility to look for creative solutions, which is how I learned to repurpose and implement various state-of-the-art machine learning and deep-learning algorithms directly into our product.</span>
                     He was always available whenever we needed his guidance, and my colleagues and I are grateful for the care and knowledge that Charles bestowed on us.
                     <br>
                     <br>
                     Moreover, Charles demonstrated excellent people-management skills, leadership abilities, creative thinking and attention to detail. It was his managerial skills and innovative encouragement that has led to an impressive growth of our team and enabled us to deliver cutting-edge solutions while following best practices in software development and engineering. He is able to assign, delegate, and solve engineering problems himself because of his copious experience in the industry. He is a source of motivation to us - his employees. In addition to his stellar managerial skills, he is also an active listener, and worked with us on our feedback.
                     <br>
                     <br>
-                    I believe Charles would be an asset to any organization, and I can recommend him without a moment's hesitation.             
-                </span>
-            </div>
-        </div> <!-- End 4th -->
+                    I believe Charles would be an asset to any organization, and I can recommend him without a moment's hesitation.
+                </div> <!-- End accordion-item-body-content -->
+            </div> <!-- End accordion-item-body -->
+        </div> <!-- End accordion-item -->
+        <!-- End 4th -->
 
         <!-- Fifth Recommendation -->
-        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent text-shadow shadow-neutral-100 shadow-2xl ">
-            <!-- Recommend Photo -->
-            <div class="flex flex-col mr-3 space-y-2">
-                <img class="h-12 w-12 mb-4 rounded-full" src="./images/bowei-wei.jpeg" alt="">
-                <img src="./images/spd-bank.png" alt="" class="w-14">
-            </div>
-            
-            <div class="flex-1">
-                <span class="text-2xl capitalize font-bold">
-                    Bowei Wei
-                    <br>
-                    Back End Developer at Shanghai Pudong Development Bank
-                </span>
+        <div class="accordion-item max-w-2xl p-6 bg-white/30 text-shadow shadow-neutral-100 shadow-lg mx-auto">
+            <div class="accordion-item-header flex">
+                <!-- Recommend Photo -->
+                <div class="flex flex-col md:flex-row mr-3 space-y-2 md:space-x-4">
+                    <div>
+                        <img class="h-12 w-12 mb-4 rounded-full" src="./images/bowei-wei.jpeg" alt="">
+                        <img src="./images/spd-bank.png" alt="" class="w-14">
+                    </div>
+                <!-- Title & Recommendation -->
+                <div class="flex-1">
+                    <span class="text-2xl capitalize font-bold">
+                        Bowei Wei
+                        <br>
+                        <div class="hidden md:block"><br></div>
+                        Back End Developer at Shanghai Pudong Development Bank
+                    </span>
+                <!-- +/- symbol in CSS -->
                 <br>
-                <br>
-                <span class="font-normal">
-                    <span class="font-bold italic">Really smart guy with a clear mind in his head. Always give me the best advice at work! </span> 
-                    <br>
-                    <br>
-                    He is always very helpful. Always 100% dedicated to his job! As a manager, he taught me how to grow up from the new grad to a proper full stack developer and provide all kinds of support he could offer. Whomever gets Charles as their manager will be so grateful that they can learn tons of things from him.                   
-                </span>
+                </div>
             </div>
-            
-        </div>
+            </div> <!-- End accordion-item-header -->
+            <div class="accordion-item-body">
+                <br>
+                <div class="font-normal accordion-item-body-content">
+                    <br>
+                    Really smart guy with a clear mind in his head. Always give me the best advice at work! </span> 
+                    <br>
+                    <br>
+                    He is always very helpful. Always 100% dedicated to his job! As a manager, he taught me how to grow up from the new grad to a proper full stack developer and provide all kinds of support he could offer. Whomever gets Charles as their manager will be so grateful that they can learn tons of things from him.
+                </div> <!-- End accordion-item-body-content -->
+            </div> <!-- End accordion-item-body -->
+        </div> <!-- End accordion-item -->
+        <!-- End 5th -->
 
         <!-- Sixth Recommendation -->
-        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent text-shadow shadow-neutral-100 shadow-2xl ">
-            <!-- Recommend Photo -->
-            <div class="flex flex-col mr-3 space-y-2">
-                <img class="h-12 w-12 mb-4 rounded-full" src="./images/julien-soloman.jpeg" alt="">
-                <img src="./images/picnic-logo.png" alt="" class="w-12">
+        <div class="accordion-item max-w-2xl p-6 bg-white/30 text-shadow shadow-neutral-100 shadow-lg mx-auto">
+            <div class="accordion-item-header flex">
+                <!-- Recommend Photo -->
+                <div class="flex flex-col md:flex-row mr-3 space-y-2 md:space-x-4">
+                    <div>
+                        <img class="h-12 w-12 mb-4 rounded-full" src="./images/julien-soloman.jpeg" alt="">
+                        <img src="./images/picnic-logo.png" alt="" class="w-12">
+                    </div>
+                <!-- Title & Recommendation -->
+                <div class="flex-1">
+                    <span class="text-2xl capitalize font-bold">
+                        Julien Salomon
+                        <br>
+                        <div class="hidden md:block"><br></div>
+                        Data Engineer at Picnic Technologies
+                    </span>
+                <!-- +/- symbol in CSS -->
+                <br>
+                </div>
             </div>
-            <!-- Title & Recommendation -->
-            <div class="flex-1">
-                <span class="text-2xl capitalize font-bold">
-                    Julien Salomon
+            </div> <!-- End accordion-item-header -->
+            <div class="accordion-item-body">
+                <br>
+                <div class="font-normal accordion-item-body-content">
                     <br>
-                    Data Engineer at Picnic Technologies
-
-                </span>
-                <br>
-                <br>
-                <span class="font-normal">
                     <span class="font-bold italic">Efficiency seems to be Charles’s biggest drive and thus his strength: his dedication to ‘not waste anyone’s time’ as he puts it,</span> and his high standards in terms of software development makes him as efficient as he is rigorous. 
                     <br>
                     <br>
                     <span class="font-bold italic">As a manager, Charles expected me to meet his standards. As a mentor, he taught me how to meet them.</span> During my time working for him, he was able to play both roles equally and his support made our work as efficient and robust as it could be. <br>
                     <br>
-                    Anyone would be lucky to have Charles as a manager, a person that is both motivating and fun, both professional and friendly, making it a pleasure not only to work for him, but also to get to know him.                 
-                </span>
-            </div>
-        </div> <!-- End 6th -->
+                    Anyone would be lucky to have Charles as a manager, a person that is both motivating and fun, both professional and friendly, making it a pleasure not only to work for him, but also to get to know him.
+                </div> <!-- End accordion-item-body-content -->
+            </div> <!-- End accordion-item-body -->
+        </div> <!-- End accordion-item -->
+        <!-- End 6th -->
 
         <!-- Seventh Recommendation -->
-        <div class="flex flex-col md:flex-row space-x-2 max-w-lg p-6 bg-transparent text-shadow shadow-neutral-100 shadow-2xl ">
-            <!-- Recommend Photo -->
-            <div class="flex flex-col mr-3 space-y-2">
-                <img class="h-12 w-12 mb-4 rounded-full" src="./images/joseph-qin.jpeg" alt="">
-                <img src="./images/vuforia-logo.png" alt="" class="w-12">
+        <div class="accordion-item max-w-2xl p-6 bg-white/30 text-shadow shadow-neutral-100 shadow-lg mx-auto">
+            <div class="accordion-item-header flex">
+                <!-- Recommend Photo -->
+                <div class="flex flex-col md:flex-row mr-3 space-y-2 md:space-x-4">
+                    <div>
+                        <img class="h-12 w-12 mb-4 rounded-full" src="./images/joseph-qin.jpeg" alt="">
+                        <img src="./images/vuforia-logo.png" alt="" class="w-12">
+                    </div>
+                <!-- Title & Recommendation -->
+                <div class="flex-1">
+                    <span class="text-2xl capitalize font-bold">
+                        Joseph Qin
+                        <br>
+                        <div class="hidden md:block"><br></div>
+                        Software Development Engineer-Augmented Reality at Vuforia
+                    </span>
+                <!-- +/- symbol in CSS -->
+                <br>
+                </div>
             </div>
-            <div class="flex-1">
-                <span class="text-2xl capitalize font-bold">
-                    Joseph Qin
+            </div> <!-- End accordion-item-header -->
+            <div class="accordion-item-body">
+                <br>
+                <div class="font-normal accordion-item-body-content">
                     <br>
-                    Software Development Engineer-Augmented Reality at Vuforia
-                </span>
-                <br>
-                <br>
-                <span class="font-normal">
                     Charles is a true leader and gifted mentor, who's not only interested in the company's bottom line, but also in his employees' professional growth! As a manager, Charles already has the essential characteristics: smart and analytic, fast and responsive, intelligent risk-taking, and a real team player.
                     <br>
                     <br>
                     <span class="font-bold italic">He knows how to bring the best out of the members of his team, by inspiring and mentoring them. </span>
                     <br>
                     <br>
-                    I have been so lucky to have worked with Charles, where I learned a lot from him!                   
-                </span>
-            </div>
-            
-        </div>
+                    I have been so lucky to have worked with Charles, where I learned a lot from him!     
+                </div> <!-- End accordion-item-body-content -->
+            </div> <!-- End accordion-item-body -->
+        </div> <!-- End accordion-item -->
+
     </div> <!-- End of Rec's Grid -->
 
         <!-- Footer -->
