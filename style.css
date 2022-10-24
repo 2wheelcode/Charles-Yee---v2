@@ -1539,11 +1539,27 @@ video {
   height: 100%;
 }
 
+.background-image-parallax.charles-motorcycle {
+  background-color: black;
+}
+
+.background-image-parallax.charles-motorcycle img{
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
 @media(max-width: 768px) {
   .background-image-parallax img.charles-presentation{
     width: 2216px;
     -o-object-position: top right;
        object-position: top right;
+  }
+
+  .background-image-parallax.charles-motorcycle img{
+    width: calc(100% + 2vw);
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -1570,9 +1586,9 @@ video {
        object-position: top right;
   }
 
-  .background-image-parallax img.charles-motorcycle{
+  .background-image-parallax.charles-motorcycle img {
     width: calc(100% + 206vw);
-    margin: 0 calc(-31vw);
+    margin: 0 calc(-149vw);
   }
 }
 
@@ -1696,10 +1712,6 @@ video {
 }
 
 .accordion-item-body-content {
-  //padding: 1rem;
-  //line-height: 1.5rem;
-  //border-top: 1px solid;
-  //border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
 /*End Accordion*/
