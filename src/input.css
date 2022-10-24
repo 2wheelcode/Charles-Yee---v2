@@ -165,12 +165,9 @@
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
-// @todo Not displaying
-// Accordion
-  .accordion-item {
-    // I don't undertand! If I remove this empty class, I lose the +/- symbol?
-  }
-  
+ /*Accordion*/
+
+
   .accordion-item-header {
     position: relative;
     cursor: pointer;
@@ -195,7 +192,7 @@
     //border-top: 1px solid;
     //border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   }
-// End Accordion
+/*End Accordion*/
 
 .user-cannot-see {
     display: none;

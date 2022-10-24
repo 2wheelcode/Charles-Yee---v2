@@ -1671,10 +1671,7 @@ video {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
-// @todo Not displaying
-// Accordion
-  .accordion-item {
-}
+/*Accordion*/
 
 .accordion-item-header {
   position: relative;
@@ -1698,14 +1695,15 @@ video {
   transition: max-height 0.2s ease-out;
 }
 
-/* .accordion-item-body-content {
-    padding: 1rem;
-    line-height: 1.5rem;
-    border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
-  } */
+.accordion-item-body-content {
+  //padding: 1rem;
+  //line-height: 1.5rem;
+  //border-top: 1px solid;
+  //border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
 
-// below
+/*End Accordion*/
+
 .user-cannot-see {
   display: none;
 }
