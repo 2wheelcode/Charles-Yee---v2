@@ -10,6 +10,44 @@ function navToggle() {
     menu.classList.toggle('hidden');
 }
 
+// Accordion Menu Burger/X Button Toggle
+// const accBtn = document.getElementsByClassName('accordion-btn');
+// const accCont = document.getElementsByClassName('accordion-content');
+
+// accBtn.addEventListener('click', accToggle, console.log('accBtn clicked'));
+
+// function accToggle() {
+//     btn.classList.toggle('open');
+//     menu.classList.toggle('flex');
+//     menu.classList.toggle('hidden');
+// }
+
+// Accordion Button
+const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+    
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+    
+     const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+     if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+       currentlyActiveAccordionItemHeader.classList.toggle("active");
+       currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+     }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if(accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+    
+  });
+});
+
 // Open Contact Form Top Menu Button
 const contactBtns = document.getElementsByClassName('contact-btns');
 const contactFormCloseButton = document.getElementById('contact-us-close-btn');
