@@ -3,11 +3,16 @@ const btn = $("#menu-btn");
 const menu = $("#menu");
 
 btn.click(navToggle);
-
+let mobileMenuOpen = false;
 function navToggle() {
     btn.toggleClass('open');
     menu.toggleClass('flex');
     menu.toggleClass('hidden');
+
+    mobileMenuOpen = !mobileMenuOpen;
+
+    $('body').toggleClass('overflow-hidden');
+    $('nav').first().toggleClass('h-screen')
 }
 
 // Accordion Button
@@ -51,7 +56,9 @@ appointmentBtn.click(contactToggle);
 formSubmitButton.click(submitForm2);
 
 function contactToggle() {
-    $('body').toggleClass('overflow-hidden');
+    if(!mobileMenuOpen) {
+        $('body').toggleClass('overflow-hidden');
+    }
     contactFormWrapper.toggleClass('block');
     contactFormWrapper.toggleClass('hidden');
 }
