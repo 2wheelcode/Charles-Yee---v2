@@ -1,64 +1,59 @@
 // Mobile Menu Burger/X Button Toggle
-const btn = document.getElementById('menu-btn');
-const menu = document.getElementById('menu');
+const btn = $("#menu-btn");
+const menu = $("#menu");
 
-btn.addEventListener('click', navToggle);
+btn.click(navToggle);
 
 function navToggle() {
-    btn.classList.toggle('open');
-    menu.classList.toggle('flex');
-    menu.classList.toggle('hidden');
+    btn.toggleClass('open');
+    menu.toggleClass('flex');
+    menu.toggleClass('hidden');
 }
 
 // Accordion Button
-const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-
-accordionItemHeaders.forEach(accordionItemHeader => {
-    accordionItemHeader.addEventListener("click", event => {
-
+$(".accordion-item-header").click(
+    event => {
+        let accordionItemHeader = $(event.target);
         // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-
-        const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-        if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
-            currentlyActiveAccordionItemHeader.classList.toggle("active");
-            currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+        const currentlyActiveAccordionItemHeader = $(".accordion-item-header.active");
+        if (currentlyActiveAccordionItemHeader && !currentlyActiveAccordionItemHeader.is(accordionItemHeader)) {
+            currentlyActiveAccordionItemHeader.toggleClass("active");
+            currentlyActiveAccordionItemHeader.next().css("maxHeight", '0');
         }
 
-        accordionItemHeader.classList.toggle("active");
-        const accordionItemBody = accordionItemHeader.nextElementSibling;
-        if (accordionItemHeader.classList.contains("active")) {
-            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        accordionItemHeader.toggleClass("active");
+        const accordionItemBody = accordionItemHeader.next();
+        if (accordionItemHeader.hasClass("active")) {
+            accordionItemBody.css("maxHeight", `${accordionItemBody.get(0).scrollHeight}px`);
         } else {
-            accordionItemBody.style.maxHeight = 0;
+            accordionItemBody.css("maxHeight", '0');
         }
 
-    });
-});
+    }
+);
+
 
 // Open Contact Form
-const contactBtns = document.getElementsByClassName('contact-btns');
-const contactFormCloseButton = document.getElementById('contact-us-close-btn');
-const contactFormWrapper = document.getElementById('contact-form-wrapper');
-const contactForm = document.getElementById('contact-form');
-const formSubmitButton = document.getElementById('submitBtn');
-const appointmentBtn = document.getElementById('appointment');
+$('.contact-btns').click(contactToggle);
 
-contactForm.addEventListener('submit', function (event) {
+const contactFormCloseButton = $('#contact-us-close-btn');
+const contactFormWrapper = $('#contact-form-wrapper');
+const contactForm = $('#contact-form');
+const formSubmitButton = $('#submitBtn');
+const appointmentBtn = $('#appointment');
+
+contactForm.submit(function (event) {
     event.preventDefault();
 });
 
-([...contactBtns]).forEach(contactButton => {
-    contactButton.addEventListener('click', contactToggle);
-})
-
-contactFormCloseButton.addEventListener('click', contactToggle)
-appointmentBtn.addEventListener('click', contactToggle);
-formSubmitButton.addEventListener('click', submitForm2);
+contactFormCloseButton.click(contactToggle)
+appointmentBtn.click(contactToggle);
+formSubmitButton.click(submitForm2);
 
 function contactToggle() {
-    document.getElementsByTagName('body').item(0).classList.toggle('overflow-hidden');
-    contactFormWrapper.classList.toggle('block');
-    contactFormWrapper.classList.toggle('hidden');
+    $('body').toggleClass('overflow-hidden');
+    contactFormWrapper.toggleClass('block');
+    contactFormWrapper.toggleClass('hidden');
 }
 
 let parallaxRight = document.getElementsByClassName('parallax-right');
@@ -80,50 +75,49 @@ new simpleParallax(parallaxUp, {
 
 // Contact Form with Ajax & PHP
 function submitForm2() {
-    document.getElementById('contact-dots').innerHTML = 'please wait...';
+    $('#contact-dots').html('please wait...');
     let formdata = new FormData();
-    formdata.append('name', document.getElementById('name').value);
-    formdata.append('email', document.getElementById('email').value);
-    formdata.append('subject', document.getElementById('subject').value);
-    formdata.append('message', document.getElementById('message').value);
-    let ajax = new XMLHttpRequest();
-    ajax.open('POST', 'action-page.php');
-    ajax.onloadend = function () {
-        if (ajax.readyState === 4 && ajax.status === 200) {
-            if (ajax.responseText === 'success') {
-                document.getElementById('contact-dots').innerHTML = '<h2>Thanks ' + document.getElementById('name').value + ', your message has been sent. <br>Charles will be in touch with you shortly</h2>';
-            } else {
-                //document.getElementById('status').innerHTML = ajax.responseText;
-            }
-        }
-        contactToggle();
-        cleanUpForm();
-    }
-    ajax.onerror = function (error) {
-        contactToggle();
-        cleanUpForm();
-    }
-    ajax.send(formdata);
+    formdata.append('name', $('#name').val());
+    formdata.append('email', $('#email').val());
+    formdata.append('subject', $('#subject').val());
+    formdata.append('message', $('#message').val());
+    $.ajax({
+        url: 'action-page.php',
+        data: formdata,
+        processData: false,
+        contentType: false,
+        type: 'POST',
+    })
+        .done(function () {
+            $('#contact-dots').html('<h2>Thanks ' + $('#name').value + ', your message has been sent. <br>Charles will be in touch with you shortly</h2>');
+        })
+        .fail(function () {
+            alert("error");
+        })
+        .always(function () {
+            contactToggle();
+            cleanUpForm();
+        });
 }
 
 function cleanUpForm() {
-    document.getElementById('contact-dots').innerHTML = '';
-    contactForm.reset()
+    $('#contact-dots').html('');
+    contactForm.get(0).reset()
 }
 
 // Header Read More/Red Less Button Function  
 function headerFunction() {
-    let dots = document.getElementById("header-dots");
-    let moreText = document.getElementById("header-more");
-    let btnText = document.getElementById("headerBtn");
+    let dots = $("#header-dots");
+    let moreText = $("#header-more");
+    let btnText = $("#headerBtn");
 
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read More...";
-        moreText.style.display = "none";
+    if (dots.css("display") === "none") {
+        dots.css("display", "inline");
+        btnText.html("Read More...");
+        moreText.css("display", "none");
     } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read Less...";
-        moreText.style.display = "inline";
+        dots.css("display", "none");
+        btnText.html("Read Less...");
+        moreText.css("display", "inline");
     }
 }

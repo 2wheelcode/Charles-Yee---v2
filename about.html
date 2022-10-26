@@ -4,264 +4,293 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/FavIcon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/FavIcon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/FavIcon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+          rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
-    <script src="./js/script.js" defer></script>
     <title>Charles Yee | About</title>
 </head>
 <body>
 
-    <!-- Header Section -->
-      <section id="about-page" class="screen-full z-0" >
-        <div class="bg-black bg-opacity-30"> <!-- Gradient Overlay -->
-            <!-- Navigation -->
-            <!-- Desktop Menu - Hidden to replace with burger on mobile -->
-            <nav class="mx-auto px-6 py-2 screen-full">
-                <!-- Menu/Logo Container -->
-                <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
-                    <!-- Logo -->
-                    <img src="./images/logo-transparent.png" id="logo-top"  class="w-24 h-24" alt="Charles' Logo">
+<!-- Header Section -->
+<section id="about-page" class="screen-full z-0">
+    <div class="bg-black bg-opacity-30"> <!-- Gradient Overlay -->
+        <!-- Navigation -->
+        <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+        <nav class="mx-auto px-6 py-2 screen-full">
+            <!-- Menu/Logo Container -->
+            <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
+                <!-- Logo -->
+                <img src="./images/logo-transparent.png" id="logo-top" class="w-24 h-24" alt="Charles' Logo">
 
-                    <!-- Desktop Menu - Hidden to replace with burger on mobile -->
-                    <div class="hidden h-10 font-alata md:flex md:space-x-6">
-                        <!-- Menu Item 1 -->
-                        <div class="group">
-                            <a href="index.html">Home</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
-                        </div>
-                        <!-- Menu Item 2 -->
-                        <div class="group">
-                            <a href="services.html">Services</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
-                        <!-- Menu Item 3 -->
-                        <div class="group">
-                            <a href="projects.html">Projects</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
-                        <!-- Menu Item 4 -->
-                        <div class="group">
-                            <a href="patents.html">Patents</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
-                        <!-- Menu Item 5 -->
-                        <div class="group">
-                            <a class="contact-btns" href="javascript:void(0)">Contact</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>            
+                <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-6">
+                    <!-- Menu Item 1 -->
+                    <div class="group">
+                        <a href="index.html">Home</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
                     </div>
-                    <!-- Hamburger Button -->
-                    <div class="md:hidden">
-                        <button
-                        id="menu-btn"
-                        type="button"
-                        class="z-40 block hamburger lg:hidden focus:ouline-none">
-                            <span class="hamburger-top"></span>
-                            <span class="hamburger-middle"></span>
-                            <span class="hamburger-bottom"></span>
-                        </button>
+                    <!-- Menu Item 2 -->
+                    <div class="group">
+                        <a href="services.html">Services</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
-                </nav>
-                
-                <!-- Mobile Menu -->
-                <div
-                    id="menu"
-                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
-                    <a href="index.html" class="hover:text-blue-600">Home</a>
-                    <a href="services.html" class="hover:text-blue-600">Services</a>
-                    <a href="projects.html" class="hover:text-blue-600">Projects</a>
-                    <a href="patents.html" class="hover:text-blue-600">Patents</a>
-                    <a href="" class="text-blue-600 underline">About</a>
-                    <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
+                    <!-- Menu Item 3 -->
+                    <div class="group">
+                        <a href="projects.html">Projects</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <!-- Menu Item 4 -->
+                    <div class="group">
+                        <a href="patents.html">Patents</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <!-- Menu Item 5 -->
+                    <div class="group">
+                        <a class="contact-btns" href="javascript:void(0)">Contact</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
                 </div>
-
-                <!-- Hero Statement -->
-                <div id="hero-statement" class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
-                    <!-- * Here is where a tagline or a highlight may go  -->
+                <!-- Hamburger Button -->
+                <div class="md:hidden">
+                    <button
+                            id="menu-btn"
+                            type="button"
+                            class="z-40 block hamburger lg:hidden focus:ouline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
                 </div>
             </nav>
 
-<!-- About Section -->
+            <!-- Mobile Menu -->
+            <div
+                    id="menu"
+                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-16 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-black">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="services.html" class="hover:text-blue-600">Services</a>
+                <a href="projects.html" class="hover:text-blue-600">Projects</a>
+                <a href="patents.html" class="hover:text-blue-600">Patents</a>
+                <a href="" class="text-blue-600 underline">About</a>
+                <a id="contact-btn" href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
+            </div>
 
-            <!-- Two Columns -->
+            <!-- Hero Statement -->
+            <div id="hero-statement"
+                 class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl">
+                <!-- * Here is where a tagline or a highlight may go  -->
+            </div>
+        </nav>
 
-            <div class="grid md:grid-cols-2 font-alata text-gray-300 text-shadow p-12 justify-center lg:h-fit lg:px-24">
-                <div id="left-col" class=" py-8 px-8 font-alata md:max-w-lg">
-                    <p class="text-justify md:max-w-lg">
-                        <span class="text-4xl text-slate-50 italic font-bold uppercase flex-1">About Charles</span>
-                        <br>
-                        <br>
-                        <span class="text-xl font-bold italic text-white">Charles is an industry leader in healthcare NLP (Natural Language Processing)</span> with nearly two decades of experience building commercial products, both in a hands-on capacity and as a technical manager.
-                        <br>
-                        <br>
-                        As a player coach, <span class="text-xl font-bold italic text-white">Charles has led multimillion-dollar projects in health-tech Fortune 500s such as United Health, Philips, and AstraZeneca.</span> Charles was also the co-founder and early employee of multiple Series-A and Series-B startup companies. Charles has a Ph.D. in computational linguistics.
-                        <br>
-                        <br>
-                        With over a dozen publications and patents in his field, <span class="text-xl font-bold italic text-white">Charles is an authority in machine learning for named entity extraction and classification.</span>
-                        <br>
-                        Charles’ expertise ranges from semantics, ontology, machine learning, and deep learning approaches for information classification and extraction. Provide leadership, orchestration, and implementation to materialize domain experts’ scientific rationale into commercial products.
-                        <br>
-                        <br>
-                        <span class="text-xl font-bold italic text-white">Uniquely versed in clinical trial protocol, oncology/pathology, EMR/EHR, and NLP-Assisted ICD coding.</span>
-                        <br>
-                        <br>
-                        Headed various companies’ R & D and infrastructure teams: Code review, <span class="text-xl font-bold italic text-white">building deep neural networks, model diagnosis, product and project management, end-to-end UAT and OAT, DevOps,</span> recruitment-onboarding, aspirational speeches, and business acumen.
-                        <br>
-                        <br>
-                        <span class="text-xl font-bold italic text-white">Well acclimated to large corporate culture.</span> Nevertheless, full track record of entrepreneurship initiatives.
+        <!-- About Section -->
 
-                    </p>
-                </div>
+        <!-- Two Columns -->
 
-                <!-- Spacing div's to create the layout -->
-                <div></div>
-                <div class="max-w-2xl mr-4"></div>
+        <div class="grid md:grid-cols-2 font-alata text-gray-300 text-shadow p-12 justify-center lg:h-fit lg:px-24">
+            <div id="left-col" class=" py-8 px-8 font-alata md:max-w-lg">
+                <p class="text-justify md:max-w-lg">
+                    <span class="text-4xl text-slate-50 italic font-bold uppercase flex-1">About Charles</span>
+                    <br>
+                    <br>
+                    <span class="text-xl font-bold italic text-white">Charles is an industry leader in healthcare NLP (Natural Language Processing)</span>
+                    with nearly two decades of experience building commercial products, both in a hands-on capacity and
+                    as a technical manager.
+                    <br>
+                    <br>
+                    As a player coach, <span class="text-xl font-bold italic text-white">Charles has led multimillion-dollar projects in health-tech Fortune 500s such as United Health, Philips, and AstraZeneca.</span>
+                    Charles was also the co-founder and early employee of multiple Series-A and Series-B startup
+                    companies. Charles has a Ph.D. in computational linguistics.
+                    <br>
+                    <br>
+                    With over a dozen publications and patents in his field, <span
+                        class="text-xl font-bold italic text-white">Charles is an authority in machine learning for named entity extraction and classification.</span>
+                    <br>
+                    Charles’ expertise ranges from semantics, ontology, machine learning, and deep learning approaches
+                    for information classification and extraction. Provide leadership, orchestration, and implementation
+                    to materialize domain experts’ scientific rationale into commercial products.
+                    <br>
+                    <br>
+                    <span class="text-xl font-bold italic text-white">Uniquely versed in clinical trial protocol, oncology/pathology, EMR/EHR, and NLP-Assisted ICD coding.</span>
+                    <br>
+                    <br>
+                    Headed various companies’ R & D and infrastructure teams: Code review, <span
+                        class="text-xl font-bold italic text-white">building deep neural networks, model diagnosis, product and project management, end-to-end UAT and OAT, DevOps,</span>
+                    recruitment-onboarding, aspirational speeches, and business acumen.
+                    <br>
+                    <br>
+                    <span class="text-xl font-bold italic text-white">Well acclimated to large corporate culture.</span>
+                    Nevertheless, full track record of entrepreneurship initiatives.
 
-                <div class="flex justify-end md:max-w-3xl">
+                </p>
+            </div>
+
+            <!-- Spacing div's to create the layout -->
+            <div></div>
+            <div class="max-w-2xl mr-4"></div>
+
+            <div class="flex justify-end md:max-w-3xl">
                 <div id="right-col" class="py-8 px-8 font-alata md:max-w-lg ">
                     <p class="text-justify">
                         <span class="text-3xl text-slate-50 font-bold uppercase">Personal</span>
                         <br>
                         <br>
-                        Charles grew up in Taipei, and left for Auckland, New Zealand at the age of 13 to learn English at the behest of his wise father. 
+                        Charles grew up in Taipei, and left for Auckland, New Zealand at the age of 13 to learn English
+                        at the behest of his wise father.
                         <br>
                         <br>
-                        He excelled at rugby and math, then went to Ohio to continue his love for nature and computer science. <span class="text-xl font-bold italic text-white">In his free time, he studied philosophy,</span> became fascinated by the works of Hermann Hesse, and was curious about the capabilities and the limitations of human language in conveying meaning. 
+                        He excelled at rugby and math, then went to Ohio to continue his love for nature and computer
+                        science. <span class="text-xl font-bold italic text-white">In his free time, he studied philosophy,</span>
+                        became fascinated by the works of Hermann Hesse, and was curious about the capabilities and the
+                        limitations of human language in conveying meaning.
                         <br>
                         <br>
-                        <span class="text-xl font-bold italic text-white">What is “meaning”, are there different spectrums of meaning and experiences,</span>  and how much of it can we convince another of? Why are meanings often lost??
+                        <span class="text-xl font-bold italic text-white">What is “meaning”, are there different spectrums of meaning and experiences,</span>
+                        and how much of it can we convince another of? Why are meanings often lost??
                         <br>
                         <br>
-                        While working on his MSc at King’s College London to try and answer those questions, he met a beautiful young violinist who he took lessons from. They fell in love. Without even knowing what umlauts are, Charles gave up everything and moved to Germany with her. They traveled around all of Europe stopping short of Russia on a single Interrail ticket (taking turns hiding in the WC). <span class="text-xl font-bold italic text-white">For a little while, Charles was a street musician,</span> and dumpster dived for the morsels Eastern Europe had to offer!
+                        While working on his MSc at King’s College London to try and answer those questions, he met a
+                        beautiful young violinist who he took lessons from. They fell in love. Without even knowing what
+                        umlauts are, Charles gave up everything and moved to Germany with her. They traveled around all
+                        of Europe stopping short of Russia on a single Interrail ticket (taking turns hiding in the WC).
+                        <span class="text-xl font-bold italic text-white">For a little while, Charles was a street musician,</span>
+                        and dumpster dived for the morsels Eastern Europe had to offer!
                         <br>
                         <br>
                         Upon receiving his doctorate from University of Stuttgart, Charles came back to the US.
                         <br>
                         <br>
-                        As an adrenaline junkie, <span class="text-xl font-bold italic text-white">he likes to race cars and motorcycles,</span> and has a collection of Ducatis over his 20 years of riding career. 
+                        As an adrenaline junkie, <span class="text-xl font-bold italic text-white">he likes to race cars and motorcycles,</span>
+                        and has a collection of Ducatis over his 20 years of riding career.
                         <br>
                         <br>
                         He’s explored 24 countries on two wheels, and rode across the United States twice.
                         <br>
-                        Between renewing his passport, he is well known in the Tango and Salsa communities of Boston. 
+                        Between renewing his passport, he is well known in the Tango and Salsa communities of Boston.
                         <br>
-                        He’s also been to Japan 3 times for his Iaijutsu certification. <span class="text-xl font-bold italic text-white">Fortunately, you won’t see him carrying the katana outside of a dojo.</span>
+                        He’s also been to Japan 3 times for his Iaijutsu certification. <span
+                            class="text-xl font-bold italic text-white">Fortunately, you won’t see him carrying the katana outside of a dojo.</span>
                         <br>
                         <br>
-                        <span class="text-xl font-bold italic text-white">Today, Charles is a technology mercenary</span> who flies south when the snow arrives, and keeps in touch with his friends from around the world. 
+                        <span class="text-xl font-bold italic text-white">Today, Charles is a technology mercenary</span>
+                        who flies south when the snow arrives, and keeps in touch with his friends from around the
+                        world.
 
-                    </p>    
+                    </p>
                 </div>
+            </div>
+            <!-- Resume Button -->
+            <div class="ml-auto my-8">
+                <a class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500"
+                   href="./images/Charles Yee CV 2022.pdf" target="_blank">
+                    Charles' Resume
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-black">
+        <!-- Container -->
+        <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
+            <!-- Footer Flex Container -->
+            <div class="flex flex-col font-alata mx-auto mb-8 space-y-6 lg:flex-row lg:mx-0 lg:space-y-0 lg:justify-between lg:items-end">
+                <!-- Logo & Title -->
+                <div class="flex flex-col">
+                    <!-- Logo & Title Container -->
+                    <div>
+                        <a href="#logo-top">
+                            <img src="./images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
+                        </a>
+                    </div>
+                    <!-- Logo Title -->
+                    <div>
+                        <h2 class="font-alata text-3xl text-center lg:justify-start text-white lg:text-6xl">
+                            Charles Yee
+                        </h2>
+                    </div>
+                </div> <!-- End Logo & Title -->
+
+
+                <!-- Menu Container -->
+                <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-8">
+
+                    <!-- Contact Container -->
+                    <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
+                        <!-- Item 1 -->
+                        <div class="group h-16 text-center cursor-default">
+                            <a href="" class="cursor-default"></a>
+                            <div class="text-white">
+                                charles.wj.yee@gmail.com
+                            </div>
+                            <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Item 3 -->
+                        <!-- <div class="group h-16 text-center cursor-default">
+                            <a href="" class="cursor-default"></a>
+                            <div class="text-white">
+                                123 Any Street
+                                <br>
+                                Boston, MA 00000
+                            </div>
+                            <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div> -->
+
+                    </div>
+                    <!-- Contact Form Button -->
+                    <div class="mx-auto">
+                        <button id="footer-contact-btn"
+                                class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500 contact-btns">
+                            Contact Form
+                        </button>
+                    </div>
+
                 </div>
-                <!-- Resume Button -->
-                <div class="ml-auto my-8">
-                    <a class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500" 
-                    href="./images/Charles Yee CV 2022.pdf" target="_blank">
-                        Charles' Resume
-                    </a>
+                <!-- Social & Copy Container -->
+                <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
+                    <!-- icons Container -->
+                    <div class="flex items-center justify-center mx-auto space-x-8 xl:space-x-12 md:justify-end">
+                        <!-- Icon 1 -->
+                        <div class="group h-8 mb-4">
+                            <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
+                                <img src="./images/linkedin-128.gif" alt="" class="h-12 mb-2">
+                            </a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Icon 2 -->
+                        <div class="group h-8">
+                            <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
+                                <img src="./images/toptal.png" alt="" class="h-12 mb-2">
+                            </a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="font-bold text-center px-3">
+                        Charles Yee &copy; 2022
+                        <br>
+                        All Rights Reserved
+                        <br>
+                        <div class="group h-16 text-center cursor-pointer">
+                            <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built &
+                                powered by
+                                <br>
+                                summit web creations
+                            </a>
+                            <div class="mx-8 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        
-
-        <!-- Footer -->
-        <footer id="footer" class="bg-black">
-            <!-- Container -->
-            <div class="container max-w-7xl py-10 mx-auto flex flex-col lg:px-6">
-                <!-- Footer Flex Container -->
-                <div class="flex flex-col font-alata mx-auto mb-8 space-y-6 lg:flex-row lg:mx-0 lg:space-y-0 lg:justify-between lg:items-end">
-                    <!-- Logo & Title -->
-                    <div class="flex flex-col">
-                        <!-- Logo & Title Container -->
-                        <div>
-                            <a href="#logo-top">
-                                <img src="./images/logo-transparent.png" class="mx-auto mb-8 w-24 h-24" alt="Charles' Logo">
-                        </div>
-                        <!-- Logo Title -->
-                        <div>
-                            <h2 class="font-alata text-3xl text-center lg:justify-start text-white lg:text-6xl">
-                                Charles Yee
-                            </h2>
-                        </div>
-                    </div> <!-- End Logo & Title -->
-                        
-
-                    <!-- Menu Container -->
-                    <div class="flex flex-col mx-auto space-y-8 ft:flex-row ft:space-y-0 ft:space-x-8">
-                        
-                            <!-- Contact Container -->
-                        <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6">
-                            <!-- Item 1 -->
-                            <div class="group h-16 text-center cursor-default">
-                                <a href=""class="cursor-default"></a>
-                                <div class="text-white">
-                                    charles.wj.yee@gmail.com
-                                </div>
-                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div>
-                            <!-- Item 3 -->
-                            <!-- <div class="group h-16 text-center cursor-default">
-                                <a href="" class="cursor-default"></a>
-                                <div class="text-white">
-                                    123 Any Street
-                                    <br>
-                                    Boston, MA 00000
-                                </div>
-                                <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div> -->
-                            
-                        </div>
-                        <!-- Contact Form Button -->
-                        <div class="mx-auto">
-                            <button id="footer-contact-btn" class="px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500 contact-btns">Contact Form</button>
-                        </div>
-                        
-                    </div>
-                    <!-- Social & Copy Container -->
-                    <div class="flex flex-col mx-auto space-y-6 text-gray-500 lg:items-end lg:justify-between">
-                        <!-- icons Container -->
-                        <div class="flex items-center justify-center mx-auto space-x-8 xl:space-x-12 md:justify-end">
-                            <!-- Icon 1 -->
-                            <div class="group h-8 mb-4">
-                                <a target="_blank" href="https://linkedin.com/in/charleswjyee/">
-                                    <img src="./images/linkedin-128.gif" alt="" class="h-12 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div>
-                            <!-- Icon 2 -->
-                            <div class="group h-8">
-                                <a target="_blank" href="https://toptal.com/product-managers/resume/charles-yee">
-                                    <img src="./images/toptal.png" alt="" class="h-12 mb-2">
-                                </a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                            </div>
-                        </div>
-        
-                        <!-- Copyright -->
-                        <div class="font-bold text-center px-3">
-                            Charles Yee &copy; 2022
-                            <br>
-                            All Rights Reserved
-                            <br>
-                            <div class="group h-16 text-center cursor-pointer">
-                                <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built & powered by
-                                    <br>
-                                    summit web creations
-                                </a>
-                                <div class="mx-8 group-hover:border-b group-hover:border-blue-50"></div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> <!-- End Footer -->
+    </footer> <!-- End Footer -->
 
     <!-- Contact From -->
     <div class="hidden absolute z-50" id="contact-form-wrapper"> <!-- hidden -->
@@ -269,83 +298,97 @@
             <div class="fixed inset-0 z-10 overflow-y-auto">
                 <div class="flex min-h-full items-start justify-center p-4 text-center sm:items-center sm:p-0">
                     <div class="bg-gray-900 p-4 bg-opacity-85 transition-opacity"> <!-- Form container -->
-                         <!-- Close Button -->
-                    <div class="md:flex md:justify-end">
-                        <button id="contact-us-close-btn" type="button" class=" bg-black text-white p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-slate-400/20 border border-color-zinc-600 duration-500">
-                            <span class="sr-only">Close menu</span>
-                            <!-- X Icon -->
-                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div> <!-- End Close Button -->
+                        <!-- Close Button -->
+                        <div class="md:flex md:justify-end">
+                            <button id="contact-us-close-btn" type="button"
+                                    class=" bg-black text-white p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-slate-400/20 border border-color-zinc-600 duration-500">
+                                <span class="sr-only">Close menu</span>
+                                <!-- X Icon -->
+                                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </button>
+                        </div> <!-- End Close Button -->
 
-                    <!-- Calendly Link -->
-                    <div class="mt-8 mb-12 w-f">
-                        <a id="appointment" class="w-full px-8 py-5 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500" target="_blank" href="https://calendly.com/charles-wj-yee">
-                            Book an Appointment with Charles
-                        </a>
-                    </div>
-                    
-                    <div class="text-white mx-auto font-bold">
-                        or send a message
-                    </div>
-
-                    <!-- Contact Form Insert, Hidden until clicked -->
-                    <div>      
-                        <span id="contact-dots"></span>
-                        <div id="" class="h-auto w-96 mx-auto my-auto px-auto z-20">
-                            <form id="contact-form" class="px-10 pb-4 space-y-4">
-                                
-
-                                <!-- Honeypot for spambots -->
-                                <input type="checkbox" name="contact_me_by_fax_only" value="1" class="user-cannot-see"
-                                    tabindex="-1" autocomplete="off">
-                                <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
-                                    <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1"
-                                        autocomplete="off"></label> <!-- End Honeypot -->
-        
-                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name" id="name"
-                                    type="text" placeholder="Name" required>
-                                <br>
-                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email" id="email"
-                                    type="email" placeholder="Email" required>
-                                <br>
-                                <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Subject"
-                                    id="subject" type="text" placeholder="Subject" required>
-                                <br>
-                                <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
-                                    placeholder="Your message" name="Message" id="message" cols="40" rows="5"
-                                    required></textarea>
-                                <button id="submitBtn"
-                                    class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500">Submit</button>
-                            </form>
-                        </div> <!-- End of Contact Form -->
-                        <div id="error-msg" class="w-auto h-auto mx-auto">
-                            <!-- @todo Add Hidden -->
-                            <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                                There was an error sending your form.
-                            </p>
+                        <!-- Calendly Link -->
+                        <div class="mt-8 mb-12 w-f">
+                            <a id="appointment"
+                               class="w-full px-8 py-5 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500"
+                               target="_blank" href="https://calendly.com/charles-wj-yee">
+                                Book an Appointment with Charles
+                            </a>
                         </div>
-                        <div id="success-msg" class="w-auto h-auto mx-auto">
-                            <!-- @todo Add Hidden -->
-                            <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
-                                Your message has been sent successfully,
-                                <br>
-                                Charles will be in touch with you shortly.
-                            </p>
+
+                        <div class="text-white mx-auto font-bold">
+                            or send a message
                         </div>
-                    </div>
-                    
+
+                        <!-- Contact Form Insert, Hidden until clicked -->
+                        <div>
+                            <span id="contact-dots"></span>
+                            <div id="" class="h-auto w-96 mx-auto my-auto px-auto z-20">
+                                <form id="contact-form" class="px-10 pb-4 space-y-4">
+
+
+                                    <!-- Honeypot for spambots -->
+                                    <input type="checkbox" name="contact_me_by_fax_only" value="1"
+                                           class="user-cannot-see"
+                                           tabindex="-1" autocomplete="off">
+                                    <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
+                                        <input type="text" name="nickname" id="nickname" class="user-cannot-see"
+                                               tabindex="-1"
+                                               autocomplete="off"></label> <!-- End Honeypot -->
+
+                                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Name"
+                                           id="name"
+                                           type="text" placeholder="Name" required>
+                                    <br>
+                                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white" name="Email"
+                                           id="email"
+                                           type="email" placeholder="Email" required>
+                                    <br>
+                                    <input class="w-full bg-slate-400/20 text-white placeholder:text-white"
+                                           name="Subject"
+                                           id="subject" type="text" placeholder="Subject" required>
+                                    <br>
+                                    <textarea class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
+                                              placeholder="Your message" name="Message" id="message" cols="40" rows="5"
+                                              required></textarea>
+                                    <button id="submitBtn"
+                                            class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500">
+                                        Submit
+                                    </button>
+                                </form>
+                            </div> <!-- End of Contact Form -->
+                            <div id="error-msg" class="w-auto h-auto mx-auto">
+                                <!-- @todo Add Hidden -->
+                                <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                                    There was an error sending your form.
+                                </p>
+                            </div>
+                            <div id="success-msg" class="w-auto h-auto mx-auto">
+                                <!-- @todo Add Hidden -->
+                                <p class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100">
+                                    Your message has been sent successfully,
+                                    <br>
+                                    Charles will be in touch with you shortly.
+                                </p>
+                            </div>
+                        </div>
+
                     </div> <!-- Form container -->
-                
+
                 </div>
             </div>
         </div>
     </div> <!-- End Contact Form Wrapper -->
-    </section> <!-- End of Header Section -->
+</section> <!-- End of Header Section -->
 
-    <!-- Javascript -->
-
+<!-- Javascript -->
+<script src="https://unpkg.com/jquery@^3.6.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+<script src="./js/script.js" defer></script>
 </body>
 </html>
