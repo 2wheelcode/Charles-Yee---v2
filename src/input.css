@@ -70,7 +70,7 @@
 
 @media(max-width: 650px) {
     .background-image-parallax img.charles-presentation{
-        width: 2367px;
+        width: 1914px;
         object-position: top right;
     }
 }
@@ -78,14 +78,14 @@
 
 @media(max-width: 400px) {
     .background-image-parallax img.charles-presentation{
-        width: 2550px;
+        width: 2070px;
         object-position: top right;
     }
 }
 
 @media(max-width: 300px) {
     .background-image-parallax img.charles-presentation{
-        width: 2730px;
+        width: 2478px;
         object-position: top right;
     }
     .background-image-parallax.charles-motorcycle img {
