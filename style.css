@@ -1782,20 +1782,6 @@ video {
   background-overflow: hidden;
 }
 
-/* Is this the iPhone fix? */
-/* @todo Bentley inserted to attempt to fix the iPhone issue, not sure if this will interfere with Jonathan's work... */
-body {
-  height: 100vh;
-}
-
-/* Avoid Chrome to see Safari hack */
-@supports (-webkit-touch-callout: none) {
-  body {
-    /* The hack for Safari */
-    height: -webkit-fill-available;
-  }
-}
-
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
 
