@@ -281,10 +281,11 @@
 }
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */
-    #services-page {
+    #services-page, #patents-page, #projects-page, #about-page {
         background:none;
     }
-    #services-page:after{
+    #services-page:after, #patents-page:after, #projects-page:after,
+    #about-page:after {
         content:"";
         position:fixed; /* stretch a fixed position to the whole screen */
         top:0;
@@ -293,11 +294,22 @@
         right:0;
         z-index:-1; /* needed to keep in the background */
         background-position: center center;
-        background-image: url('./images/services-v2.jpg');
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    }
+    #services-page:after{
+        background-image: url('./images/services-v2.jpg');
+    }
+    #patents-page:after {
+        background-image: url('./images/patents-pg-v2.jpg');
+    }
+    #projects-page:after {
+        background-image: url('./images/projects-pg-v2.jpg');
+    }
+    #about-page:after {
+        background-image: url('./images/about-pg-v2.jpg');
     }
 }
 
