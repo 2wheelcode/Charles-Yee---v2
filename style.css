@@ -828,10 +828,6 @@ video {
   height: fit-content;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-48 {
   height: 12rem;
 }
@@ -846,6 +842,10 @@ video {
 
 .h-5 {
   height: 1.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .min-h-screen {
@@ -876,10 +876,6 @@ video {
   width: auto;
 }
 
-.w-16 {
-  width: 4rem;
-}
-
 .w-72 {
   width: 18rem;
 }
@@ -890,6 +886,10 @@ video {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-11 {
@@ -1143,10 +1143,6 @@ video {
   background-color: rgb(148 163 184 / 0.2);
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -1174,6 +1170,10 @@ video {
   background-color: rgb(255 255 255 / 0.3);
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-zinc-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
@@ -1183,12 +1183,12 @@ video {
   --tw-bg-opacity: 0.3;
 }
 
-.bg-opacity-75 {
-  --tw-bg-opacity: 0.75;
-}
-
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
+}
+
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
 }
 
 .bg-opacity-40 {
@@ -1763,18 +1763,6 @@ video {
   background-overflow: hidden;
 }
 
-@supports (-webkit-touch-callout: none) {
-  /* CSS specific to iOS devices */
-
-  #services-page {
-    /*background-image: url('./images/services-v2.jpg');*/
-    /*background-position: center;*/
-    /*background-attachment: scroll;*/
-    /*background-size: 100vw;*/
-    /*background-gradient: rgba(-180deg 0,0,0,0.8);*/
-  }
-}
-
 @media(max-width: 768px) {
   #services-page {
     background-image: url('./images/services-v2.jpg');
@@ -1832,6 +1820,30 @@ video {
     background-image: url('./images/about-pg-v2.jpg');
     background-position: center;
     background-gradient: rgba(-180deg 0,0,0,0.8);
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+
+  #services-page {
+    background:none;
+  }
+
+  #services-page:after{
+    content:"";
+    position:fixed;
+    /* stretch a fixed position to the whole screen */
+    top:0;
+    height:100vh;
+    /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    z-index:-1;
+    /* needed to keep in the background */
+    background-position: center center;
+    background-image: url('./images/services-v2.jpg');
+    background-size: cover;
   }
 }
 
@@ -2200,16 +2212,16 @@ video {
     border-radius: 0.75rem;
   }
 
-  .lg\:p-32 {
-    padding: 8rem;
-  }
-
   .lg\:p-24 {
     padding: 6rem;
   }
 
   .lg\:p-20 {
     padding: 5rem;
+  }
+
+  .lg\:p-32 {
+    padding: 8rem;
   }
 
   .lg\:p-6 {

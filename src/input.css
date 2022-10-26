@@ -219,16 +219,6 @@
     background-overflow: hidden;
 }
 
-@supports (-webkit-touch-callout: none) {
-    /* CSS specific to iOS devices */
-    #services-page {
-        /*background-image: url('./images/services-v2.jpg');*/
-        /*background-position: center;*/
-        /*background-attachment: scroll;*/
-        /*background-size: 100vw;*/
-        /*background-gradient: rgba(-180deg 0,0,0,0.8);*/
-    }
-}
 
 @media(max-width: 768px) {
     #services-page {
@@ -289,6 +279,28 @@
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 }
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    #services-page {
+        background:none;
+    }
+    #services-page:after{
+        content:"";
+        position:fixed; /* stretch a fixed position to the whole screen */
+        top:0;
+        height:100vh; /* fix for mobile browser address bar appearing disappearing */
+        left:0;
+        right:0;
+        z-index:-1; /* needed to keep in the background */
+        background-position: center center;
+        background-image: url('./images/services-v2.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
 
 /*body{*/
 /*    text-shadow: 0 1px 3px #000000;*/
