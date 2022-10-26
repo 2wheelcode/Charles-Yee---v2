@@ -57,7 +57,7 @@
 
 @media(max-width: 768px) {
     .background-image-parallax img.charles-presentation{
-        width: 2216px;
+        width: 1937px;
         object-position: top right;
     }
     .background-image-parallax.charles-motorcycle img{
@@ -78,7 +78,7 @@
 
 @media(max-width: 400px) {
     .background-image-parallax img.charles-presentation{
-        width: 2070px;
+        width: 2084px;
         object-position: top right;
     }
 }

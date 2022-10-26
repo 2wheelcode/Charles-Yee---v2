@@ -1577,7 +1577,7 @@ video {
 
 @media(max-width: 768px) {
   .background-image-parallax img.charles-presentation{
-    width: 2216px;
+    width: 1937px;
     -o-object-position: top right;
        object-position: top right;
   }
@@ -1599,7 +1599,7 @@ video {
 
 @media(max-width: 400px) {
   .background-image-parallax img.charles-presentation{
-    width: 2070px;
+    width: 2084px;
     -o-object-position: top right;
        object-position: top right;
   }
