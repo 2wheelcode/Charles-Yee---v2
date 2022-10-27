@@ -15,6 +15,11 @@ function navToggle() {
     $('nav').first().toggleClass('h-screen')
 }
 
+// Default First Accordion Item Open
+$(function(){
+  $('.accordion-item-header').eq(0).trigger('click');
+});
+
 // Accordion Button
 $(".accordion-item-header").click(
     event => {
