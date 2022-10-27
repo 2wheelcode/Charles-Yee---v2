@@ -132,3 +132,7 @@ function headerFunction() {
         moreText.css('max-height', '600px')
     }
 }
+
+AOS.init({
+    once: true,
+});
