@@ -24,11 +24,14 @@ $(function(){
 $(".accordion-item-header").click(
     event => {
         let accordionItemHeader = $(event.target);
-        // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-        const currentlyActiveAccordionItemHeader = $(".accordion-item-header.active");
-        if (currentlyActiveAccordionItemHeader && !currentlyActiveAccordionItemHeader.is(accordionItemHeader)) {
-            currentlyActiveAccordionItemHeader.toggleClass("active");
-            currentlyActiveAccordionItemHeader.next().css("maxHeight", '0');
+
+        if(accordionItemHeader.hasClass('exclusive-open')) {
+            // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+            const currentlyActiveAccordionItemHeader = $(".accordion-item-header.exclusive-open.active");
+            if (currentlyActiveAccordionItemHeader && !currentlyActiveAccordionItemHeader.is(accordionItemHeader)) {
+                currentlyActiveAccordionItemHeader.toggleClass("active");
+                currentlyActiveAccordionItemHeader.next().css("maxHeight", '0');
+            }
         }
 
         accordionItemHeader.toggleClass("active");
@@ -126,10 +129,14 @@ function headerFunction() {
     if (dots.css("display") === "none") {
         dots.css("display", "inline");
         btnText.html("Read More...");
-        moreText.css("display", "none");
+        moreText.css('max-height', '0')
     } else {
         dots.css("display", "none");
         btnText.html("Read Less...");
-        moreText.css("display", "inline");
+        moreText.css('max-height', '600px')
     }
 }
+
+AOS.init({
+    once: true,
+});

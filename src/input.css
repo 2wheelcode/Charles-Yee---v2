@@ -49,9 +49,10 @@
 .background-image-parallax.charles-motorcycle {
     background-color: black;
 }
+
 .background-image-parallax.charles-motorcycle img{
-    object-fit: contain;
-    width: 100%;
+    width: calc(100% + 30vw);
+    object-fit: cover;
 }
 
 
@@ -115,6 +116,13 @@
     position: relative;
 }
 
+#title #header-more{
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
@@ -157,6 +165,11 @@
     position: relative;
     cursor: pointer;
   }
+
+  .accordion-item-header > div {
+      margin-right: 35px;
+  }
+
   .accordion-item-header::after {
     content: "\002B";
     font-size: 2rem;
@@ -165,6 +178,9 @@
   }
   .accordion-item-header.active::after {
     content: "\2212";
+  }
+  .accordion-item-header.active + .accordion-item-body{
+      max-height: max-content;
   }
   .accordion-item-body {
     max-height: 0;
