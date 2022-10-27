@@ -1641,6 +1641,13 @@ video {
   position: relative;
 }
 
+#title #header-more{
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {

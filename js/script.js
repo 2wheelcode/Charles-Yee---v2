@@ -121,10 +121,10 @@ function headerFunction() {
     if (dots.css("display") === "none") {
         dots.css("display", "inline");
         btnText.html("Read More...");
-        moreText.css("display", "none");
+        moreText.css('max-height', '0')
     } else {
         dots.css("display", "none");
         btnText.html("Read Less...");
-        moreText.css("display", "inline");
+        moreText.css('max-height', '600px')
     }
 }
