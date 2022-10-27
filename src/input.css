@@ -49,9 +49,10 @@
 .background-image-parallax.charles-motorcycle {
     background-color: black;
 }
+
 .background-image-parallax.charles-motorcycle img{
-    object-fit: contain;
-    width: 100%;
+    width: calc(100% + 30vw);
+    object-fit: cover;
 }
 
 
