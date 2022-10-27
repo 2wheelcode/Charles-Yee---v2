@@ -1692,6 +1692,10 @@ video {
   cursor: pointer;
 }
 
+.accordion-item-header > div {
+  margin-right: 35px;
+}
+
 .accordion-item-header::after {
   content: "\002B";
   font-size: 2rem;
@@ -1701,6 +1705,12 @@ video {
 
 .accordion-item-header.active::after {
   content: "\2212";
+}
+
+.accordion-item-header.active + .accordion-item-body{
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
 }
 
 .accordion-item-body {

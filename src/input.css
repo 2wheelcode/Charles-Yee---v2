@@ -165,6 +165,11 @@
     position: relative;
     cursor: pointer;
   }
+
+  .accordion-item-header > div {
+      margin-right: 35px;
+  }
+
   .accordion-item-header::after {
     content: "\002B";
     font-size: 2rem;
@@ -173,6 +178,9 @@
   }
   .accordion-item-header.active::after {
     content: "\2212";
+  }
+  .accordion-item-header.active + .accordion-item-body{
+      max-height: max-content;
   }
   .accordion-item-body {
     max-height: 0;

@@ -15,15 +15,19 @@ function navToggle() {
     $('nav').first().toggleClass('h-screen')
 }
 
+
 // Accordion Button
 $(".accordion-item-header").click(
     event => {
         let accordionItemHeader = $(event.target);
-        // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-        const currentlyActiveAccordionItemHeader = $(".accordion-item-header.active");
-        if (currentlyActiveAccordionItemHeader && !currentlyActiveAccordionItemHeader.is(accordionItemHeader)) {
-            currentlyActiveAccordionItemHeader.toggleClass("active");
-            currentlyActiveAccordionItemHeader.next().css("maxHeight", '0');
+
+        if(accordionItemHeader.hasClass('exclusive-open')) {
+            // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+            const currentlyActiveAccordionItemHeader = $(".accordion-item-header.exclusive-open.active");
+            if (currentlyActiveAccordionItemHeader && !currentlyActiveAccordionItemHeader.is(accordionItemHeader)) {
+                currentlyActiveAccordionItemHeader.toggleClass("active");
+                currentlyActiveAccordionItemHeader.next().css("maxHeight", '0');
+            }
         }
 
         accordionItemHeader.toggleClass("active");
