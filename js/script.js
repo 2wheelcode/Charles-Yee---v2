@@ -25,16 +25,14 @@ $(".accordion-item-header").click(
     event => {
         let accordionItemHeader = $(event.target);
 
-        if(accordionItemHeader.hasClass('exclusive-open')) {
-            // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-            const currentlyActiveAccordionItemHeader = $(".accordion-item-header.exclusive-open.active");
+            // Leave Uncommented if you only want to allow for the display of only one collapsed item at a time!
+            const currentlyActiveAccordionItemHeader = $(".accordion-item-header.active");
             if (currentlyActiveAccordionItemHeader && !currentlyActiveAccordionItemHeader.is(accordionItemHeader)) {
                 currentlyActiveAccordionItemHeader.toggleClass("active");
                 currentlyActiveAccordionItemHeader.next().css("maxHeight", '0');
             }
-        }
 
-        accordionItemHeader.toggleClass("active");
+        accordionItemHeader.toggleClass('active');
         const accordionItemBody = accordionItemHeader.next();
         if (accordionItemHeader.hasClass("active")) {
             accordionItemBody.css("maxHeight", `${accordionItemBody.get(0).scrollHeight}px`);
