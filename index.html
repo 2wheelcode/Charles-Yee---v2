@@ -29,8 +29,7 @@
     </div>
     <div class="h-fit bg-black bg-opacity-60"> <!-- Gradient Overlay -->
 
-        <!-- Navigation -->
-        <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+        <!-- Navigation | Desktop Menu - Replaced with Burger on Mobile -->
         <nav class="mx-auto px-6 py-2 screen-full">
             <!-- Menu/Logo Container -->
             <nav class="flex px-8 items-center justify-between font-bold text-white md:px-0">
@@ -66,8 +65,8 @@
                         <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                 </div>
+
                 <!-- Hamburger Button -->
-                <!-- **BUG** If I add data-aos animation, the X close disappears across all pages -->
                 <div class="md:hidden">
                     <button
                             id="menu-btn"
@@ -93,10 +92,9 @@
             </div>
 
             <!-- Hero Statement -->
-            <!-- **BUG** with data-aos it is on top of the mobile menu on this page only?? -->
             <div id="hero-statement"
                  class="max-w-md mt-8 mx-auto p-4 font-alata text-2xl text-white uppercase italic md:p-0 md:max-w-3xl md:mx-0 md:text-3xl -z-10"
-                 data-aos="fade-down"
+                 data-aos="zoom-in"
                  data-aos-duration="2000"
                  >
                 In any project- there is Time, Quality, and Cost- You can have two, but not all three…
@@ -108,14 +106,16 @@
         <div class="mx-auto">
             <div class="flex flex-col lg:flex-row lg:px-6">
                 <!-- Image Container -->
-                <div class="mx-auto my-auto md:shrink-0" data-aos="fade-right"
-                data-aos-duration="2000">
+                <div class="mx-auto my-auto md:shrink-0" 
+                    data-aos="fade-right"
+                    data-aos-duration="2000">
                     <img class="w-72 rounded-full object-cover lg:w-96" src="./images/charles-hero-v1.jpg"
                          alt="Photo of Charles Yee">
                 </div>
                 <!-- Title & Headline Section -->
-                <div id="title" class="mx-auto px-10 py-8 md:max-w-3xl md:py-0" data-aos="fade-left"
-                data-aos-duration="2000">
+                <div id="title" class="mx-auto px-10 py-8 md:max-w-3xl md:py-0"
+                    data-aos="fade-left"
+                    data-aos-duration="2000">
                     <p class="font-alata font-extrabold text-3xl mt-4 text-slate-100">Charles Yee</p>
                     <p class="mt-2 text-xl text-slate-100">
                         Leader in Machine Learning/Deep Neural Networks for Natural Language Processing.
@@ -165,57 +165,59 @@
 
 <!-- Principle Why's -->
 <section id="why-work-with-charles"
-         class="font-alata grid grid-cols-1 divide-y divide-x lg:grid-cols-2  bg-gray-300 bg-center bg-cover bg-no-repeat overflow-hidden"
+         class="font-alata grid grid-cols-1 lg:grid-cols-2  bg-gray-300 bg-center bg-cover bg-no-repeat overflow-hidden"
          style="background-image:linear-gradient(rgba(207,185,151,.9), rgba(207,185,151,.9)), url(./images/alt-image-inverted.png);">
-    <div id="leader" class="px-12 py-8 lg:p-24"
-        data-aos="fade-right"
-        data-aos-duration="2000">
+    <div id="leader" class="px-12 py-8 lg:p-24">
         <!-- Icon -->
         <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat"
-             style="background-image: url(./images/logo-transparent-b-and-b.png)">
+             style="background-image: url(./images/logo-transparent-b-and-b.png)" data-aos="fade-right" data-aos-duration="2000">
         </div>
         <!-- Leader -->
-        <h2 class="text-3xl uppercase font-bold">Leader In Healthcare Tech</h2>
-        <br/>
-        <p class="text-xl">
-            Deep Neural Network, Backend engineering in Natural Language Programming applications:
+        <h2 class="text-3xl uppercase font-bold"
+            data-aos="fade-right"
+            data-aos-duration="2000">
+            Leader In Healthcare Tech
+        </h2>
+        <br>
+            <p class="text-xl">
+                Deep Neural Network, Backend engineering in Natural Language Programming applications:
+                <br/>
+                <br/>
+            <ul class="list-disc">
+                <li>Domain expertise in healthcare, insurance, provider, oncology, personalized nutrition</li>
+                <li>Hands-on work with Python and Tensorflow</li>
+                <li>Technical leadership, team management, mentorship</li>
+            </ul>
             <br/>
-            <br/>
-        <ul class="list-disc">
-            <li>Domain expertise in healthcare, insurance, provider, oncology, personalized nutrition</li>
-            <li>Hands-on work with Python and Tensorflow</li>
-            <li>Technical leadership, team management, mentorship</li>
-            <!-- <a href="#" class="text-blue-500 underline">The Why is obvious with these 4 major points</a> -->
-        </ul>
-
-        <br/>
-
-        </p>
+            </p>
     </div>
-    <div id="services" class="px-12 py-8 lg:p-24"
-        data-aos="fade-left"
-        data-aos-duration="2000">
+    <div id="services" class="px-12 py-8 lg:p-24">
         <!-- Icon -->
         <div class="flex h-12 w-12 mb-4 bg-center bg-cover bg-no-repeat"
-             style="background-image: url(./images/services-black.png)">
+             style="background-image: url(./images/services-black.png)" data-aos="fade-left" data-aos-duration="2000">
         </div>
         <!-- Services -->
-        <h2 class="text-3xl uppercase font-bold">Services</h2>
-        <br/>
-        <p class="text-xl">
-            Charles' expertise is machine learning and backend development, with a strong emphasis on the healthcare
-            industry. Throughout his career, he has proven to excel in the following responsibilities:
-            <br/>
-            <br/>
-        <ul class="list-disc">
-            <li>Hands-on, backend software development/troubleshooting</li>
-            <li>Technical audit, particularly for startup acquisition, pharmacovigilance, and regulatory</li>
-            <li>Machine learning, AI, data science. Building deep neural network models using structured and
-                unstructured data
-            </li>
-            <a href="services.html" class="text-blue-500 underline">Services</a>
-        </ul>
-        </p>
+        <h2 class="text-3xl uppercase font-bold"
+            data-aos="fade-left" 
+            data-aos-duration="2000">
+            Services
+        </h2>
+        <br>
+            <p class="text-xl">
+                Charles' expertise is machine learning and backend development, with a strong emphasis on the healthcare
+                industry. Throughout his career, he has proven to excel in the following responsibilities:
+                <br/>
+                <br/>
+            <ul class="list-disc">
+                <li>Hands-on, backend software development/troubleshooting</li>
+                <li>Technical audit, particularly for startup acquisition, pharmacovigilance, and regulatory</li>
+                <li>Machine learning, AI, data science. Building deep neural network models using structured and
+                    unstructured data
+                </li>
+                <a href="services.html" class="text-blue-500 underline">Services</a>
+            </ul>
+            </p>
+        </br>
     </div>
 </section> <!-- End Principle Why Section -->
 
@@ -227,13 +229,13 @@
         <img src="./images/presentation-2.jpg" class="parallax-right attach-right-bottom charles-presentation">
     </div>
     <div class="p-8 lg:p-24 z-0 " style="background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5))">
+        <!-- Title -->
         <div class="mb-0">
             <h2 class="font-alata font-bold uppercase text-4xl text-white shadow-zinc-400 text-center pt-12"
-                data-aos="fade-down"
+                data-aos="zoom-in"
                 data-aos-duration="2000">
                 credentials</h2>
         </div>
-
         <div id="boxes" class="grid lg:grid-cols-2 md:grid-cols-1 gap-12">
         <!-- Patents Container 1st -->
         <div id="patents" class="text-xl p-6 lg:p-20">
@@ -369,7 +371,11 @@
 
 <!-- Recommendations Carousel Section -->
 <section id="recommendations-slider" class="bg-black h-fit px-8 overflow-x-hidden">
-    <h2 class="font-alata uppercase text-2xl md:text-4xl font-bold text-slate-100 text-center pt-24">recommendations</h2>
+    <h2 class="font-alata uppercase text-2xl md:text-4xl font-bold text-slate-100 text-center pt-24"
+        data-aos="zoom-in"
+        data-aos-duration="2000">
+        recommendations
+    </h2>
 
     <div id="default-carousel duration-5000 ease-in-out" class="relative py-16 lg:px-32" data-carousel="slide"> <!--  -->
         <!-- Carousel wrapper -->
