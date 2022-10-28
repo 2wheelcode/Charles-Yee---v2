@@ -165,6 +165,12 @@
 }
 
  /*Accordion*/
+ .accordion-item {
+  border: 1px solid;
+  -o-border-image: linear-gradient(to bottom, #34495e, transparent, #34495e) 1;
+  border-image: linear-gradient(to bottom, #34495e, transparent, #34495e) 1;
+}
+
   .accordion-item-header {
     position: relative;
     cursor: pointer;
@@ -193,8 +199,6 @@
   }
   .accordion-item-body-content {
     margin-top: 12px;
-    border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 /*End Accordion*/
 
