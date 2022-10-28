@@ -103,7 +103,7 @@
 }
 
 #about {
-    background-image: ;
+    background-image: url(./images/about-home-1.png);
 }
 
 @media(max-width: 768px) {
@@ -303,6 +303,9 @@
     }
     #projects-page:after {
         background-image: url('./images/projects-pg-v2.jpg');
+    }
+    #about:after {
+        background-image: url(./images/about-home-1.png);
     }
     #about-page:after {
         background-image: url('./images/about-pg-v2.jpg');
