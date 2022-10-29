@@ -302,6 +302,7 @@
     }
     #services-page:after{
         background-image: url('./images/services-v2.jpg');
+        background-position: center top;
     }
     #patents-page:after {
         background-image: url('./images/patents-pg-v2.jpg');
@@ -315,6 +316,7 @@
     }
     #about-page:after {
         background-image: url('./images/about-pg-v2.jpg');
+        background-position: center top;
     }
 }
 
