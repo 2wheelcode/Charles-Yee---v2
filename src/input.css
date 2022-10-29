@@ -311,6 +311,7 @@
     }
     #about:after {
         background-image: url('./images/about-parallax.jpg');
+        background-position: center top;
     }
     #about-page:after {
         background-image: url('./images/about-pg-v2.jpg');
