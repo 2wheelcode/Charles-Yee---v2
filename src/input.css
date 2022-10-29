@@ -102,9 +102,6 @@
     overflow:hidden;
 }
 
-#about {
-    background-image: url(./images/about-home-1.png);
-}
 
 @media(max-width: 768px) {
     #hero {
@@ -185,6 +182,7 @@
     font-size: 2rem;
     position: absolute;
     right: .5rem;
+    top: -0.58rem;
   }
   .accordion-item-header.active::after {
     content: "\2212";
@@ -272,6 +270,10 @@
     background-overflow: hidden;
 }
 
+#about {
+    background-position: center top;
+    background-image: url('./images/about-home-1.png');
+}
 @media(max-width: 768px) {
     #about-page {
     background-image: url('./images/about-pg-v2.jpg');
@@ -279,13 +281,18 @@
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 }
+@media(max-width: 1200px) {
+    #about {
+        background-image: url('./images/about-parallax.jpg');
+    }
+}
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */
-    #services-page, #patents-page, #projects-page, #about-page {
+    #services-page, #patents-page, #projects-page, #about-page, #about {
         background:none;
     }
     #services-page:after, #patents-page:after, #projects-page:after,
-    #about-page:after {
+    #about-page:after, #about:after {
         content:"";
         position:fixed; /* stretch a fixed position to the whole screen */
         top:0;
@@ -309,9 +316,14 @@
         background-image: url('./images/projects-pg-v2.jpg');
     }
     #about:after {
-        background-image: url('./images/about-home-1.png');
+        background-image: url('./images/about-parallax.jpg');
     }
     #about-page:after {
         background-image: url('./images/about-pg-v2.jpg');
     }
+}
+
+ul, ol {
+    margin-left: 20px;
+    /*list-style-position: inside;*/
 }
