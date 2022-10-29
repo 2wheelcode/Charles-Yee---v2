@@ -277,7 +277,7 @@
 @media(max-width: 768px) {
     #about-page {
     background-image: url('./images/about-pg-v2.jpg');
-    background-position: center;
+    background-position: center top;
     background-gradient: rgba(-180deg 0,0,0,0.8);
     }
 }
