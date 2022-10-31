@@ -71,7 +71,7 @@
 
 @media(max-width: 650px) {
     .background-image-parallax img.charles-presentation{
-        width: 1914px;
+        width: 2107px;
         object-position: top right;
     }
 }
@@ -79,14 +79,21 @@
 
 @media(max-width: 400px) {
     .background-image-parallax img.charles-presentation{
-        width: 2084px;
+        width: 2325px;
+        object-position: top right;
+    }
+}
+
+@media(max-width: 330px) {
+    .background-image-parallax img.charles-presentation{
+        width: 2500px;
         object-position: top right;
     }
 }
 
 @media(max-width: 300px) {
     .background-image-parallax img.charles-presentation{
-        width: 2478px;
+        width: 2663px;
         object-position: top right;
     }
     .background-image-parallax.charles-motorcycle img {
