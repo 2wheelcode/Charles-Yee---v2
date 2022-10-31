@@ -334,12 +334,12 @@ ul, ol {
 }
 
 #default-carousel{
-    max-width:925px;
+    max-width: 1000px;
 }
 
 @media(max-width: 975px) {
     #default-carousel{
-        max-width: 100%;
+        max-width: 90%;
     }
     #carousel-wrapper{
 
