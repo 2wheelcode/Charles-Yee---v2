@@ -254,6 +254,7 @@
     }
 }
 
+
 #about-page {
     background-image: url('./images/about-pg-v1.jpg');
     background-repeat: no-repeat;
@@ -323,4 +324,17 @@
 ul, ol {
     margin-left: 20px;
     /*list-style-position: inside;*/
+}
+
+#default-carousel{
+    max-width:925px;
+}
+
+@media(max-width: 975px) {
+    #default-carousel{
+        max-width: 100%;
+    }
+    #carousel-wrapper{
+
+    }
 }
