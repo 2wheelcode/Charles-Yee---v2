@@ -274,7 +274,7 @@
 
 #about {
     background-position: center top;
-    background-image: url('./images/about-home-1.png');
+    background-image: url('./images/about-home-1.jpg');
 }
 @media(max-width: 768px) {
     #about-page {
