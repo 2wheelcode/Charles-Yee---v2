@@ -679,10 +679,6 @@ video {
   z-index: 30;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -937,16 +933,16 @@ video {
   max-width: 80rem;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
-}
-
 .max-w-lg {
   max-width: 32rem;
 }
 
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-1 {
@@ -1784,7 +1780,7 @@ video {
 
 #about {
   background-position: center top;
-  background-image: url('./images/about-home-1.png');
+  background-image: url('./images/about-home-1.jpg');
 }
 
 @media(max-width: 768px) {
@@ -2127,10 +2123,6 @@ ul, ol {
     margin-right: 0px;
   }
 
-  .lg\:ml-auto {
-    margin-left: auto;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -2159,10 +2151,6 @@ ul, ol {
 
   .lg\:justify-start {
     justify-content: flex-start;
-  }
-
-  .lg\:justify-between {
-    justify-content: space-between;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
