@@ -15,29 +15,38 @@
             //validate the email is formatted correctly contains '@' and '.'
             //submit the form
 
+            $replyTo = $_POST['email'];
             $userName = $_POST['name'];
             $userEmail = $_POST['email'];
             $messageSubject = $_POST['subject'];
             $message = $_POST['message'];
 
-            // @todo Change out my email for Charles upon launch
-            $mailTo = 'bentleyhamm@gmail.com';
-            //$mailTo = 'charles.wj.yee@gmail.com';
+           
+            $mailTo = 'charles.wj.yee@gmail.com';
             $body = '';
 
             $body .= 'From: '.$userName."\r\n";
             $body .= 'Email: '.$userEmail."\r\n";
             $body .= 'Subject: '.$messageSubject."\r\n";
             $body .= 'Message: '."\r\n".$message."\r\n";
+            
+            
+            $headers  = "From: " .$userName ." <" .$userEmail  .">\r\n";
+            $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Content-Type: text/plain; charset=iso-8859-1\r\n";
+            
 
-            if(mail($mailTo, "Message from Charles' Website", $messageSubject, $body)){
-                header("HTTP/1.1 200 OK");
-                $message_sent = true;
-                echo 'success';
-            } else {
-                header("HTTP/1.1 500 Send Error");
-                echo 'The server failed to send the message. Please try again later.';
-            }
+            $mailSent = mail($mailTo, "Message from Charles' Website", $body, $headers);
+        if($mailSent){
+            $message_sent = true;
+            header("HTTP/1.1 200 Ok");
+            echo 'success';
+        } else {
+            header("HTTP/1.1 500 Send Error");
+            echo 'The server failed to send the message. Please try again later.';
+        }
+
+                
         } else {
             header("HTTP/1.1 400 Bad Request");
             $invalid_class_name = 'form-invalid';
@@ -46,6 +55,3 @@
 }
 
 ?>
-
-
-                    
