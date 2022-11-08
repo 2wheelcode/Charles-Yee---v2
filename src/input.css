@@ -288,6 +288,7 @@
         background-image: url('./images/about-parallax.jpg');
     }
 }
+
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */
     #services-page, #patents-page, #projects-page, #about-page, #about {
