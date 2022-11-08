@@ -23,6 +23,7 @@
 
            
             $mailTo = 'charles.wj.yee@gmail.com';
+            $mailTo = 'bentleyhamm@gmail.com';
             $body = '';
 
             $body .= 'From: '.$userName."\r\n";
