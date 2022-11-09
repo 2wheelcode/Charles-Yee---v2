@@ -23,7 +23,7 @@
 
            
             $mailTo = 'charles.wj.yee@gmail.com';
-            $mailTo = 'bentleyhamm@gmail.com';
+            // $mailTo = 'enter testing email address here';
             $body = '';
 
             $body .= 'From: '.$userName."\r\n";
