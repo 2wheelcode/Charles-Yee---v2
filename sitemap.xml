@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://charlesyeeportfolio.com/</loc>
+  <lastmod>2022-11-25T01:45:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://charlesyeeportfolio.com/index.html</loc>
+  <lastmod>2022-11-25T01:45:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://charlesyeeportfolio.com/services.html</loc>
+  <lastmod>2022-12-20T21:35:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://charlesyeeportfolio.com/projects.html</loc>
+  <lastmod>2022-11-25T01:45:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://charlesyeeportfolio.com/patents.html</loc>
+  <lastmod>2022-11-25T01:45:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://charlesyeeportfolio.com/about.html</loc>
+  <lastmod>2022-11-25T01:44:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://charlesyeeportfolio.com/images/Charles%20Yee%20CV%202023.pdf</loc>
+  <lastmod>2022-11-24T19:33:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
